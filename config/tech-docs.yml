@@ -9,12 +9,12 @@ phase: alpha
 
 # Links to show on right-hand-side of header
 header_links:
-  Summary: /
-  All: /all.html
-  Content: /content.html
-  Design: /design.html
-  Code: /code.html
-  Checklist: /checklist.html
+  Summary: index.html
+  All: all.html
+  Content: content.html
+  Design: design.html
+  Code: code.html
+  Checklist: checklist.html
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: false
