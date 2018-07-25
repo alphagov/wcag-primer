@@ -1,0 +1,47 @@
+<h1 id="checklist">Checklist</h1>
+<p>To meet WCAG 2.0 to level AA you must be able to answer YES or Not Applicable to all of the following questions.</p>
+
+<p>Answering no means that you are not meeting WCAG and have barriers that will prevent some users, especially disabled users and older people, from accessing your digital content successfully.</p>
+<h2 id="percievable">Percievable</h2>
+<ul>
+<li>Do all images have an appropriate text equivalent? Is essential visual information also available as text?</li>
+<li>Do all audio files have a transcript?. Is essential audio information availble as text?</li>
+<li>Do all videos have captions that are synchronised with the audio?</li>
+<li>Do all live videos have captions that are synchronised with the audio?</li>
+<li>Does video that includes important visual information have an audio description?</li>
+<li>Is all content structure that is communicated visually available to assistive technologies?</li>
+<li>If styling is removed is the content in a logical order?</li>
+<li>Have you avoided using visual characteristics to communicate information?</li>
+<li>Have you avoided using colour as the only way to convey some information?</li>
+<li>Can users stop audio that auto plays?</li>
+<li>Does all text have sufficient contrast against the background colour?</li>
+<li>Is the content fully usable when text is enlarged up to 200%?</li>
+<li>Have you avoided using images of text?</li>
+</ul>
+<h2 id="operable">Operable</h2>
+<ul>
+<li>Can all menus, links, buttons, and other controls be operated by keyboard?</li>
+<li>Do pages that have time limits include mechanisms for adjusting those limits?</li>
+<li>Can any content that moves or auto updates be stopped?</li>
+<li>Have you avoided using content that flashes or flickers?</li>
+<li>Can blocks of links and other interactive elements be bypassed by keyboard users?</li>
+<li>Does each page have a unique title that indicates its purpose and context?</li>
+<li>When using a keyboard to move through a page does the order make sense?</li>
+<li>Is the purpose of every link clear from its link text?</li>
+<li>Does the website have two or more ways of finding content, such as a navigation menu, search feature, or site map?</li>
+<li>Are headings and labels clear and descriptive?</li>
+<li>When using a keyboard to move through a page can you tell where you are?</li>
+</ul>
+<h2 id="understandable">Understandable</h2>
+<ul>
+<li>Has the language of the web page or document (or individual parts of a multilingual document) been defined?</li>
+<li>Have you avoided links, controls, or form fields that automatically trigger a change in context?</li>
+<li>Does the website include consistent navigation?</li>
+<li>Are features with the same functionality labelled consistently?</li>
+<li>Do forms provide helpful, accessible error and verification messages?</li>
+</ul>
+<h2 id="robut">Robut</h2>
+<ul>
+<li>Is the web page coded using valid HTML?</li>
+<li>Do all interactive components have an accessible name and role, and when required state? Has the correct ARIA markup been used and does it validate?</li>
+</ul>

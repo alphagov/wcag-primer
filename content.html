@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+      <meta name="robots" content="noindex">
+
+    <title>Content | WCAG 2.0 Primer | WCAG 2.0 Primer</title>
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" rel="stylesheet" media="screen" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" rel="stylesheet" media="screen" /><![endif]-->
+
+    <link rel="canonical" href="/content.html">
+
+
+    <link href="/stylesheets/print.css" rel="stylesheet" media="print" />
+    <script src="/javascripts/application.js"></script>
+
+      <meta property="og:image" content="/images/govuk-large.png" />
+      <meta property="og:site_name" content="WCAG 2.0 Primer" />
+      <meta property="og:title" content="Content | WCAG 2.0 Primer" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="/content.html" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:image" content="/images/govuk-large.png" />
+      <meta property="twitter:title" content="Content | WCAG 2.0 Primer | WCAG 2.0 Primer" />
+      <meta property="twitter:url" content="/content.html" />
+  </head>
+
+  <body>
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="skip-link">Skip to main content</a>
+
+        <header class="header header--full-width">
+  <div class="header__container">
+    <div class="header__brand">
+        <a href="/">
+          <span class="govuk-logo">
+            <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+            GOV.UK
+          </span>
+        <span class="header__title">
+          WCAG 2.0 Primer
+            <span class="phase-banner">alpha</span>
+        </span>
+        </a>
+    </div>
+
+      <div data-module="navigation">
+        <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
+
+        <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <ul>
+              <li>
+                <a href="/">
+                  Summary
+                </a>
+              </li>
+              <li>
+                <a href="/all.html">
+                  All
+                </a>
+              </li>
+              <li class="active">
+                <a href="/content.html">
+                  Content
+                </a>
+              </li>
+              <li>
+                <a href="/design.html">
+                  Design
+                </a>
+              </li>
+              <li>
+                <a href="/code.html">
+                  Code
+                </a>
+              </li>
+              <li>
+                <a href="/checklist.html">
+                  Checklist
+                </a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+</header>
+
+      </div>
+
+      <div id="toc-heading" class="toc-show fixedsticky">
+        <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          Table of contents <span class="toc-show__icon"></span>
+        </a>
+      </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+        <div class="app-pane__toc">
+          <div class="toc" data-module="table-of-contents">
+            
+            <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+            <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+                    <ul>
+  <li>
+    <a href="#content-related-wcag-2-0-a-and-aa-success-criteria">Content related WCAG 2.0 A and AA Success Criteria</a>
+    <ul>
+      <li>
+        <a href="#percieveable">Percieveable</a>
+        <ul>
+          <li>
+            <a href="#1-1-text-alternatives">1.1 Text Alternatives</a>
+            <ul>
+              <li>
+                <a href="#1-1-1-non-text-content-a">1.1.1 Non-text content (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#1-2-time-based-media">1.2 Time-based Media</a>
+            <ul>
+              <li>
+                <a href="#1-2-1-audio-only-and-video-only-a">1.2.1 Audio-only and video-only (A)</a>
+              </li>
+              <li>
+                <a href="#1-2-2-captions-a">1.2.2 Captions (A)</a>
+              </li>
+              <li>
+                <a href="#1-2-3-audio-description-or-media-alternative-a">1.2.3 Audio description or media alternative (A)</a>
+              </li>
+              <li>
+                <a href="#1-2-4-captions-live-aa">1.2.4 Captions (live) (AA)</a>
+              </li>
+              <li>
+                <a href="#1-2-5-audio-description-pre-recorded-aa">1.2.5 Audio description (pre-recorded) (AA)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#1-3-adaptable">1.3 Adaptable</a>
+            <ul>
+              <li>
+                <a href="#1-3-1-info-and-relationships-a">1.3.1 Info and relationships (A)</a>
+              </li>
+              <li>
+                <a href="#1-3-3-sensory-characteristics-a">1.3.3 Sensory characteristics (A)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#operable">Operable</a>
+        <ul>
+          <li>
+            <a href="#2-4-navigable">2.4 Navigable</a>
+            <ul>
+              <li>
+                <a href="#2-4-2-page-title-a">2.4.2 Page title (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-4-link-purpose-in-context-a">2.4.4 Link purpose (in context) (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-6-headings-and-labels-aa">2.4.6 Headings and labels (AA)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#understandable">Understandable</a>
+        <ul>
+          <li>
+            <a href="#3-1-readable">3.1 Readable</a>
+            <ul>
+              <li>
+                <a href="#3-1-1-language-of-page-a">3.1.1 Language of page (A)</a>
+              </li>
+              <li>
+                <a href="#3-1-2-language-of-parts-a">3.1.2 Language of parts (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#3-2-predictable">3.2 Predictable</a>
+            <ul>
+              <li>
+                <a href="#3-2-4-consistent-identification-aa">3.2.4 Consistent identification (AA)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#3-3-input-assistance">3.3 Input Assistance</a>
+            <ul>
+              <li>
+                <a href="#3-3-1-error-identification-a">3.3.1 Error identification (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-2-labels-or-instructions-a">3.3.2 Labels or instructions (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-3-error-suggestion-a">3.3.3 Error suggestion (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-4-error-prevention-legal-financial-data-a">3.3.4 Error prevention (legal, financial, data (A)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+            </nav>
+          </div>
+        </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="content-related-wcag-2-0-a-and-aa-success-criteria">Content related WCAG 2.0 A and AA Success Criteria</h1>
+
+<p>Here are the details of the success criteria that are related to content.</p>
+
+<p><h2 id="percieveable">Percieveable</h2><h3 id="1-1-text-alternatives">1.1 Text Alternatives</h3>
+<h4 id="1-1-1-non-text-content-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">1.1.1 Non-text content (A)</a></h4></p>
+
+<p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
+
+<h5 id="requirements">Requirements</h5>
+
+<ul>
+<li>  Images (like logos and icons) that communicate information have short text descriptions;</li>
+<li>  Editorial images that support the text around them have short descriptions;</li>
+<li>  Images (like infographics, charts and diagrams) that communicate complex information also have longer text descriptions within the same page;</li>
+<li>  Decorative images have empty text descriptions.</li>
+</ul>
+
+<h5 id="common-issues">Common issues</h5>
+
+<ul>
+<li>  The image communicates information but does not have a text description;</li>
+<li>  The text description does not communicate the same information as the image;</li>
+<li>  The image has a text description but, like a placeholder or file name, it does not communicate the information in the image;</li>
+<li>  The image has a text description that is an exact duplication of content elsewhere on the page.</li>
+</ul>
+
+<h5 id="useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text">W3C Requirements for providing text to act as an alternative for images</a></li>
+<li>  <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">W3C Alt text decision tree</a></li>
+</ul>
+
+<h3 id="1-2-time-based-media">1.2 Time-based Media</h3>
+
+<h4 id="1-2-1-audio-only-and-video-only-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">1.2.1 Audio-only and video-only (A)</a></h4>
+
+<p>All content that is audio-only like a podcast, or video-only like a silent movie, must have a text description or an audio description. This ensures that information communicated for sight and sound is available to people who cannot see or hear.</p>
+
+<h5 id="1-2-1-audio-only-and-video-only-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Audio only content that communicates information (like a podcast) has a text transcript;</li>
+<li>  Video-only content that communicates information (like a silent movie) has a text transcript that describes the video or a audio description.</li>
+</ul>
+
+<h5 id="1-2-1-audio-only-and-video-only-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Audio-only content that communicates information does not have a text transcript;</li>
+<li>  Video-only content that communicates information does not have a text transcript or an audio description;</li>
+<li>  The text transcript for audio-only content does not include all spoken dialogue and sound effects;</li>
+<li>  The text transcript for video-only content does not include descriptions of all important visual information;</li>
+<li>  The text transcript for audio-only or video-only content is not clearly labelled as such.</li>
+<li>  The audio description for video-only content does not include descriptions of all important visual information;</li>
+</ul>
+
+<h5 id="1-2-1-audio-only-and-video-only-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/what-are-transcripts/">What are transcripts?</a></li>
+</ul>
+
+<h4 id="1-2-2-captions-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">1.2.2 Captions (A)</a></h4>
+
+<p>Video content like instructional videos, promotions and interviews, must have captions that are synchronised with the audio content of the video. This ensures that the information communicated by the audio part of the video is available to people who cannot hear it.</p>
+
+<h5 id="1-2-2-captions-a-requirements">Requirements</h5>
+
+<ul>
+<li>  All video content has captions that are synchronised with the audio content of the video;</li>
+<li>  Captions include all the spoken dialogue and important sound effects from the audio part of the video.</li>
+</ul>
+
+<h5 id="1-2-2-captions-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The video does not have synchronised captions;</li>
+<li>  The video has captions but they do not include all the spoken dialogue and important sound effects from the audio content of the video;</li>
+<li>  The video has captions but they are not synchronised with the audio content of the video.</li>
+</ul>
+
+<h5 id="1-2-2-captions-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/what-are-captions">What are captions?</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2017/03/sounding-out-the-web-accessibility-for-deaf-and-hard-of-hearing-people-part-2/">Sounding out the web: accessibility for Deaf and hard of hearing people (Part 2</a></li>
+</ul>
+
+<h4 id="1-2-3-audio-description-or-media-alternative-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">1.2.3 Audio description or media alternative (A)</a></h4>
+
+<p>Video content like instructional videos must have audio description, unless it already has a text alternative. This ensures that information communicated visually in the video is available to people who cannot see it.</p>
+
+<h5 id="1-2-3-audio-description-or-media-alternative-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Video content is audio described, or has a text alternative that describes the visual content of the video.</li>
+</ul>
+
+<h5 id="1-2-3-audio-description-or-media-alternative-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The video does not have audio description or a text alternative;</li>
+<li>  The audio description does not describe important information communicated visually in the video;</li>
+<li>  The text alternative does not describe important information communicated visually in the video;</li>
+<li>  The audio description is not synchronised to complement the audio content of the video.</li>
+</ul>
+
+<h5 id="1-2-3-audio-description-or-media-alternative-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/what-is-audio-description">What is audio description?</a></li>
+</ul>
+
+<h4 id="1-2-4-captions-live-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html">1.2.4 Captions (live) (AA)</a></h4>
+
+<p>Live broadcast video must have captions that are synchronised with the audio content of the video. This ensures that the information communicated by the audio part of the video is available to people who cannot hear it.</p>
+
+<h5 id="1-2-4-captions-live-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  All live video content has captions that are synchronised with the audio content of the video.</li>
+</ul>
+
+<h5 id="1-2-4-captions-live-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  The live video does not have synchronised captions;</li>
+<li>  The live video has captions but they are not synchronised with the audio content of the video.</li>
+</ul>
+
+<h5 id="1-2-4-captions-live-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/what-are-captions">What are captions?</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2017/03/sounding-out-the-web-accessibility-for-deaf-and-hard-of-hearing-people-part-2/">Sounding out the web: accessibility for Deaf and hard of hearing people (Part 2</a></li>
+</ul>
+
+<h4 id="1-2-5-audio-description-pre-recorded-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">1.2.5 Audio description (pre-recorded) (AA)</a></h4>
+
+<p>Video content like instructional videos must have audio description. This ensures that information communicated visually in the video is available to people who cannot see it.</p>
+
+<h5 id="1-2-5-audio-description-pre-recorded-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  Video that includes important visual information has audio description;</li>
+</ul>
+
+<h5 id="1-2-5-audio-description-pre-recorded-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  A video includes important visual information but does not have audio description;</li>
+<li>  The audio description does not describe important information communicated visually in the video;</li>
+<li>  The audio description is not synchronised to complement the audio content of the video.</li>
+</ul>
+
+<h5 id="1-2-5-audio-description-pre-recorded-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/what-is-audio-description">What is audio description?</a></li>
+</ul>
+
+<h3 id="1-3-adaptable">1.3 Adaptable</h3>
+
+<h4 id="1-3-1-info-and-relationships-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">1.3.1 Info and relationships (A)</a></h4>
+
+<p>When content structures like tables, lists and headings are communicated visually, they must also be communicated in ways that assistive technologies can understand. This ensures that content structures are available to screen reader, screen magnifier and speech recognition tool users.</p>
+
+<h5 id="1-3-1-info-and-relationships-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements);</li>
+<li>  Lists of items are presented using proper HTML markup (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements);</li>
+<li>  Headings are presented using proper HTML markup (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> elements);</li>
+<li>  Form fields have properly associated <code>&lt;label&gt;</code> elements;</li>
+<li>  Sets of radio buttons or checkboxes have a <code>&lt;fieldset&gt;</code> element to group them together, and a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
+<li>  Form fields with format requirements or other additional information have properly associated hints.</li>
+</ul>
+
+<h5 id="1-3-1-info-and-relationships-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
+<li>  A list of items is presented using line breaks to separate each item, and the proper HTML markup has not been used;</li>
+<li>  Headings are text styled with CSS, and the proper HTML markup has not been used;</li>
+<li>  Headings use the proper HTML markup, but do not accurately represent the hierarchy of content on the page (starting with <code>&lt;h1&gt;</code>, then <code>&lt;h2&gt;</code> for each section, <code>&lt;h3&gt;</code> for each sub-section and so on);</li>
+<li>  Form fields do not have labels;</li>
+<li>  Form fields have labels but they are not properly associated with their corresponding fields;</li>
+<li>  Sets of radio buttons or checkboxes are not grouped inside a <code>&lt;fieldset&gt;</code> element, and do not have a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
+<li>  Form fields have format requirements or additional information, but it is not properly associated with the corresponding field.</li>
+</ul>
+
+<h5 id="1-3-1-info-and-relationships-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/using-html-headings">Using HTML headings</a></li>
+<li>  <a href="https://www.nomensa.com/blog/2011/using-html-lists">Using HTML lists</a></li>
+<li>  <a href="https://www.nomensa.com/blog/2008/tables-more-than-just-rows-and-cells">Tables, more than just rows and columns</a></li>
+</ul>
+
+<h4 id="1-3-3-sensory-characteristics-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">1.3.3 Sensory characteristics (A)</a></h4>
+
+<p>Instructions must not depend on sensory characteristics like shape, size, colour, or location. This ensures that instructions can be understood by users who are unable to see or recognise information communicated using sensory characteristics.</p>
+
+<h5 id="1-3-3-sensory-characteristics-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Do not use shape, size, colour, or location to communicate instructions.</li>
+</ul>
+
+<h5 id="1-3-3-sensory-characteristics-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An instruction tells users to “activate the green button”;</li>
+<li>  An instruction tells users to “use the menu on the left of the page”;</li>
+<li>  An instruction tells users they can “find more information in the square box”;</li>
+<li>  An instruction tells users to “follow the biggest link in the tag cloud”.</li>
+</ul>
+
+<h5 id="1-3-3-sensory-characteristics-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<p><h2 id="operable">Operable</h2><h3 id="2-4-navigable">2.4 Navigable</h3>
+<h4 id="2-4-2-page-title-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">2.4.2 Page title (A)</a></h4></p>
+
+<p>Each page must have a unique title that indicates its topic or purpose. This ensures that people with cognitive disabilities can quickly orientate themselves within the service and identify the purpose of the page without interpreting its entire contents.</p>
+
+<h5 id="2-4-2-page-title-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Each page has a title that is unique within the service;</li>
+<li>  Each page has a title that indicates its topic or purpose.</li>
+</ul>
+
+<h5 id="2-4-2-page-title-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The page title is not unique within the service;</li>
+<li>  The page title does not indicate its topic or purpose;</li>
+<li>  The title does not indicate the page is part of a service on Gov.UK;</li>
+<li>  The page title does not change because the service is a Single Page Application (SPA).</li>
+</ul>
+
+<h5 id="2-4-2-page-title-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2013/how-to-write-better-page-titles">How to write better page titles</a></li>
+</ul>
+
+<h4 id="2-4-4-link-purpose-in-context-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">2.4.4 Link purpose (in context) (A)</a></h4>
+
+<p>The purpose of every link must be clear from its link text, or its link text plus associated content if assistive technologies recognise the association. This ensures that screen reader users can understand the purpose of links without reading nearby content, and that speech recognition users can target links accurately using voice commands.</p>
+
+<h5 id="2-4-4-link-purpose-in-context-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Link text clearly indicates the purpose of the link;</li>
+<li>  Multiple links that point to the same destination have the same link text;</li>
+<li>  Links have accessible names.</li>
+</ul>
+
+<h5 id="2-4-4-link-purpose-in-context-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  A link has text that does not indicate its purpose;</li>
+<li>  A link points to the same destination as another link, but uses different link text;</li>
+<li>  A link points to a unique destination, but uses the same text as other links;</li>
+<li>  A link has text that depends on nearby content to be understood, but that content is not automatically identified by assistive technologies;</li>
+<li>  A link uses a CSS background image, and has no visible accessible name.</li>
+</ul>
+
+<h5 id="2-4-4-link-purpose-in-context-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2011/writing-good-link-text">Writing good link text</a></li>
+<li>  <a href="https://www.gov.uk/guidance/content-design/links#using-links-in-content">GOV.UK: Using links in content</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2012/08/notes-on-accessible-css-image-sprites/">Notes on accessible CSS image sprites</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/">What is an accessible name?</a></li>
+</ul>
+
+<h4 id="2-4-6-headings-and-labels-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">2.4.6 Headings and labels (AA)</a></h4>
+
+<p>Headings must indicate the topic or purpose of the content in that section of the page, and labels must indicate the purpose of the field they relate to. This ensures people with reading difficulties can understand the purpose of content, and that screen reader users can easily navigate to relevant sections of content on the page.</p>
+
+<h5 id="2-4-6-headings-and-labels-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  Headings describe the purpose or topic of the content that follows;</li>
+<li>  Labels indicate the purpose of the fields they relate to.</li>
+</ul>
+
+<h5 id="2-4-6-headings-and-labels-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  A heading does not indicate the purpose or topic of the content that follows;</li>
+<li>  A label does not indicate the purpose of the field it relates to.</li>
+</ul>
+
+<h5 id="2-4-6-headings-and-labels-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<p><h2 id="understandable">Understandable</h2><h3 id="3-1-readable">3.1 Readable</h3>
+<h4 id="3-1-1-language-of-page-a"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">3.1.1 Language of page (A)</a></h4></p>
+
+<p>The written language of the page must be identified in the code of the web page. This makes sure that screen readers automatically use the correct speech libraries for accent and pronunciation.</p>
+
+<h5 id="3-1-1-language-of-page-a-requirements">Requirements</h5>
+
+<ul>
+<li>  The language is identified using the <code>lang</code> attribute of the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&lt;/span&gt;</code> element.</li>
+</ul>
+
+<h5 id="3-1-1-language-of-page-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  No <code>lang</code> attribute is present on the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&gt;&lt;/span&gt;</code> element.</li>
+<li>  The <code>lang</code> attribute is present on the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&gt;&lt;/span&gt;</code> element, but it incorrectly identifies the language of the page.</li>
+</ul>
+
+<h5 id="3-1-1-language-of-page-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.w3.org/International/tutorials/language-decl/">Working with Language on the Web - W3C i18n tutorial</a></li>
+<li>  <a href="https://www.w3.org/International/getting-started/language">Language on the Web</a></li>
+</ul>
+
+<h4 id="3-1-2-language-of-parts-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html">3.1.2 Language of parts (A)</a></h4>
+
+<p>When content is displayed in a language that is different from the primary language of the page, it must be indicated in a way that assistive technologies understand. This ensures that screen readers switch to the appropriate accent and pronunciation for that language.</p>
+
+<h5 id="3-1-2-language-of-parts-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Content that is written in a different language from the primary language of the page, is identified using HTML (the lang attribute).</li>
+</ul>
+
+<h5 id="3-1-2-language-of-parts-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Content uses a different language, but the change in language is not identified in the HTML;</li>
+<li>  Content uses a different language, and the wrong language is identified in the HTML.</li>
+</ul>
+
+<h5 id="3-1-2-language-of-parts-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/">Using the HTML lang attribute</a></li>
+</ul>
+
+<h3 id="3-2-predictable">3.2 Predictable</h3>
+
+<h4 id="3-2-4-consistent-identification-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html">3.2.4 Consistent identification (AA)</a></h4>
+
+<p>When features with the same functionality are used in multiple places, they must be identified in a consistent way. This helps screen reader users correctly identify the type and purpose of the functionality.</p>
+
+<h5 id="3-2-4-consistent-identification-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  An icon has the same alternative text wherever it is used;</li>
+<li>  Buttons for “Next”, “Previous”, and “Continue”, are labelled consistently wherever they are used;</li>
+<li>  Form fields with the same purpose are consistently labelled wherever they are used.</li>
+</ul>
+
+<h5 id="3-2-4-consistent-identification-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  An icon is used to denote a file download, but has a different alternate text whenever it is used;</li>
+<li>  A search facility is provided on every page, but the text field and button have different labels on each page.</li>
+</ul>
+
+<h5 id="3-2-4-consistent-identification-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h3 id="3-3-input-assistance">3.3 Input Assistance</h3>
+
+<h4 id="3-3-1-error-identification-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">3.3.1 Error identification (A)</a></h4>
+
+<p>When an error occurs the user is informed what caused the error, and the error is described in text. This ensures that the error is available to people who cannot see, distinguish colours, or understand icons and other visual cues.</p>
+
+<h5 id="3-3-1-error-identification-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Each error is described in text;</li>
+<li>  Each error is associated with the field it relates to;</li>
+<li>  Multiple errors are summarised at the top of the form.</li>
+</ul>
+
+<h5 id="3-3-1-error-identification-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An error is only indicated by a red border around the field;</li>
+<li>  An error is only indicated by an icon near to the field;</li>
+<li>  An error is described in text, but it is not associated with the field it relates to;</li>
+<li>  Multiple errors occur, but no summary is provided.</li>
+<li>  An error summary is provided, but keyboard focus is not taken to it.</li>
+</ul>
+
+<h5 id="3-3-1-error-identification-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h4 id="3-3-2-labels-or-instructions-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">3.3.2 Labels or instructions (A)</a></h4>
+
+<p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. This ensures that everyone understands any requirements for entering data, and does so in a way that ensures that people unable to see the information are made aware of it by their screen readers.</p>
+
+<h5 id="3-3-2-labels-or-instructions-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Instructions are provided for fields that require data to be entered in a specific format;</li>
+<li>  Instructions are properly associated with the relevant form field.</li>
+</ul>
+
+<h5 id="3-3-2-labels-or-instructions-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Data is expected in a specific format, but no iinstructions have been provided;</li>
+<li>  Instructions have been provided, but they are not associated with the relevant field.</li>
+</ul>
+
+<h5 id="3-3-2-labels-or-instructions-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.paciellogroup.com/blog/2014/12/using-aria-describedby-to-provide-helpful-form-hints/">Using aria-describedby to provide form hints</a></li>
+<li>  <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints">Basic form hints</a></li>
+</ul>
+
+<h4 id="3-3-3-error-suggestion-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">3.3.3 Error suggestion (A)</a></h4>
+
+<p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion comprimises security. This helps everyone resolve issues more easily, but especially people with cognitive disabilities who find processing information difficult.</p>
+
+<h5 id="3-3-3-error-suggestion-a-requirements">Requirements</h5>
+
+<ul>
+<li>  When an error is detected, a suggestion is provided to help the user correct the issue.</li>
+</ul>
+
+<h5 id="3-3-3-error-suggestion-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An error is detected and the user is notified, but no suggestion is given to help them resolve it; A login error is detected and a suggestion is provided, but it comprimises security by revelaing that a particular username exists.</li>
+</ul>
+
+<h5 id="3-3-3-error-suggestion-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h4 id="3-3-4-error-prevention-legal-financial-data-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html">3.3.4 Error prevention (legal, financial, data (A)</a></h4>
+
+<p>When completion of a form causes a legal commitment, triggers a financial transaction, or gives consent for personal data to be updated or changed, the user must be able to review, correct, and confirm that the information they have entered is correct, or they must be able to reverse the decision. This provides safeguards to help people with all disabilities, but especially those who are vulnerable to making mistakes.</p>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-requirements">Requirements</h5>
+
+<ul>
+<li>  When data is submitted leading to a legal commitment, financial transaction, or to update or change personal data, an interim page is presented that allows the user to review, correct, and confirm the information they have entered.</li>
+</ul>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+            
+          </main>
+
+
+          <footer class="footer">
+  <div class="footer__licence">
+    <a class="footer__licence-logo" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a>
+    <p class="footer__licence-description">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+  </div>
+
+  <div class="footer__copyright">
+    <a class="footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

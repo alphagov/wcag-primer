@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+      <meta name="robots" content="noindex">
+
+    <title>Code | WCAG 2.0 Primer | WCAG 2.0 Primer</title>
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" rel="stylesheet" media="screen" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" rel="stylesheet" media="screen" /><![endif]-->
+
+    <link rel="canonical" href="/code.html">
+
+
+    <link href="/stylesheets/print.css" rel="stylesheet" media="print" />
+    <script src="/javascripts/application.js"></script>
+
+      <meta property="og:image" content="/images/govuk-large.png" />
+      <meta property="og:site_name" content="WCAG 2.0 Primer" />
+      <meta property="og:title" content="Code | WCAG 2.0 Primer" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="/code.html" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:image" content="/images/govuk-large.png" />
+      <meta property="twitter:title" content="Code | WCAG 2.0 Primer | WCAG 2.0 Primer" />
+      <meta property="twitter:url" content="/code.html" />
+  </head>
+
+  <body>
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="skip-link">Skip to main content</a>
+
+        <header class="header header--full-width">
+  <div class="header__container">
+    <div class="header__brand">
+        <a href="/">
+          <span class="govuk-logo">
+            <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+            GOV.UK
+          </span>
+        <span class="header__title">
+          WCAG 2.0 Primer
+            <span class="phase-banner">alpha</span>
+        </span>
+        </a>
+    </div>
+
+      <div data-module="navigation">
+        <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
+
+        <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <ul>
+              <li>
+                <a href="/">
+                  Summary
+                </a>
+              </li>
+              <li>
+                <a href="/all.html">
+                  All
+                </a>
+              </li>
+              <li>
+                <a href="/content.html">
+                  Content
+                </a>
+              </li>
+              <li>
+                <a href="/design.html">
+                  Design
+                </a>
+              </li>
+              <li class="active">
+                <a href="/code.html">
+                  Code
+                </a>
+              </li>
+              <li>
+                <a href="/checklist.html">
+                  Checklist
+                </a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+</header>
+
+      </div>
+
+      <div id="toc-heading" class="toc-show fixedsticky">
+        <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          Table of contents <span class="toc-show__icon"></span>
+        </a>
+      </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+        <div class="app-pane__toc">
+          <div class="toc" data-module="table-of-contents">
+            
+            <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+            <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+                    <ul>
+  <li>
+    <a href="#code-related-wcag-2-0-a-and-aa-success-criteria">Code related WCAG 2.0 A and AA Success Criteria</a>
+    <ul>
+      <li>
+        <a href="#percieveable">Percieveable</a>
+        <ul>
+          <li>
+            <a href="#1-1-text-alternatives">1.1 Text Alternatives</a>
+            <ul>
+              <li>
+                <a href="#1-1-1-non-text-content-a">1.1.1 Non-text content (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#1-3-adaptable">1.3 Adaptable</a>
+            <ul>
+              <li>
+                <a href="#1-3-1-info-and-relationships-a">1.3.1 Info and relationships (A)</a>
+              </li>
+              <li>
+                <a href="#1-3-2-meaningful-sequence-a">1.3.2 Meaningful sequence (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#1-4-distinguishable">1.4 Distinguishable</a>
+            <ul>
+              <li>
+                <a href="#1-4-4-resize-text-aa">1.4.4 Resize text (AA)</a>
+              </li>
+              <li>
+                <a href="#1-4-5-images-of-text-aa">1.4.5 Images of text (AA)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#operable">Operable</a>
+        <ul>
+          <li>
+            <a href="#2-1-keyboard-accessible">2.1 Keyboard Accessible</a>
+            <ul>
+              <li>
+                <a href="#2-1-1-keyboard-a">2.1.1 Keyboard (A)</a>
+              </li>
+              <li>
+                <a href="#2-1-2-no-keyboard-trap-a">2.1.2 No keyboard trap (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#2-2-enough-time">2.2 Enough Time</a>
+            <ul>
+              <li>
+                <a href="#2-2-1-timing-adjustable-a">2.2.1 Timing adjustable (A)</a>
+              </li>
+              <li>
+                <a href="#2-2-2-pause-stop-hide-a">2.2.2 Pause, stop, hide (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#2-4-navigable">2.4 Navigable</a>
+            <ul>
+              <li>
+                <a href="#2-4-1-bypass-blocks-a">2.4.1 Bypass blocks (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-2-page-title-a">2.4.2 Page title (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-3-focus-order-a">2.4.3 Focus order (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-4-link-purpose-in-context-a">2.4.4 Link purpose (in context) (A)</a>
+              </li>
+              <li>
+                <a href="#2-4-7-focus-visible-aa">2.4.7 Focus visible (AA)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#understandable">Understandable</a>
+        <ul>
+          <li>
+            <a href="#3-1-readable">3.1 Readable</a>
+            <ul>
+              <li>
+                <a href="#3-1-1-language-of-page-a">3.1.1 Language of page (A)</a>
+              </li>
+              <li>
+                <a href="#3-1-2-language-of-parts-a">3.1.2 Language of parts (A)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#3-2-predictable">3.2 Predictable</a>
+            <ul>
+              <li>
+                <a href="#3-2-1-on-focus-a">3.2.1 On Focus (A)</a>
+              </li>
+              <li>
+                <a href="#3-2-2-on-input-a">3.2.2 On Input (A)</a>
+              </li>
+              <li>
+                <a href="#3-2-4-consistent-identification-aa">3.2.4 Consistent identification (AA)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#3-3-input-assistance">3.3 Input Assistance</a>
+            <ul>
+              <li>
+                <a href="#3-3-1-error-identification-a">3.3.1 Error identification (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-2-labels-or-instructions-a">3.3.2 Labels or instructions (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-3-error-suggestion-a">3.3.3 Error suggestion (A)</a>
+              </li>
+              <li>
+                <a href="#3-3-4-error-prevention-legal-financial-data-a">3.3.4 Error prevention (legal, financial, data (A)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#robust">Robust</a>
+        <ul>
+          <li>
+            <a href="#4-1-compatible">4.1 Compatible</a>
+            <ul>
+              <li>
+                <a href="#4-1-1-parsing-a">4.1.1 Parsing (A)</a>
+              </li>
+              <li>
+                <a href="#4-1-2-name-role-value-a">4.1.2 Name, role, value (A)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+            </nav>
+          </div>
+        </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="code-related-wcag-2-0-a-and-aa-success-criteria">Code related WCAG 2.0 A and AA Success Criteria</h1>
+
+<p>Here are the details of the X success criteria that are related to code 
+X A, Y AA</p>
+
+<p><h2 id="percieveable">Percieveable</h2><h3 id="1-1-text-alternatives">1.1 Text Alternatives</h3>
+<h4 id="1-1-1-non-text-content-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">1.1.1 Non-text content (A)</a></h4></p>
+
+<p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
+
+<h5 id="requirements">Requirements</h5>
+
+<ul>
+<li>  Images (like logos and icons) that communicate information have short text descriptions;</li>
+<li>  Editorial images that support the text around them have short descriptions;</li>
+<li>  Images (like infographics, charts and diagrams) that communicate complex information also have longer text descriptions within the same page;</li>
+<li>  Decorative images have empty text descriptions.</li>
+</ul>
+
+<h5 id="common-issues">Common issues</h5>
+
+<ul>
+<li>  The image communicates information but does not have a text description;</li>
+<li>  The text description does not communicate the same information as the image;</li>
+<li>  The image has a text description but, like a placeholder or file name, it does not communicate the information in the image;</li>
+<li>  The image has a text description that is an exact duplication of content elsewhere on the page.</li>
+</ul>
+
+<h5 id="useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text">W3C Requirements for providing text to act as an alternative for images</a></li>
+<li>  <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">W3C Alt text decision tree</a></li>
+</ul>
+
+<h3 id="1-3-adaptable">1.3 Adaptable</h3>
+
+<h4 id="1-3-1-info-and-relationships-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">1.3.1 Info and relationships (A)</a></h4>
+
+<p>When content structures like tables, lists and headings are communicated visually, they must also be communicated in ways that assistive technologies can understand. This ensures that content structures are available to screen reader, screen magnifier and speech recognition tool users.</p>
+
+<h5 id="1-3-1-info-and-relationships-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements);</li>
+<li>  Lists of items are presented using proper HTML markup (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements);</li>
+<li>  Headings are presented using proper HTML markup (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> elements);</li>
+<li>  Form fields have properly associated <code>&lt;label&gt;</code> elements;</li>
+<li>  Sets of radio buttons or checkboxes have a <code>&lt;fieldset&gt;</code> element to group them together, and a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
+<li>  Form fields with format requirements or other additional information have properly associated hints.</li>
+</ul>
+
+<h5 id="1-3-1-info-and-relationships-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
+<li>  A list of items is presented using line breaks to separate each item, and the proper HTML markup has not been used;</li>
+<li>  Headings are text styled with CSS, and the proper HTML markup has not been used;</li>
+<li>  Headings use the proper HTML markup, but do not accurately represent the hierarchy of content on the page (starting with <code>&lt;h1&gt;</code>, then <code>&lt;h2&gt;</code> for each section, <code>&lt;h3&gt;</code> for each sub-section and so on);</li>
+<li>  Form fields do not have labels;</li>
+<li>  Form fields have labels but they are not properly associated with their corresponding fields;</li>
+<li>  Sets of radio buttons or checkboxes are not grouped inside a <code>&lt;fieldset&gt;</code> element, and do not have a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
+<li>  Form fields have format requirements or additional information, but it is not properly associated with the corresponding field.</li>
+</ul>
+
+<h5 id="1-3-1-info-and-relationships-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2010/using-html-headings">Using HTML headings</a></li>
+<li>  <a href="https://www.nomensa.com/blog/2011/using-html-lists">Using HTML lists</a></li>
+<li>  <a href="https://www.nomensa.com/blog/2008/tables-more-than-just-rows-and-cells">Tables, more than just rows and columns</a></li>
+</ul>
+
+<h4 id="1-3-2-meaningful-sequence-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">1.3.2 Meaningful sequence (A)</a></h4>
+
+<p>When the order of content is important, the content order must be preserved no matter how it is presented to the user. This ensures that the order of content is meaningful whether someone is looking at it, listening to it with a screen reader, or has stripped out visual styling using a browser plugin.</p>
+
+<h5 id="1-3-2-meaningful-sequence-a-requirements">Requirements</h5>
+
+<ul>
+<li>  The visual order of content matches the underlying code order;</li>
+<li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements).</li>
+</ul>
+
+<h5 id="1-3-2-meaningful-sequence-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;</li>
+<li>  When CSS styles are disabled, the content order is meaningless;</li>
+<li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
+<li>  The tabindex attribute has been used to force a tab order through the content.</li>
+</ul>
+
+<h5 id="1-3-2-meaningful-sequence-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="http://tink.uk/flexbox-the-keyboard-navigation-disconnect/">FlexBox and the keyboard navigation disconnect</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/">Using the tabindex attribute</a></li>
+</ul>
+
+<h3 id="1-4-distinguishable">1.4 Distinguishable</h3>
+
+<h4 id="1-4-4-resize-text-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">1.4.4 Resize text (AA)</a></h4>
+
+<p>It must be possible for people to increase the size of text by up to 200%. This ensures that partially sighted people can comfortably read content.</p>
+
+<h5 id="1-4-4-resize-text-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  We need to decide whether we want to use text resize or zoom as the preferred mechanism.</li>
+</ul>
+
+<h4 id="1-4-5-images-of-text-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">1.4.5 Images of text (AA)</a></h4>
+
+<p>Text must not be presented as part of an image because it cannot be resized, and it deteriorates in quality when magnified. This means that everyone is able to read and access information presented in text.</p>
+
+<h5 id="1-4-5-images-of-text-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  Text is not presented as part of an image;</li>
+<li>  Text is presented using plain text and styled with CSS.</li>
+</ul>
+
+<h5 id="1-4-5-images-of-text-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  Images contain text.</li>
+</ul>
+
+<h5 id="1-4-5-images-of-text-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<p><h2 id="operable">Operable</h2><h3 id="2-1-keyboard-accessible">2.1 Keyboard Accessible</h3>
+<h4 id="2-1-1-keyboard-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">2.1.1 Keyboard (A)</a></h4></p>
+
+<p>It must be possible for someone using a keyboard or touch device to complete all tasks in a service. This ensures that people with mobility impairments who do not use a mouse can successfully complete their goals.</p>
+
+<h5 id="2-1-1-keyboard-a-requirements">Requirements</h5>
+
+<ul>
+<li>  All interaction and functionality is usable with a keyboard;</li>
+<li>  All interaction and functionality is usable on a touch-screen device.</li>
+</ul>
+
+<h5 id="2-1-1-keyboard-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  A custom widget has been created, but the necessary keyboard support has not been provided;</li>
+<li>  An <code>&lt;a&gt;</code> element has been used as the basis for a button, but the additional keyboard interaction (activation with the space key) has not been provided;</li>
+<li>  A dialogue opens but cannot be dismissed by touch, because it does not have a close button;</li>
+<li>  The tabindex attribute has been used with a value of “-1” to mistakenly remove it from the tab order.</li>
+</ul>
+
+<h5 id="2-1-1-keyboard-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="http://webaim.org/techniques/keyboard/">Keyboard accessibility</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/">Using the tabindex attribute</a></li>
+<li>  <a href="http://www.karlgroves.com/2014/11/24/ridiculously-easy-trick-for-keyboard-accessibility/">Ridiculously easy trick for keyboard accessibility</a></li>
+</ul>
+
+<h4 id="2-1-2-no-keyboard-trap-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">2.1.2 No keyboard trap (A)</a></h4>
+
+<p>When someone using a keyboard to navigate content moves to an element, they must be able to move away from it again. This ensures that people who use a keyboard do not get stuck on any part of the page.</p>
+
+<h5 id="2-1-2-no-keyboard-trap-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Keyboard focus can move to an element and away again.</li>
+</ul>
+
+<h5 id="2-1-2-no-keyboard-trap-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  A dialogue opens but cannot be closed with the keyboard, preventing the user from accessing the original content underneath;</li>
+<li>  Content is presented in an infinite scroll, so a keyboard user is forced to tab through everything before they can exit the scroll area.</li>
+</ul>
+
+<h5 id="2-1-2-no-keyboard-trap-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h3 id="2-2-enough-time">2.2 Enough Time</h3>
+
+<h4 id="2-2-1-timing-adjustable-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html">2.2.1 Timing adjustable (A)</a></h4>
+
+<p>When a time limit like a session timeout is set, it must be possible for the user to turn it off, delay it, or extend the length of time. This ensures that people who need longer to complete tasks because of cognitive or mobility impairments, are able to do so comfortably.</p>
+
+<h5 id="2-2-1-timing-adjustable-a-requirements">Requirements</h5>
+
+<ul>
+<li>  A mechanism is available to let users turn off, delay or extend time limits.</li>
+</ul>
+
+<h5 id="2-2-1-timing-adjustable-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  A time limit is set, but a user is unable to turn it off, delay it, or extend it;</li>
+<li>  A time limit warning is displayed, but a user’s attention is not drawn to it in an appropriate way.</li>
+</ul>
+
+<h5 id="2-2-1-timing-adjustable-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.google.co.uk/search?client=firefox-b-ab&amp;q=tink.uk+%2B+alerts&amp;oq=tink.uk+%2B+alerts&amp;gs_l=serp.3...11843.19075.0.19198.33.31.2.0.0.0.222.2583.24j5j1.30.0....0...1.1.64.serp..1.28.2205.0..0j0i131k1j0i67k1j0i10i67k1j0i10k1j0i13k1j0i13i10k1j0i30k1j0i8i30k1j0i8i10i30k1j0i22i30k1j0i22i10i30k1j0i13i30k1j0i13i5i30k1j0i8i13i30k1j0i8i13i10i30k1j33i160k1j33i21k1.qfLU1yJF7Ig">Accessible timeout notifications</a></li>
+</ul>
+
+<h4 id="2-2-2-pause-stop-hide-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html">2.2.2 Pause, stop, hide (A)</a></h4>
+
+<p>When content moves (is animated, blinks or scrolls) automatically for more than five seconds, or when content automatically updates on the page, it must be possible for users to Pause, stop or hide it. This ensures that people with cognitive disabilities that affect focus and concentration, are not distracted by movement.</p>
+
+<h5 id="2-2-2-pause-stop-hide-a-requirements">Requirements</h5>
+
+<ul>
+<li>  A mechanism is available that lets users pause, stop or hide the moving or updating content;</li>
+<li>  Content does not move (animate, blink or scroll) for more than five seconds;</li>
+<li>  Content does not update automatically.</li>
+</ul>
+
+<h5 id="2-2-2-pause-stop-hide-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Content moves for more than five seconds but there is no mechanism for a user to pause, stop or hide it.</li>
+</ul>
+
+<h5 id="2-2-2-pause-stop-hide-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h3 id="2-4-navigable">2.4 Navigable</h3>
+
+<h4 id="2-4-1-bypass-blocks-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">2.4.1 Bypass blocks (A)</a></h4>
+
+<p>When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page. This ensures that people who do not use a mouse can quickly and easily reach the primary content of the page.</p>
+
+<h5 id="2-4-1-bypass-blocks-a-requirements">Requirements</h5>
+
+<ul>
+<li>  A “Skip to main content” link is provided, and the link is located close to the start of the page;</li>
+<li>  The <code>&lt;main&gt;</code> element is used to represent the main content area of the page.</li>
+</ul>
+
+<h5 id="2-4-1-bypass-blocks-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The <code>&lt;main&gt;</code> element has been used, but there is no skip link that points to it;</li>
+<li>  A skip link has been provided, but it does not work in all supported browsers;</li>
+<li>  A skip link is provided, but it is only available to screen reader users.</li>
+</ul>
+
+<h5 id="2-4-1-bypass-blocks-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h4 id="2-4-2-page-title-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">2.4.2 Page title (A)</a></h4>
+
+<p>Each page must have a unique title that indicates its topic or purpose. This ensures that people with cognitive disabilities can quickly orientate themselves within the service and identify the purpose of the page without interpreting its entire contents.</p>
+
+<h5 id="2-4-2-page-title-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Each page has a title that is unique within the service;</li>
+<li>  Each page has a title that indicates its topic or purpose.</li>
+</ul>
+
+<h5 id="2-4-2-page-title-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The page title is not unique within the service;</li>
+<li>  The page title does not indicate its topic or purpose;</li>
+<li>  The title does not indicate the page is part of a service on Gov.UK;</li>
+<li>  The page title does not change because the service is a Single Page Application (SPA).</li>
+</ul>
+
+<h5 id="2-4-2-page-title-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2013/how-to-write-better-page-titles">How to write better page titles</a></li>
+</ul>
+
+<h4 id="2-4-3-focus-order-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">2.4.3 Focus order (A)</a></h4>
+
+<p>It must be possible to navigate through content in a way that makes sense. This ensures that content can be navigated in a logical way by screen reader users, keyboard users, and people who choose to use their own CSS style sheets.</p>
+
+<h5 id="2-4-3-focus-order-a-requirements">Requirements</h5>
+
+<ul>
+<li>  The visible focus order matches the DOM focus order.</li>
+</ul>
+
+<h5 id="2-4-3-focus-order-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;</li>
+<li>  When CSS styles are disabled, the focus order is meaningless;</li>
+<li>  When a user interaction causes content to be displayed, it does so before the trigger control in the DOM order.</li>
+</ul>
+
+<h5 id="2-4-3-focus-order-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h4 id="2-4-4-link-purpose-in-context-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">2.4.4 Link purpose (in context) (A)</a></h4>
+
+<p>The purpose of every link must be clear from its link text, or its link text plus associated content if assistive technologies recognise the association. This ensures that screen reader users can understand the purpose of links without reading nearby content, and that speech recognition users can target links accurately using voice commands.</p>
+
+<h5 id="2-4-4-link-purpose-in-context-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Link text clearly indicates the purpose of the link;</li>
+<li>  Multiple links that point to the same destination have the same link text;</li>
+<li>  Links have accessible names.</li>
+</ul>
+
+<h5 id="2-4-4-link-purpose-in-context-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  A link has text that does not indicate its purpose;</li>
+<li>  A link points to the same destination as another link, but uses different link text;</li>
+<li>  A link points to a unique destination, but uses the same text as other links;</li>
+<li>  A link has text that depends on nearby content to be understood, but that content is not automatically identified by assistive technologies;</li>
+<li>  A link uses a CSS background image, and has no visible accessible name.</li>
+</ul>
+
+<h5 id="2-4-4-link-purpose-in-context-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.nomensa.com/blog/2011/writing-good-link-text">Writing good link text</a></li>
+<li>  <a href="https://www.gov.uk/guidance/content-design/links#using-links-in-content">GOV.UK: Using links in content</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2012/08/notes-on-accessible-css-image-sprites/">Notes on accessible CSS image sprites</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/">What is an accessible name?</a></li>
+</ul>
+
+<h4 id="2-4-7-focus-visible-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">2.4.7 Focus visible (AA)</a></h4>
+
+<p>It must be easy to tell which element has keyboard focus. This helps sighted keyboard users orient themselves within the page, and confidently interact with it.</p>
+
+<h5 id="2-4-7-focus-visible-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  Interactive elements like links, buttons, and form fields, have a visible focus indicator.</li>
+</ul>
+
+<h5 id="2-4-7-focus-visible-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  The browser default focus indicator has not been replaced with something that is easier to see;</li>
+<li>  An indicator has been provided for mouse hover, but not duplicated for keyboard focus.</li>
+</ul>
+
+<h5 id="2-4-7-focus-visible-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<p><h2 id="understandable">Understandable</h2><h3 id="3-1-readable">3.1 Readable</h3>
+<h4 id="3-1-1-language-of-page-a"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">3.1.1 Language of page (A)</a></h4></p>
+
+<p>The written language of the page must be identified in the code of the web page. This makes sure that screen readers automatically use the correct speech libraries for accent and pronunciation.</p>
+
+<h5 id="3-1-1-language-of-page-a-requirements">Requirements</h5>
+
+<ul>
+<li>  The language is identified using the <code>lang</code> attribute of the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&lt;/span&gt;</code> element.</li>
+</ul>
+
+<h5 id="3-1-1-language-of-page-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  No <code>lang</code> attribute is present on the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&gt;&lt;/span&gt;</code> element.</li>
+<li>  The <code>lang</code> attribute is present on the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&gt;&lt;/span&gt;</code> element, but it incorrectly identifies the language of the page.</li>
+</ul>
+
+<h5 id="3-1-1-language-of-page-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.w3.org/International/tutorials/language-decl/">Working with Language on the Web - W3C i18n tutorial</a></li>
+<li>  <a href="https://www.w3.org/International/getting-started/language">Language on the Web</a></li>
+</ul>
+
+<h4 id="3-1-2-language-of-parts-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html">3.1.2 Language of parts (A)</a></h4>
+
+<p>When content is displayed in a language that is different from the primary language of the page, it must be indicated in a way that assistive technologies understand. This ensures that screen readers switch to the appropriate accent and pronunciation for that language.</p>
+
+<h5 id="3-1-2-language-of-parts-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Content that is written in a different language from the primary language of the page, is identified using HTML (the lang attribute).</li>
+</ul>
+
+<h5 id="3-1-2-language-of-parts-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Content uses a different language, but the change in language is not identified in the HTML;</li>
+<li>  Content uses a different language, and the wrong language is identified in the HTML.</li>
+</ul>
+
+<h5 id="3-1-2-language-of-parts-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/">Using the HTML lang attribute</a></li>
+</ul>
+
+<h3 id="3-2-predictable">3.2 Predictable</h3>
+
+<h4 id="3-2-1-on-focus-a"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html">3.2.1 On Focus (A)</a></h4>
+
+<p>When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page/tab. This stops unexpected things happening without screen reader and screen magnifer users being aware of it.</p>
+
+<h5 id="3-2-1-on-focus-a-requirements">Requirements</h5>
+
+<ul>
+<li>  <code>focus</code> events do not cause navigation, nor form submission</li>
+<li>  components that respond to <code>focus</code> do not initiate a “focus trap”, where it is impossible or unclear how to navigate out of the component using the keyboard.</li>
+</ul>
+
+<h5 id="3-2-1-on-focus-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Dropdown menus trigger navigation as the user tabs between options</li>
+<li>  Javascript triggers navigation when a user is merely leaving a form control</li>
+<li>  focus is moved by script in ways that surprise the user</li>
+</ul>
+
+<h5 id="3-2-1-on-focus-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h4 id="3-2-2-on-input-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">3.2.2 On Input (A)</a></h4>
+
+<p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component.</p>
+
+<h5 id="3-2-2-on-input-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Users can predict what a control such as a button or drop-down menu will do</li>
+<li>  User interface components built with javascript have adequate and accurate ARIA labelling.</li>
+</ul>
+
+<h5 id="3-2-2-on-input-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Controls built with javascript lack appropriate ARIA information</li>
+<li>  Form controls are used to trigger navigation without an explicit submit step, and without warning</li>
+</ul>
+
+<h5 id="3-2-2-on-input-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://w3c.github.io/using-aria/">Using ARIA</a></li>
+</ul>
+
+<h4 id="3-2-4-consistent-identification-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html">3.2.4 Consistent identification (AA)</a></h4>
+
+<p>When features with the same functionality are used in multiple places, they must be identified in a consistent way. This helps screen reader users correctly identify the type and purpose of the functionality.</p>
+
+<h5 id="3-2-4-consistent-identification-aa-requirements">Requirements</h5>
+
+<ul>
+<li>  An icon has the same alternative text wherever it is used;</li>
+<li>  Buttons for “Next”, “Previous”, and “Continue”, are labelled consistently wherever they are used;</li>
+<li>  Form fields with the same purpose are consistently labelled wherever they are used.</li>
+</ul>
+
+<h5 id="3-2-4-consistent-identification-aa-common-issues">Common issues</h5>
+
+<ul>
+<li>  An icon is used to denote a file download, but has a different alternate text whenever it is used;</li>
+<li>  A search facility is provided on every page, but the text field and button have different labels on each page.</li>
+</ul>
+
+<h5 id="3-2-4-consistent-identification-aa-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h3 id="3-3-input-assistance">3.3 Input Assistance</h3>
+
+<h4 id="3-3-1-error-identification-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">3.3.1 Error identification (A)</a></h4>
+
+<p>When an error occurs the user is informed what caused the error, and the error is described in text. This ensures that the error is available to people who cannot see, distinguish colours, or understand icons and other visual cues.</p>
+
+<h5 id="3-3-1-error-identification-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Each error is described in text;</li>
+<li>  Each error is associated with the field it relates to;</li>
+<li>  Multiple errors are summarised at the top of the form.</li>
+</ul>
+
+<h5 id="3-3-1-error-identification-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An error is only indicated by a red border around the field;</li>
+<li>  An error is only indicated by an icon near to the field;</li>
+<li>  An error is described in text, but it is not associated with the field it relates to;</li>
+<li>  Multiple errors occur, but no summary is provided.</li>
+<li>  An error summary is provided, but keyboard focus is not taken to it.</li>
+</ul>
+
+<h5 id="3-3-1-error-identification-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC</li>
+</ul>
+
+<h4 id="3-3-2-labels-or-instructions-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">3.3.2 Labels or instructions (A)</a></h4>
+
+<p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. This ensures that everyone understands any requirements for entering data, and does so in a way that ensures that people unable to see the information are made aware of it by their screen readers.</p>
+
+<h5 id="3-3-2-labels-or-instructions-a-requirements">Requirements</h5>
+
+<ul>
+<li>  Instructions are provided for fields that require data to be entered in a specific format;</li>
+<li>  Instructions are properly associated with the relevant form field.</li>
+</ul>
+
+<h5 id="3-3-2-labels-or-instructions-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  Data is expected in a specific format, but no iinstructions have been provided;</li>
+<li>  Instructions have been provided, but they are not associated with the relevant field.</li>
+</ul>
+
+<h5 id="3-3-2-labels-or-instructions-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.paciellogroup.com/blog/2014/12/using-aria-describedby-to-provide-helpful-form-hints/">Using aria-describedby to provide form hints</a></li>
+<li>  <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints">Basic form hints</a></li>
+</ul>
+
+<h4 id="3-3-3-error-suggestion-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">3.3.3 Error suggestion (A)</a></h4>
+
+<p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion comprimises security. This helps everyone resolve issues more easily, but especially people with cognitive disabilities who find processing information difficult.</p>
+
+<h5 id="3-3-3-error-suggestion-a-requirements">Requirements</h5>
+
+<ul>
+<li>  When an error is detected, a suggestion is provided to help the user correct the issue.</li>
+</ul>
+
+<h5 id="3-3-3-error-suggestion-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An error is detected and the user is notified, but no suggestion is given to help them resolve it; A login error is detected and a suggestion is provided, but it comprimises security by revelaing that a particular username exists.</li>
+</ul>
+
+<h5 id="3-3-3-error-suggestion-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h4 id="3-3-4-error-prevention-legal-financial-data-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html">3.3.4 Error prevention (legal, financial, data (A)</a></h4>
+
+<p>When completion of a form causes a legal commitment, triggers a financial transaction, or gives consent for personal data to be updated or changed, the user must be able to review, correct, and confirm that the information they have entered is correct, or they must be able to reverse the decision. This provides safeguards to help people with all disabilities, but especially those who are vulnerable to making mistakes.</p>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-requirements">Requirements</h5>
+
+<ul>
+<li>  When data is submitted leading to a legal commitment, financial transaction, or to update or change personal data, an interim page is presented that allows the user to review, correct, and confirm the information they have entered.</li>
+</ul>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  TBC.</li>
+</ul>
+
+<p><h2 id="robust">Robust</h2><h3 id="4-1-compatible">4.1 Compatible</h3>
+<h4 id="4-1-1-parsing-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html">4.1.1 Parsing (A)</a></h4></p>
+
+<p>The code of the page must not cause browser or assistive technology conflicts. This ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies.</p>
+
+<h5 id="4-1-1-parsing-a-requirements">Requirements</h5>
+
+<ul>
+<li>  HTML code must conform to the standard identified in the doctype statement;</li>
+<li>  ARIA code must conform to the rules for use with the host language (HTML).</li>
+</ul>
+
+<h5 id="4-1-1-parsing-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  HTML elements are not well formed (opened and closed properly);</li>
+<li>  HTML elements include invalid attributes;</li>
+<li>  HTML id attributes use duplicate values within the same page;</li>
+<li>  ARIA attributes are invalid.</li>
+</ul>
+
+<h5 id="4-1-1-parsing-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://validator.w3.org/nu/">W3C conformance validator</a></li>
+</ul>
+
+<h4 id="4-1-2-name-role-value-a"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">4.1.2 Name, role, value (A)</a></h4>
+
+<p>All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies. This ensures that screen reader users understand the purpose (role) of every component, how to identify it (name), and what state it is in.</p>
+
+<h5 id="4-1-2-name-role-value-a-requirements">Requirements</h5>
+
+<ul>
+<li>  All interactive elements and components have an accessible name;</li>
+<li>  All interactive elements and components have a role (either implicit or explicit);</li>
+<li>  All interactive elements and components communicate information about their state.</li>
+</ul>
+
+<h5 id="4-1-2-name-role-value-a-common-issues">Common issues</h5>
+
+<ul>
+<li>  An <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element contains no text content, and so has no accessible name;</li>
+<li>  A form field has no associated <code>&lt;label&gt;</code> element, and so has no accessible name;</li>
+<li>  A set of tabs is created using <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;a&gt;</code> elements, but ARIA has not been used to provide the <code>tablist</code>, <code>tab</code>, and <code>tabpanel</code> roles;</li>
+<li>  An <code>&lt;a&gt;</code> element has been used as the basis for a button, but the ARIA <code>button</code> role has not been applied;</li>
+<li>  A button is used as the trigger to disclose content, but the <code>aria-expanded</code> attribute has not been used to communicate the disclosure component’s current state;</li>
+<li>  A <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> has been used as the basis for an interactive component, but ARIA has not been used to identify the purpose of the component (or its constituent parts).</li>
+</ul>
+
+<h5 id="4-1-2-name-role-value-a-useful-resources">Useful resources</h5>
+
+<ul>
+<li>  <a href="https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/">What is an accessible name?</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2015/11/wcag-2-0-parsing-criterion-is-a-pita/">WCAG 2.0 parsing criterion is a PITA</a></li>
+<li>  <a href="https://www.paciellogroup.com/blog/2016/08/what-does-accessibility-supported-mean/">What does accessibility supported mean?</a></li>
+<li>  <a href="http://tink.uk/understanding-semantics/">Understanding semantics</a></li>
+</ul>
+
+            
+          </main>
+
+
+          <footer class="footer">
+  <div class="footer__licence">
+    <a class="footer__licence-logo" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a>
+    <p class="footer__licence-description">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+  </div>
+
+  <div class="footer__copyright">
+    <a class="footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
