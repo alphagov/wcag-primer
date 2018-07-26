@@ -1,10 +1,14 @@
-# WCAG 2.0 Primer
+# WCAG 2.0 Getting started
+
+This document will help you get up to speed with WCAG 2.0 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content. 
+
+This information will not allow you to reach full compliance, but it will give you the essential information you need to reach a high standard. Links are provided to further content if you want to achieve a higher level of compliance.
 
 ## What is WCAG?
 
-The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) explain how to make websites accessible to disabled and older people. The guidelines are written by accessibility specialists and disabled people at the [W3C](https://w3.org/).
+The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) explain how to make websites accessible for disabled and older people. The guidelines are written by accessibility specialists and disabled people at the World Wide Web Consortium [W3C](https://w3.org/).
 
-WCAG 2.0 helps make websites, documents and mobils apps accessible to people with:
+WCAG 2.0 helps make websites, documents and mobile apps accessible to people with:
 
 * Visual impairments, including people who are blind, partially sighted, and people with conditions like being colour blind
 * Hearing impairments, including Deaf people who use sign language, and people who are hard of hearing
@@ -15,7 +19,7 @@ WCAG 2.0 also helps us think about the different ways people use the web:
 
 * By changing the way a website looks in their browser
 * By using a keyboard instead of a mouse
-* By using a screen reader to present the website in synthetic speech or electronic Braille
+* By using a screen reader to present the website as speech or on an electronic Braille display
 * By using a screen magnifier to increase the size of everything on-screen
 * By using speech recognition to use the web with voice commands and dictation
 
@@ -30,7 +34,7 @@ WCAG 2.0 has twelve guidelines, grouped into four principles. Content must be:
 
 The twelve guidelines cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices. 
 
-Each guideline has a number of Success Criteria (SC). Each SC has a conformance level: Level A, Level AA or Level AAA.
+Each guideline has a number of Success Criteria (SC). Each SC has a conformance level: A, AA or AAA.
 
 ## Meeting accessibility regulations
 
@@ -38,7 +42,7 @@ Public sector websites, documents and mobile apps that meet WCAG 2.0 Level A and
 
 ## WCAG overview
 
-Here is a short description of the principles, guidelines and SC your must meet.
+Here is a short description of the principles, guidelines and SC you must meet.
 
 ### Principle 1: Perceivable
 
