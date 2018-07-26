@@ -2,7 +2,7 @@
 
 To meet WCAG 2.0 to level AA you must be able to answer YES or Not Applicable to all of the following questions.
 
-Answering no means that you are not meeting WCAG and have barriers that will prevent some users, especially disabled users and older people, from accessing your digital content successfully.
+Answering NO means that you are not meeting WCAG and have barriers that will prevent some users, especially disabled users and older people from accessing your digital content successfully.
 
 ## Percievable
 * Do all images have an appropriate text equivalent? Is essential visual information also available as text?
