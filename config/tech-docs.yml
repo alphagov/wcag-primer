@@ -4,7 +4,7 @@ host:
 # Header-related options
 show_govuk_logo: true
 service_name: WCAG 2.0 Primer
-service_link: /
+service_link: index.html
 phase: alpha
 
 # Links to show on right-hand-side of header
