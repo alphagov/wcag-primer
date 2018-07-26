@@ -6,9 +6,8 @@ Answering NO means that you are not meeting WCAG and have barriers that will pre
 
 ## Percievable
 * Do all images have an appropriate text equivalent? Is essential visual information also available as text?
-* Do all audio files have a transcript?. Is essential audio information availble as text?
+* Do all audio files have a transcript? Is essential audio information availble as text?
 * Do all videos have captions that are synchronised with the audio?
-* Do all live videos have captions that are synchronised with the audio?
 * Does video that includes important visual information have an audio description?
 * Is all content structure that is communicated visually available to assistive technologies?
 * If styling is removed is the content in a logical order?
@@ -37,7 +36,7 @@ Answering NO means that you are not meeting WCAG and have barriers that will pre
 * Have you avoided links, controls, or form fields that automatically trigger a change in context?
 * Does the website include consistent navigation?
 * Are features with the same functionality labelled consistently?
-* Do forms provide helpful, accessible error and verification messages?
+* Do forms provide helpful, understandable error and verification messages?
 
 ## Robut
 * Is the web page coded using valid HTML?
