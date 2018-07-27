@@ -4,7 +4,7 @@ To meet WCAG 2.0 to level AA you must be able to answer YES or Not Applicable to
 
 Answering NO means that you are not meeting WCAG and have barriers that will prevent some users, especially disabled users and older people from accessing your digital content successfully.
 
-## Percievable
+## Perceivable
 * Do all images have an appropriate text equivalent? Is essential visual information also available as text?
 * Do all audio files have a transcript? Is essential audio information availble as text?
 * Do all videos have captions that are synchronised with the audio?
@@ -38,6 +38,6 @@ Answering NO means that you are not meeting WCAG and have barriers that will pre
 * Are features with the same functionality labelled consistently?
 * Do forms provide helpful, understandable error and verification messages?
 
-## Robut
+## Robust
 * Is the web page coded using valid HTML?
 * Do all interactive components have an accessible name and role, and when required state? Has the correct ARIA markup been used and does it validate?
