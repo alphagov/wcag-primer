@@ -9,8 +9,8 @@ phase: alpha
 
 # Links to show on right-hand-side of header
 header_links:
-  Summary: index.html
-  All: all.html
+  Overview: index.html
+  All requirements: all.html
   Content: content.html
   Design: design.html
   Code: code.html
