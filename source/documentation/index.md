@@ -37,6 +37,7 @@ WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions, and guide
 ### New Success Criteria
 
 The following Success Criteria are new in WCAG 2.1:
+
 * 1.3.4 Orientation (AA)
 * 1.3.5 Identify Input Purpose (AA) 
 * 1.3.6 Identify Purpose (AAA)
