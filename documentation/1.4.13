@@ -1,0 +1,47 @@
+<h4 id="1-4-13-content-on-hover-or-focus-aa"><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 Content on Hover or Focus (AA)</a></h4>
+<p>This is for mobile or tablet devices - where pointer hover or keyboard focus triggers additional content to become visible and then hidden (like pops or other options) you need make sure:</p>
+
+<ul>
+<li>The ‘extra’ content can be <strong>dismissed</strong> without moving focus and it does not obscure other page content.</li>
+<li>If the user needs to <strong>hover or interact with the extra content<strong>, then the pointer can move to it and use it, without it disappearing. </li>
+<li>The content <strong>stays visible until focus is moved</strong>, or the user dismissed it, or it is no longer useful.</li>
+</ul>
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
+<ul>
+<li><p>For disabled users on your website who may accidentally trigger content or are using keyboards only or mobile devices it is frustrating when pop up content either doesn’t ‘stay’ on the screen if they need to use it or won’t go away without loosing their place.</p></li>
+<li><p>This also helps sight impaired users who don’t want to zoom in/out a lot to see if content is still active on the page (or not). It also gives all user enough time to understand the ‘extra’ content that appears and what they need to do.</p></li>
+</ul>
+<h5 id="what-to-do">What to do?</h5>
+<p>This has several approaches depending on the control. 
+For content to be <strong>dismissed</strong>:</p>
+
+<ul>
+<li>Position the additional content so that it does not obscure any other content including the trigger, with the exception of white space and purely decorative content, such as a background graphic which provides no information.</li>
+<li>Provide a way to easily dismiss the additional content, such as by pressing Escape or selecting a close button.</li>
+</ul>
+
+<p>For content to be <strong>hoverable</strong>:</p>
+
+<ul>
+<li>Manage focus and move the mouse pointer directly from the trigger onto the new content.</li>
+</ul>
+
+<p>For content to be persistent:</p>
+
+<p>Once it appears, the content should remain visible until:</p>
+
+<ul>
+<li>The user removes hover or focus from the trigger and the extra content;</li>
+<li>The user dismisses the extra content.</li>
+<li>The information conveyed by the additional content becomes unnecessary.</li>
+</ul>
+<h5 id="common-mistakes">Common Mistakes</h5>
+<ul>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F95">Content shown on hover not being hoverable</a></li>
+<li>The user can’t dismiss content without moving pointer hover or keyboard focus.</li>
+<li>Content on hover or focus does not stay visible until dismissed or invalid</li>
+</ul>
+<h5 id="resources">Resources</h5>
+<ul>
+<li>TBD</li>
+</ul>

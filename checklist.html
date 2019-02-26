@@ -132,9 +132,9 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="checklist">Checklist</h1>
 
-<p>To meet WCAG 2.0 to level AA you must be able to answer YES or Not Applicable to all of the following questions.</p>
+<p>To meet WCAG 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.</p>
 
-<p>Answering NO means that you are not meeting WCAG and have barriers that will prevent some users, especially disabled users and older people from accessing your digital content successfully.</p>
+<p>Answering NO means that you are not meeting WCAG and your content will have barriers that will prevent some users, especially disabled users and older people from accessing it.</p>
 
 <h2 id="perceivable">Perceivable</h2>
 
@@ -151,6 +151,12 @@
 <li>Does all text have sufficient contrast against the background colour?</li>
 <li>Is the content fully usable when text is enlarged up to 200%?</li>
 <li>Have you avoided using images of text?</li>
+<li>Can users flip the content horizontally and vertically?<br></li>
+<li>Have you added HTML autocomplete tokens to any forms collecting information about the user? </li>
+<li>Does the page content resize to a single column with no horizontal and vertical scrolling? </li>
+<li>Do all important graphical objects, interface components, and states have a colour contrast of 3:1?<br></li>
+<li>Can line height, spacing between paragraphs and letter and word spacing be changed without breaking anything? </li>
+<li>Where extra content is shown or hidden on focus, can it be dismissed, interacted with (and not disappear when the user moves to it) and will stay visible until dismissed by the user?</li>
 </ul>
 
 <h2 id="operable">Operable</h2>
@@ -167,6 +173,11 @@
 <li>Does the website have two or more ways of finding content, such as a navigation menu, search feature, or site map?</li>
 <li>Are headings and labels clear and descriptive?</li>
 <li>When using a keyboard to move through a page can you tell where you are?</li>
+<li>Do you have shortcuts triggered by only one letter or character? If so can they be turned off or remapped by the user?</li>
+<li>Does some of your site functionality need several fingers or complex gestures to operate it? </li>
+<li>Does some of your site functionality work using a single point (e.g fingertip) and is it triggered the moment it is touched? </li>
+<li>On forms and other components is the accessible name or label the same as any on-screen text? </li>
+<li>Does your site respond to motion or movement to operate parts? </li>
 </ul>
 
 <h2 id="understandable">Understandable</h2>
@@ -184,6 +195,7 @@
 <ul>
 <li>Is the web page coded using valid HTML?</li>
 <li>Do all interactive components have an accessible name and role, and when required state? Has the correct ARIA markup been used and does it validate?</li>
+<li>Are status messages and updates given appropriate roles that can be understood by AT, without receiving focus? </li>
 </ul>
 
             

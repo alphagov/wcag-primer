@@ -1,0 +1,33 @@
+<h4 id="1-4-11-non-text-contrast-aa"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-Text Contrast (AA)</a></h4>
+<p>This is like ‘colour contrast for charts, icons and controls’. User Interface components and graphical objects have <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">contrast ratio of at least 3:1</a>. This also covers where the state of a control changes - a button on mouse over for example.</p>
+
+<ul>
+<li><strong>User Interface Components</strong>
+Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;</li>
+<li><strong>Graphical Objects</strong>
+Parts of graphics required to understand the content of a page. These can be charts, graphs, infographics and so on.</li>
+</ul>
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
+<p>Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast. </p>
+<h5 id="what-to-do">What to do?</h5>
+<p>Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their &lsquo;state&rsquo;. </p>
+
+<p><strong>NOTE:</strong> This does not apply if inactive or if their look is made purely by the browser and not the author. </p>
+
+<p>Make sure parts of any graphics required to understand the content (like a warning icon) have good colour contrast.</p>
+<h5 id="common-mistakes">Common Mistakes</h5>
+<ul>
+<li> The purpose and meaning of important images that relate to page content - like if a medicine is poisonous, or other warnings - are hard to make our for a user who is sight impaired.</li>
+<li>The purpose or ‘state’ of a control isn’t clear to the user.</li>
+</ul>
+<h5 id="resources">Resources</h5><h6 id="for-user-interface-component-contrast">For User Interface Component contrast</h6>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G195">Using an author-supplied, highly visible focus indicator</a></p>
+<h6 id="for-graphics-with-sufficient-contrast">For graphics with sufficient contrast</h6>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G207">Ensuring that a contrast ratio of 3:1 is provided for icons</a></p>
+<h6 id="for-text-in-or-over-graphics">For text in or over graphics</h6>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G18">Ensuring that a contrast ratio of at least 4.5:1 exists between text and background</a>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G145">Ensuring that a contrast ratio of at least 3:1 exists between text and background</a>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G174">Providing a control for users to switch to a view with sufficient contrast</a>
+<a href="https://www.w3.org/WAI/GL/wiki/Using_sufficient_contrast_for_images_that_convey_information">Using sufficient contrast for images that convey information - Draft</a></p>
+<h5 id="1-4-11-non-text-contrast-aa-resources">Resources</h5>
+<p>Find out more about <a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html">Accessibility Requirements for People with Low Vision</a>.</p>

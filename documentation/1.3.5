@@ -1,0 +1,39 @@
+<h4 id="1-3-5-identify-input-purpose-aa"><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">1.3.5 Identify Input Purpose (AA)</a></h4>
+<p>In an text input form the purpose of each input field that collects information about the user can be understood by Assistive Technologies and browsers, when:
+The input field serves a purpose that relates to the user of the content.
+The content is created using HTML or supported by a language which can identify the expected meaning.</p>
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
+<ul>
+<li>People with language and memory problems or disabilities benefit from the browser auto-filling their information.</li>
+<li>People with motor impairments also benefit from not having to fill in forms with the same information when the browser can do it for them.</li>
+</ul>
+<h5 id="what-to-do">What to do?</h5>
+<ul>
+<li>A form may be written in a way where its purpose or the purpose of some of the components is not clear. This can be passed by using the
+<a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2 autocomplete attributes</a>, on fields that collect information about the user.<br></li>
+</ul>
+
+<p><strong>NOTE:</strong> Remember that you only need to add Autocomplete attributes to inputs that collect <strong>information about the user</strong>.</p>
+<h5 id="common-mistakes">Common Mistakes</h5>
+<ul>
+<li>Building a form that collects information about the user without the autocomplete (or other semantic that identifies the purpose of the input).</li>
+</ul>
+<h5 id="useful-resources">Useful resources</h5>
+<ul>
+<li>Find out <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H98">how to use the HTML 5.2 autocomplete</a> attributes.</li>
+<li>An <a href="http://john.foliot.ca/demos/autofill.php">example of a form using autocomplete</a> - (Thanks to John Foliot)</li>
+</ul>
+
+<p><strong>NOTE:</strong> If you view the example form using the browser inspection tools or ‘View Source’ you will see the autocomplete attributes added to the various form inputs that relate to the user.</p>
+
+<p><code>
+&lt;h2&gt;Personal Information&lt;/h2&gt;
+&lt;label for=&quot;1&quot;&gt;Name&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;1&quot; id=&quot;1&quot; autocomplete=&quot;name&quot;&gt;
+&lt;label for=&quot;2&quot;&gt;Honorific / Prefix&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;2&quot; id=&quot;2&quot; autocomplete=&quot;honorific-prefix&quot;&gt;
+&lt;label for=&quot;3&quot;&gt;Given Name&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;3&quot; id=&quot;3&quot; autocomplete=&quot;given-name&quot;&gt;
+&lt;label for=&quot;4&quot;&gt;Additional Name&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;4&quot; id=&quot;4&quot; autocomplete=&quot;additional-name&quot;&gt;
+&lt;label for=&quot;5&quot;&gt;Family name&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;5&quot; id=&quot;5&quot; autocomplete=&quot;family-name&quot;&gt;
+&lt;label for=&quot;6&quot;&gt;Honorific Suffix&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;6&quot; id=&quot;6&quot; autocomplete=&quot;honorific-suffix&quot;&gt;
+</code></p>
+
+<p>Example of a form collecting data on a user with autofill examples.</p>

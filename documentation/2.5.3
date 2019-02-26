@@ -1,0 +1,30 @@
+<h4 id="2-5-3-label-in-name-a"><a href="https://www.w3.org/TR/WCAG21/#label-in-name">2.5.3 Label in Name (A)</a></h4>
+<p>For user interface components with labels that include text or images of text, the <a href="https://www.w3.org/TR/WCAG21/#dfn-name">Accessible name</a> contains the text that is presented visually.</p>
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
+<p>The ‘name’ is text by which software can identify a component within Web content to the user. The ‘Accessible Name’ is text in the DOM that is understood by both the AT (like a screen reader) and the browser. This is often hidden in code.</p>
+
+<p>These need to match so that:</p>
+
+<ul>
+<li>Speech input users can activate controls on a page.</li>
+<li>Text-to-speech users will have a better experience because the labels that they hear match the visible text labels that they see on the screen.</li>
+</ul>
+<h5 id="what-to-do">What to do?</h5>
+<p>The accessible name can be the ‘label’ used on a form input. This can be provided by the label element in HTML or by an aria-label or similar. There are other ARIA and HTML elements that can provide the accessible name for a component.</p>
+
+<p>Ensure that the:</p>
+
+<ul>
+<li><strong>Accessible name matches the visible label:</strong> The accessible name and visible label of a control match.</li>
+<li><strong>Accessible name starts with visible label:</strong> The accessible name of a &ldquo;Start here&rdquo; button begins with the same text as the visible label.</li>
+</ul>
+<h5 id="common-mistakes">Common Mistakes</h5>
+<ul>
+<li>The Accessible name does not contain the visible label text </li>
+<li>The Accessible name contains the visible label text, but the words of the visible label are not in the same order.</li>
+<li>The Accessible name contains the visible label text, but there are extra words in the label.</li>
+</ul>
+<h5 id="resources">Resources</h5>
+<ul>
+<li><a href="https://knowbility.org/blog/2018/WCAG21-253LabelInName/">Knowability - Article on ‘Label in Name’ with examples</a></li>
+</ul>
