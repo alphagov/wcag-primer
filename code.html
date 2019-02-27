@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
       <meta name="robots" content="noindex">
 
-    <title>Code | WCAG 2.0 Primer | WCAG 2.0 Primer</title>
+    <title>Code | WCAG 2.1 Primer | WCAG 2.1 Primer</title>
 
     <!--[if gt IE 8]><!--><link href="stylesheets/screen.css" rel="stylesheet" media="screen" /><!--<![endif]-->
     <!--[if lte IE 8]><link href="stylesheets/screen-old-ie.css" rel="stylesheet" media="screen" /><![endif]-->
@@ -18,13 +18,13 @@
     <script src="javascripts/application.js"></script>
 
       <meta property="og:image" content="/images/govuk-large.png" />
-      <meta property="og:site_name" content="WCAG 2.0 Primer" />
-      <meta property="og:title" content="Code | WCAG 2.0 Primer" />
+      <meta property="og:site_name" content="WCAG 2.1 Primer" />
+      <meta property="og:title" content="Code | WCAG 2.1 Primer" />
       <meta property="og:type" content="object" />
       <meta property="og:url" content="/code.html" />
       <meta property="twitter:card" content="summary" />
       <meta property="twitter:image" content="/images/govuk-large.png" />
-      <meta property="twitter:title" content="Code | WCAG 2.0 Primer | WCAG 2.0 Primer" />
+      <meta property="twitter:title" content="Code | WCAG 2.1 Primer | WCAG 2.1 Primer" />
       <meta property="twitter:url" content="/code.html" />
   </head>
 
@@ -42,7 +42,7 @@
             GOV.UK
           </span>
         <span class="header__title">
-          WCAG 2.0 Primer
+          WCAG 2.1 Primer
             <span class="phase-banner">alpha</span>
         </span>
         </a>
@@ -648,8 +648,10 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>You can see the issue in these character key shortcut video, with thanks to Kim Patch.</p>
 
-<p><a href="https://www.youtube.com/watch?v=xzSyIA4OWYE">You Tube Video 1 - See how Speech affects single key shortcuts</a>
-<a href="https://www.youtube.com/watch?v=OPjfpDU9S08">You Tube Video 2 - See how Speech affects single key shortcuts</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xzSyIA4OWYE">You Tube Video 1 - See how Speech affects single key shortcuts</a></li>
+<li><a href="https://www.youtube.com/watch?v=OPjfpDU9S08">You Tube Video 2 - See how Speech affects single key shortcuts</a></li>
+</ul>
 
 <p>The remapping method can include <a href="https://en.wikipedia.org/wiki/Control_character">non-printing characters</a>. </p>
 
@@ -887,16 +889,16 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>For mobile devices or tablets where if there is functionality triggered by a single pointer, at least one of the following is true:</p>
 
-<p><strong>No Down-Event</strong>
+<p><strong>No Down-Event</strong><br />
 The down-event of the pointer is not used to ‘fire’ the function;</p>
 
-<p><strong>Stop the action or Undo</strong>
+<p><strong>Stop the action or Undo</strong><br />
 The function is triggered on the up-event, and a method  is available to stop completion or undo the function;;</p>
 
-<p><strong>Up Reversal</strong>
+<p><strong>Up Reversal</strong><br />
 The up-event reverses what happens on the down-event;</p>
 
-<p><strong>Essential</strong>
+<p><strong>Essential</strong><br />
 Completing the function on the down-event is essential.</p>
 
 <h5 id="2-5-2-pointer-cancellation-a-why-is-this-a-problem">Why is this a problem?</h5>
@@ -989,11 +991,14 @@ Completing the function on the down-event is essential.</p>
 
 <p>This Success Criterion helps people who may be unable to perform tilting, shaking, or gesturing to use an interface - or the device may be mounted. Fixing this will ensure users can still operate all functionality by other means.</p>
 
-<p>Notice how most of these following example are just about common sense alternatives to using motion to do things on a mobile device.
-* A user can’t hold and move the device to navigate content. A control exists to navigate also.
-* When inputting text - shaking a device shows a dialog where you can undo the text input. A cancel button next to the text field offers the same functionality.
-* A user can tilt a device to advance to the next or a previous page. Buttons or links are also provided to perform the same function.
-* A user can move the device to change the view of an image. A control is also available to do the same thing.</p>
+<p>Notice how most of these following example are just about common sense alternatives to using motion to do things on a mobile device.</p>
+
+<ul>
+<li>A user can’t hold and move the device to navigate content. A control exists to navigate also.</li>
+<li>When inputting text - shaking a device shows a dialog where you can undo the text input. A cancel button next to the text field offers the same functionality.</li>
+<li>A user can tilt a device to advance to the next or a previous page. Buttons or links are also provided to perform the same function.</li>
+<li>A user can move the device to change the view of an image. A control is also available to do the same thing.</li>
+</ul>
 
 <h5 id="2-5-4-motion-actuation-a-requirements-what-to-do">Requirements / What to do?</h5>
 
@@ -1336,24 +1341,32 @@ Completing the function on the down-event is essential.</p>
 
 <p>Use the following techniques:</p>
 
-<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19">Use ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">Providing text descriptions to identify required fields that were not completed</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G84">Providing a text description when the user provides information that is not in the list of allowed values</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">Providing a text description when user input falls outside the required format or values</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G139">Creating a mechanism that allows users to jump to errors</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G177">Providing suggested correction text</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G194">Providing spell checking and suggestions for text input</a></p>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19">Use ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:</p>
+
+<ul>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">Providing text descriptions to identify required fields that were not completed</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G84">Providing a text description when the user provides information that is not in the list of allowed values</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">Providing a text description when user input falls outside the required format or values</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G139">Creating a mechanism that allows users to jump to errors</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G177">Providing suggested correction text</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G194">Providing spell checking and suggestions for text input</a></li>
+</ul>
 
 <h6 id="if-a-status-message-conveys-information-on-the-progress-of-a-process">If a status message conveys information on the progress of a process:</h6>
 
 <p>The ARIA <code>role=&quot;progressbar&quot;</code> can be used but may not be enough on its own (depending on AT and browser support). For some examples of <code>progressbar</code> role see:</p>
 
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role">Mozilla - Using the progressbar role</a>
-<a href="https://labs.levelaccess.com/index.php/ARIA_Progressbar">ARIA Progress bar example - LevelAccess Labs</a></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role">Mozilla - Using the progressbar role</a></li>
+<li><a href="https://labs.levelaccess.com/index.php/ARIA_Progressbar">ARIA Progress bar example - LevelAccess Labs</a></li>
+</ul>
 
-<p>You can use the following techniques:
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">Using role=log to identify sequential information updates</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">Using role=status to present status messages</a> in combination with <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">Providing help by an assistant in the Web page</a></p>
+<p>You can use the following techniques:</p>
+
+<ul>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">Using role=log to identify sequential information updates</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">Using role=status to present status messages</a> in combination with <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">Providing help by an assistant in the Web page</a></li>
+</ul>
 
 <h5 id="4-1-3-status-messages-aa-common-mistakes">Common mistakes</h5>
 

@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
       <meta name="robots" content="noindex">
 
-    <title>Content | WCAG 2.0 Primer | WCAG 2.0 Primer</title>
+    <title>Content | WCAG 2.1 Primer | WCAG 2.1 Primer</title>
 
     <!--[if gt IE 8]><!--><link href="stylesheets/screen.css" rel="stylesheet" media="screen" /><!--<![endif]-->
     <!--[if lte IE 8]><link href="stylesheets/screen-old-ie.css" rel="stylesheet" media="screen" /><![endif]-->
@@ -18,13 +18,13 @@
     <script src="javascripts/application.js"></script>
 
       <meta property="og:image" content="/images/govuk-large.png" />
-      <meta property="og:site_name" content="WCAG 2.0 Primer" />
-      <meta property="og:title" content="Content | WCAG 2.0 Primer" />
+      <meta property="og:site_name" content="WCAG 2.1 Primer" />
+      <meta property="og:title" content="Content | WCAG 2.1 Primer" />
       <meta property="og:type" content="object" />
       <meta property="og:url" content="/content.html" />
       <meta property="twitter:card" content="summary" />
       <meta property="twitter:image" content="/images/govuk-large.png" />
-      <meta property="twitter:title" content="Content | WCAG 2.0 Primer | WCAG 2.0 Primer" />
+      <meta property="twitter:title" content="Content | WCAG 2.1 Primer | WCAG 2.1 Primer" />
       <meta property="twitter:url" content="/content.html" />
   </head>
 
@@ -42,7 +42,7 @@
             GOV.UK
           </span>
         <span class="header__title">
-          WCAG 2.0 Primer
+          WCAG 2.1 Primer
             <span class="phase-banner">alpha</span>
         </span>
         </a>
@@ -793,24 +793,32 @@
 
 <p>Use the following techniques:</p>
 
-<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19">Use ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">Providing text descriptions to identify required fields that were not completed</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G84">Providing a text description when the user provides information that is not in the list of allowed values</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">Providing a text description when user input falls outside the required format or values</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G139">Creating a mechanism that allows users to jump to errors</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G177">Providing suggested correction text</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G194">Providing spell checking and suggestions for text input</a></p>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19">Use ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:</p>
+
+<ul>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">Providing text descriptions to identify required fields that were not completed</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G84">Providing a text description when the user provides information that is not in the list of allowed values</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">Providing a text description when user input falls outside the required format or values</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G139">Creating a mechanism that allows users to jump to errors</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G177">Providing suggested correction text</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G194">Providing spell checking and suggestions for text input</a></li>
+</ul>
 
 <h6 id="if-a-status-message-conveys-information-on-the-progress-of-a-process">If a status message conveys information on the progress of a process:</h6>
 
 <p>The ARIA <code>role=&quot;progressbar&quot;</code> can be used but may not be enough on its own (depending on AT and browser support). For some examples of <code>progressbar</code> role see:</p>
 
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role">Mozilla - Using the progressbar role</a>
-<a href="https://labs.levelaccess.com/index.php/ARIA_Progressbar">ARIA Progress bar example - LevelAccess Labs</a></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role">Mozilla - Using the progressbar role</a></li>
+<li><a href="https://labs.levelaccess.com/index.php/ARIA_Progressbar">ARIA Progress bar example - LevelAccess Labs</a></li>
+</ul>
 
-<p>You can use the following techniques:
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">Using role=log to identify sequential information updates</a>
-* <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">Using role=status to present status messages</a> in combination with <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">Providing help by an assistant in the Web page</a></p>
+<p>You can use the following techniques:</p>
+
+<ul>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">Using role=log to identify sequential information updates</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">Using role=status to present status messages</a> in combination with <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">Providing help by an assistant in the Web page</a></li>
+</ul>
 
 <h5 id="4-1-3-status-messages-aa-common-mistakes">Common mistakes</h5>
 
