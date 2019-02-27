@@ -171,7 +171,7 @@
 
 <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
 
-<h5 id="requirements">Requirements</h5>
+<h5 id="requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Images (like logos and icons) that communicate information have short text descriptions;</li>
@@ -180,7 +180,7 @@
 <li>  Decorative images have empty text descriptions.</li>
 </ul>
 
-<h5 id="common-issues">Common issues</h5>
+<h5 id="common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The image communicates information but does not have a text description;</li>
@@ -202,7 +202,7 @@
 
 <p>When content structures like tables, lists and headings are communicated visually, they must also be communicated in ways that assistive technologies can understand. This ensures that content structures are available to screen reader, screen magnifier and speech recognition tool users.</p>
 
-<h5 id="1-3-1-info-and-relationships-a-requirements">Requirements</h5>
+<h5 id="1-3-1-info-and-relationships-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements);</li>
@@ -213,7 +213,7 @@
 <li>  Form fields with format requirements or other additional information have properly associated hints.</li>
 </ul>
 
-<h5 id="1-3-1-info-and-relationships-a-common-issues">Common issues</h5>
+<h5 id="1-3-1-info-and-relationships-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
@@ -238,14 +238,14 @@
 
 <p>When the order of content is important, the content order must be preserved no matter how it is presented to the user. This ensures that the order of content is meaningful whether someone is looking at it, listening to it with a screen reader, or has stripped out visual styling using a browser plugin.</p>
 
-<h5 id="1-3-2-meaningful-sequence-a-requirements">Requirements</h5>
+<h5 id="1-3-2-meaningful-sequence-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  The visual order of content matches the underlying code order;</li>
 <li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements).</li>
 </ul>
 
-<h5 id="1-3-2-meaningful-sequence-a-common-issues">Common issues</h5>
+<h5 id="1-3-2-meaningful-sequence-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;</li>
@@ -269,7 +269,7 @@
 
 <p>Users with low-vision should be able to view content in the orientation that works best for them, due to the need for increased text size. For users with dexterity impairments, who mount a mobile device or tablet, they will need to see content in their preferred way. </p>
 
-<h5 id="what-to-do">What to do?</h5>
+<h5 id="1-3-4-sensory-characteristics-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>Each page should be viewed in an orientation that suits the user. Use CSS to allow both landscape and portrait.</li>
@@ -278,7 +278,7 @@
 <li>Use show/hide controls to allow access to content in different orientations.</li>
 </ul>
 
-<h5 id="common-mistakes">Common Mistakes</h5>
+<h5 id="1-3-4-sensory-characteristics-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Locking the orientation of the device so it is set in one way only, and does not adapt.</li>
@@ -309,7 +309,7 @@ The content is created using HTML or supported by a language which can identify 
 <li>People with motor impairments also benefit from not having to fill in forms with the same information when the browser can do it for them.</li>
 </ul>
 
-<h5 id="1-3-5-identify-input-purpose-aa-what-to-do">What to do?</h5>
+<h5 id="1-3-5-identify-input-purpose-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>A form may be written in a way where its purpose or the purpose of some of the components is not clear. This can be passed by using the
@@ -318,7 +318,7 @@ The content is created using HTML or supported by a language which can identify 
 
 <p><strong>NOTE:</strong> Remember that you only need to add Autocomplete attributes to inputs that collect <strong>information about the user</strong>.</p>
 
-<h5 id="1-3-5-identify-input-purpose-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="1-3-5-identify-input-purpose-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Building a form that collects information about the user without the autocomplete (or other semantic that identifies the purpose of the input).</li>
@@ -351,7 +351,7 @@ The content is created using HTML or supported by a language which can identify 
 
 <p>It must be possible for people to increase the size of text by up to 200%. This ensures that partially sighted people can comfortably read content.</p>
 
-<h5 id="1-4-4-resize-text-aa-requirements">Requirements</h5>
+<h5 id="1-4-4-resize-text-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  We need to decide whether we want to use text resize or zoom as the preferred mechanism.</li>
@@ -361,14 +361,14 @@ The content is created using HTML or supported by a language which can identify 
 
 <p>Text must not be presented as part of an image because it cannot be resized, and it deteriorates in quality when magnified. This means that everyone is able to read and access information presented in text.</p>
 
-<h5 id="1-4-5-images-of-text-aa-requirements">Requirements</h5>
+<h5 id="1-4-5-images-of-text-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Text is not presented as part of an image;</li>
 <li>  Text is presented using plain text and styled with CSS.</li>
 </ul>
 
-<h5 id="1-4-5-images-of-text-aa-common-issues">Common issues</h5>
+<h5 id="1-4-5-images-of-text-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Images contain text.</li>
@@ -392,7 +392,7 @@ The content is created using HTML or supported by a language which can identify 
 <li>Some languages scroll vertically like Chinese, Japanese, Mongolian or Korean.</li>
 </ul>
 
-<h5 id="1-4-10-reflow-aa-what-to-do">What to do?</h5>
+<h5 id="1-4-10-reflow-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>Make sure your pages are responsive and the content will ‘reflow’ to a single column gracefully. </li>
@@ -400,7 +400,7 @@ The content is created using HTML or supported by a language which can identify 
 <li>For web content which is designed to scroll horizontally with vertical text, set viewport <strong>height</strong> of 1024px and then the 400% zoom.</li>
 </ul>
 
-<h5 id="1-4-10-reflow-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="1-4-10-reflow-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Content does not reflow to a single column when zoomed.</li>
@@ -432,7 +432,7 @@ Parts of graphics required to understand the content of a page. These can be cha
 
 <p>Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast. </p>
 
-<h5 id="1-4-11-non-text-contrast-aa-what-to-do">What to do?</h5>
+<h5 id="1-4-11-non-text-contrast-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their &lsquo;state&rsquo;. </p>
 
@@ -440,7 +440,7 @@ Parts of graphics required to understand the content of a page. These can be cha
 
 <p>Make sure parts of any graphics required to understand the content (like a warning icon) have good colour contrast.</p>
 
-<h5 id="1-4-11-non-text-contrast-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="1-4-11-non-text-contrast-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li> The purpose and meaning of important images that relate to page content - like if a medicine is poisonous, or other warnings - are hard to make our for a user who is sight impaired.</li>
@@ -472,7 +472,7 @@ Parts of graphics required to understand the content of a page. These can be cha
 <li>White space between blocks of text can help people with cognitive disabilities comprehend sections of a page and call out boxes.</li>
 </ul>
 
-<h5 id="1-4-12-text-spacing-aa-what-to-do">What to do?</h5>
+<h5 id="1-4-12-text-spacing-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>You can use a browser plug in or directly edit typographic CSS on a page to change the styles so that:</p>
 
@@ -485,7 +485,7 @@ Parts of graphics required to understand the content of a page. These can be cha
 
 <p>Make sure that all text fits within its containing box without being cut off or without overlapping other boxes.</p>
 
-<h5 id="1-4-12-text-spacing-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="1-4-12-text-spacing-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li> Not allowing or restricting the user from overriding text style.</li>
@@ -516,7 +516,7 @@ Parts of graphics required to understand the content of a page. These can be cha
 <li><p>This also helps sight impaired users who don’t want to zoom in/out a lot to see if content is still active on the page (or not). It also gives all user enough time to understand the ‘extra’ content that appears and what they need to do.</p></li>
 </ul>
 
-<h5 id="1-4-13-content-on-hover-or-focus-aa-what-to-do">What to do?</h5>
+<h5 id="1-4-13-content-on-hover-or-focus-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>This has several approaches depending on the control. 
 For content to be <strong>dismissed</strong>:</p>
@@ -542,7 +542,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li>The information conveyed by the additional content becomes unnecessary.</li>
 </ul>
 
-<h5 id="1-4-13-content-on-hover-or-focus-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="1-4-13-content-on-hover-or-focus-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F95">Content shown on hover not being hoverable</a></li>
@@ -561,14 +561,14 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>It must be possible for someone using a keyboard or touch device to complete all tasks in a service. This ensures that people with mobility impairments who do not use a mouse can successfully complete their goals.</p>
 
-<h5 id="2-1-1-keyboard-a-requirements">Requirements</h5>
+<h5 id="2-1-1-keyboard-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  All interaction and functionality is usable with a keyboard;</li>
 <li>  All interaction and functionality is usable on a touch-screen device.</li>
 </ul>
 
-<h5 id="2-1-1-keyboard-a-common-issues">Common issues</h5>
+<h5 id="2-1-1-keyboard-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  A custom widget has been created, but the necessary keyboard support has not been provided;</li>
@@ -589,13 +589,13 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>When someone using a keyboard to navigate content moves to an element, they must be able to move away from it again. This ensures that people who use a keyboard do not get stuck on any part of the page.</p>
 
-<h5 id="2-1-2-no-keyboard-trap-a-requirements">Requirements</h5>
+<h5 id="2-1-2-no-keyboard-trap-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Keyboard focus can move to an element and away again.</li>
 </ul>
 
-<h5 id="2-1-2-no-keyboard-trap-a-common-issues">Common issues</h5>
+<h5 id="2-1-2-no-keyboard-trap-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  A dialogue opens but cannot be closed with the keyboard, preventing the user from accessing the original content underneath;</li>
@@ -624,7 +624,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li><p>Also Keyboard-only users who who may accidentally hit keys, or have involuntary movement will benefit from turning off single character shortcuts or modifying them.</p></li>
 </ul>
 
-<h5 id="2-1-4-character-key-shortcuts-a-what-to-do">What to do?</h5>
+<h5 id="2-1-4-character-key-shortcuts-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>Make sure your users have a way to turn off single-key shortcuts. This could be in a preference section of your site.</p>
 
@@ -632,7 +632,7 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>The alternative shortcuts could be longer strings that would act as native speech commands for any speech engine. </p>
 
-<h5 id="2-1-4-character-key-shortcuts-a-common-mistakes">Common Mistakes</h5>
+<h5 id="2-1-4-character-key-shortcuts-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Not allowing the user to switch off or remap keyboard shortcuts.</li>
@@ -653,13 +653,13 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>When a time limit like a session timeout is set, it must be possible for the user to turn it off, delay it, or extend the length of time. This ensures that people who need longer to complete tasks because of cognitive or mobility impairments, are able to do so comfortably.</p>
 
-<h5 id="2-2-1-timing-adjustable-a-requirements">Requirements</h5>
+<h5 id="2-2-1-timing-adjustable-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  A mechanism is available to let users turn off, delay or extend time limits.</li>
 </ul>
 
-<h5 id="2-2-1-timing-adjustable-a-common-issues">Common issues</h5>
+<h5 id="2-2-1-timing-adjustable-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  A time limit is set, but a user is unable to turn it off, delay it, or extend it;</li>
@@ -676,7 +676,7 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>When content moves (is animated, blinks or scrolls) automatically for more than five seconds, or when content automatically updates on the page, it must be possible for users to Pause, stop or hide it. This ensures that people with cognitive disabilities that affect focus and concentration, are not distracted by movement.</p>
 
-<h5 id="2-2-2-pause-stop-hide-a-requirements">Requirements</h5>
+<h5 id="2-2-2-pause-stop-hide-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  A mechanism is available that lets users pause, stop or hide the moving or updating content;</li>
@@ -684,7 +684,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li>  Content does not update automatically.</li>
 </ul>
 
-<h5 id="2-2-2-pause-stop-hide-a-common-issues">Common issues</h5>
+<h5 id="2-2-2-pause-stop-hide-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Content moves for more than five seconds but there is no mechanism for a user to pause, stop or hide it.</li>
@@ -702,14 +702,14 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page. This ensures that people who do not use a mouse can quickly and easily reach the primary content of the page.</p>
 
-<h5 id="2-4-1-bypass-blocks-a-requirements">Requirements</h5>
+<h5 id="2-4-1-bypass-blocks-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  A “Skip to main content” link is provided, and the link is located close to the start of the page;</li>
 <li>  The <code>&lt;main&gt;</code> element is used to represent the main content area of the page.</li>
 </ul>
 
-<h5 id="2-4-1-bypass-blocks-a-common-issues">Common issues</h5>
+<h5 id="2-4-1-bypass-blocks-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The <code>&lt;main&gt;</code> element has been used, but there is no skip link that points to it;</li>
@@ -727,14 +727,14 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>Each page must have a unique title that indicates its topic or purpose. This ensures that people with cognitive disabilities can quickly orientate themselves within the service and identify the purpose of the page without interpreting its entire contents.</p>
 
-<h5 id="2-4-2-page-title-a-requirements">Requirements</h5>
+<h5 id="2-4-2-page-title-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Each page has a title that is unique within the service;</li>
 <li>  Each page has a title that indicates its topic or purpose.</li>
 </ul>
 
-<h5 id="2-4-2-page-title-a-common-issues">Common issues</h5>
+<h5 id="2-4-2-page-title-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The page title is not unique within the service;</li>
@@ -753,13 +753,13 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>It must be possible to navigate through content in a way that makes sense. This ensures that content can be navigated in a logical way by screen reader users, keyboard users, and people who choose to use their own CSS style sheets.</p>
 
-<h5 id="2-4-3-focus-order-a-requirements">Requirements</h5>
+<h5 id="2-4-3-focus-order-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  The visible focus order matches the DOM focus order.</li>
 </ul>
 
-<h5 id="2-4-3-focus-order-a-common-issues">Common issues</h5>
+<h5 id="2-4-3-focus-order-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;</li>
@@ -777,7 +777,7 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>The purpose of every link must be clear from its link text, or its link text plus associated content if assistive technologies recognise the association. This ensures that screen reader users can understand the purpose of links without reading nearby content, and that speech recognition users can target links accurately using voice commands.</p>
 
-<h5 id="2-4-4-link-purpose-in-context-a-requirements">Requirements</h5>
+<h5 id="2-4-4-link-purpose-in-context-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Link text clearly indicates the purpose of the link;</li>
@@ -785,7 +785,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li>  Links have accessible names.</li>
 </ul>
 
-<h5 id="2-4-4-link-purpose-in-context-a-common-issues">Common issues</h5>
+<h5 id="2-4-4-link-purpose-in-context-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  A link has text that does not indicate its purpose;</li>
@@ -808,13 +808,13 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>It must be easy to tell which element has keyboard focus. This helps sighted keyboard users orient themselves within the page, and confidently interact with it.</p>
 
-<h5 id="2-4-7-focus-visible-aa-requirements">Requirements</h5>
+<h5 id="2-4-7-focus-visible-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Interactive elements like links, buttons, and form fields, have a visible focus indicator.</li>
 </ul>
 
-<h5 id="2-4-7-focus-visible-aa-common-issues">Common issues</h5>
+<h5 id="2-4-7-focus-visible-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  The browser default focus indicator has not been replaced with something that is easier to see;</li>
@@ -847,7 +847,7 @@ For content to be <strong>dismissed</strong>:</p>
 
 <p>This can be zooming into content using a ‘pinch’ type motion with two fingers, a swipe with multiple fingers and so on.</p>
 
-<h5 id="2-5-1-pointer-gestures-a-what-to-do">What to do?</h5>
+<h5 id="2-5-1-pointer-gestures-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>Design your interface so controls and content can be used without these path or multi-point gestures. </p>
 
@@ -864,7 +864,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li>Do not rely only on multi-point gestures.</li>
 </ul>
 
-<h5 id="2-5-1-pointer-gestures-a-common-mistakes">Common Mistakes</h5>
+<h5 id="2-5-1-pointer-gestures-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Requiring complex gestures to do things.</li>
@@ -899,7 +899,7 @@ Completing the function on the down-event is essential.</p>
 
 <p>However, it can present problems for users with dexterity issues.</p>
 
-<h5 id="2-5-2-pointer-cancellation-a-what-to-do">What to do?</h5>
+<h5 id="2-5-2-pointer-cancellation-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li><strong>Simply make activation of any function occur on the up-event</strong>. This is where the control is released by the user. This can be by the users finger or a mouse for example. Using the click event by default will only trigger the event on release.</li>
@@ -920,7 +920,7 @@ Completing the function on the down-event is essential.</p>
 
 <p>The up-event may have different names, such as &ldquo;touchend&rdquo; or &ldquo;mouseup&rdquo;.</p>
 
-<h5 id="2-5-2-pointer-cancellation-a-common-mistakes">Common Mistakes</h5>
+<h5 id="2-5-2-pointer-cancellation-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Allowing controls or user interface components to fire as soon as they are touched.</li>
@@ -950,7 +950,7 @@ Completing the function on the down-event is essential.</p>
 <li>Text-to-speech users will have a better experience because the labels that they hear match the visible text labels that they see on the screen.</li>
 </ul>
 
-<h5 id="2-5-3-label-in-name-a-what-to-do">What to do?</h5>
+<h5 id="2-5-3-label-in-name-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>The accessible name can be the ‘label’ used on a form input. This can be provided by the label element in HTML or by an aria-label or similar. There are other ARIA and HTML elements that can provide the accessible name for a component.</p>
 
@@ -961,7 +961,7 @@ Completing the function on the down-event is essential.</p>
 <li><strong>Accessible name starts with visible label:</strong> The accessible name of a &ldquo;Start here&rdquo; button begins with the same text as the visible label.</li>
 </ul>
 
-<h5 id="2-5-3-label-in-name-a-common-mistakes">Common Mistakes</h5>
+<h5 id="2-5-3-label-in-name-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>The Accessible name does not contain the visible label text </li>
@@ -989,7 +989,7 @@ Completing the function on the down-event is essential.</p>
 * A user can tilt a device to advance to the next or a previous page. Buttons or links are also provided to perform the same function.
 * A user can move the device to change the view of an image. A control is also available to do the same thing.</p>
 
-<h5 id="2-5-4-motion-actuation-a-what-to-do">What to do?</h5>
+<h5 id="2-5-4-motion-actuation-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>Do not use the <code>devicemotion</code> event to activate content functionality.</li>
@@ -999,7 +999,7 @@ Completing the function on the down-event is essential.</p>
 <li>Use the new <code>prefers-reduced-motion</code> CSS declaration. This will detect if the user would like to reduce animation or motion on the pages they visit.</li>
 </ul>
 
-<h5 id="2-5-4-motion-actuation-a-common-mistakes">Common Mistakes</h5>
+<h5 id="2-5-4-motion-actuation-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Functionality that can only be activated via device motion events (e.g., shaking or tilting)</li>
@@ -1022,13 +1022,13 @@ Completing the function on the down-event is essential.</p>
 
 <p>The written language of the page must be identified in the code of the web page. This makes sure that screen readers automatically use the correct speech libraries for accent and pronunciation.</p>
 
-<h5 id="3-1-1-language-of-page-a-requirements">Requirements</h5>
+<h5 id="3-1-1-language-of-page-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  The language is identified using the <code>lang</code> attribute of the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&lt;/span&gt;</code> element.</li>
 </ul>
 
-<h5 id="3-1-1-language-of-page-a-common-issues">Common issues</h5>
+<h5 id="3-1-1-language-of-page-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  No <code>lang</code> attribute is present on the <code>&lt;span class=&quot;nt&quot;&gt;&lt;html&gt;&lt;/span&gt;</code> element.</li>
@@ -1046,13 +1046,13 @@ Completing the function on the down-event is essential.</p>
 
 <p>When content is displayed in a language that is different from the primary language of the page, it must be indicated in a way that assistive technologies understand. This ensures that screen readers switch to the appropriate accent and pronunciation for that language.</p>
 
-<h5 id="3-1-2-language-of-parts-a-requirements">Requirements</h5>
+<h5 id="3-1-2-language-of-parts-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Content that is written in a different language from the primary language of the page, is identified using HTML (the lang attribute).</li>
 </ul>
 
-<h5 id="3-1-2-language-of-parts-a-common-issues">Common issues</h5>
+<h5 id="3-1-2-language-of-parts-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Content uses a different language, but the change in language is not identified in the HTML;</li>
@@ -1071,14 +1071,14 @@ Completing the function on the down-event is essential.</p>
 
 <p>When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page/tab. This stops unexpected things happening without screen reader and screen magnifer users being aware of it.</p>
 
-<h5 id="3-2-1-on-focus-a-requirements">Requirements</h5>
+<h5 id="3-2-1-on-focus-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  <code>focus</code> events do not cause navigation, nor form submission</li>
 <li>  components that respond to <code>focus</code> do not initiate a “focus trap”, where it is impossible or unclear how to navigate out of the component using the keyboard.</li>
 </ul>
 
-<h5 id="3-2-1-on-focus-a-common-issues">Common issues</h5>
+<h5 id="3-2-1-on-focus-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Dropdown menus trigger navigation as the user tabs between options</li>
@@ -1096,14 +1096,14 @@ Completing the function on the down-event is essential.</p>
 
 <p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component.</p>
 
-<h5 id="3-2-2-on-input-a-requirements">Requirements</h5>
+<h5 id="3-2-2-on-input-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Users can predict what a control such as a button or drop-down menu will do</li>
 <li>  User interface components built with javascript have adequate and accurate ARIA labelling.</li>
 </ul>
 
-<h5 id="3-2-2-on-input-a-common-issues">Common issues</h5>
+<h5 id="3-2-2-on-input-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Controls built with javascript lack appropriate ARIA information</li>
@@ -1120,7 +1120,7 @@ Completing the function on the down-event is essential.</p>
 
 <p>When features with the same functionality are used in multiple places, they must be identified in a consistent way. This helps screen reader users correctly identify the type and purpose of the functionality.</p>
 
-<h5 id="3-2-4-consistent-identification-aa-requirements">Requirements</h5>
+<h5 id="3-2-4-consistent-identification-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  An icon has the same alternative text wherever it is used;</li>
@@ -1128,7 +1128,7 @@ Completing the function on the down-event is essential.</p>
 <li>  Form fields with the same purpose are consistently labelled wherever they are used.</li>
 </ul>
 
-<h5 id="3-2-4-consistent-identification-aa-common-issues">Common issues</h5>
+<h5 id="3-2-4-consistent-identification-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  An icon is used to denote a file download, but has a different alternate text whenever it is used;</li>
@@ -1147,7 +1147,7 @@ Completing the function on the down-event is essential.</p>
 
 <p>When an error occurs the user is informed what caused the error, and the error is described in text. This ensures that the error is available to people who cannot see, distinguish colours, or understand icons and other visual cues.</p>
 
-<h5 id="3-3-1-error-identification-a-requirements">Requirements</h5>
+<h5 id="3-3-1-error-identification-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Each error is described in text;</li>
@@ -1155,7 +1155,7 @@ Completing the function on the down-event is essential.</p>
 <li>  Multiple errors are summarised at the top of the form.</li>
 </ul>
 
-<h5 id="3-3-1-error-identification-a-common-issues">Common issues</h5>
+<h5 id="3-3-1-error-identification-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  An error is only indicated by a red border around the field;</li>
@@ -1175,14 +1175,14 @@ Completing the function on the down-event is essential.</p>
 
 <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. This ensures that everyone understands any requirements for entering data, and does so in a way that ensures that people unable to see the information are made aware of it by their screen readers.</p>
 
-<h5 id="3-3-2-labels-or-instructions-a-requirements">Requirements</h5>
+<h5 id="3-3-2-labels-or-instructions-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  Instructions are provided for fields that require data to be entered in a specific format;</li>
 <li>  Instructions are properly associated with the relevant form field.</li>
 </ul>
 
-<h5 id="3-3-2-labels-or-instructions-a-common-issues">Common issues</h5>
+<h5 id="3-3-2-labels-or-instructions-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  Data is expected in a specific format, but no iinstructions have been provided;</li>
@@ -1200,13 +1200,13 @@ Completing the function on the down-event is essential.</p>
 
 <p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion comprimises security. This helps everyone resolve issues more easily, but especially people with cognitive disabilities who find processing information difficult.</p>
 
-<h5 id="3-3-3-error-suggestion-a-requirements">Requirements</h5>
+<h5 id="3-3-3-error-suggestion-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  When an error is detected, a suggestion is provided to help the user correct the issue.</li>
 </ul>
 
-<h5 id="3-3-3-error-suggestion-a-common-issues">Common issues</h5>
+<h5 id="3-3-3-error-suggestion-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  An error is detected and the user is notified, but no suggestion is given to help them resolve it; A login error is detected and a suggestion is provided, but it comprimises security by revelaing that a particular username exists.</li>
@@ -1222,13 +1222,13 @@ Completing the function on the down-event is essential.</p>
 
 <p>When completion of a form causes a legal commitment, triggers a financial transaction, or gives consent for personal data to be updated or changed, the user must be able to review, correct, and confirm that the information they have entered is correct, or they must be able to reverse the decision. This provides safeguards to prevent people with disabilities, and indeed all users, from making avoidable mistakes.</p>
 
-<h5 id="3-3-4-error-prevention-legal-financial-data-a-requirements">Requirements</h5>
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  When data is submitted leading to a legal commitment, financial transaction, or an update to personal data, an interim page, alert or status message is presented that allows the user to review, correct, and confirm the information they have entered.</li>
 </ul>
 
-<h5 id="3-3-4-error-prevention-legal-financial-data-a-common-issues">Common issues</h5>
+<h5 id="3-3-4-error-prevention-legal-financial-data-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  An online shop where order or personal details are not displayed so the user can confirm them or make changes.</li>
@@ -1247,14 +1247,14 @@ Completing the function on the down-event is essential.</p>
 
 <p>The code of the page must not cause browser or assistive technology conflicts. This ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies.</p>
 
-<h5 id="4-1-1-parsing-a-requirements">Requirements</h5>
+<h5 id="4-1-1-parsing-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  HTML code must conform to the standard identified in the doctype statement;</li>
 <li>  ARIA code must conform to the rules for use with the host language (HTML).</li>
 </ul>
 
-<h5 id="4-1-1-parsing-a-common-issues">Common issues</h5>
+<h5 id="4-1-1-parsing-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  HTML elements are not well formed (opened and closed properly);</li>
@@ -1273,7 +1273,7 @@ Completing the function on the down-event is essential.</p>
 
 <p>All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies. This ensures that screen reader users understand the purpose (role) of every component, how to identify it (name), and what state it is in.</p>
 
-<h5 id="4-1-2-name-role-value-a-requirements">Requirements</h5>
+<h5 id="4-1-2-name-role-value-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>  All interactive elements and components have an accessible name;</li>
@@ -1281,7 +1281,7 @@ Completing the function on the down-event is essential.</p>
 <li>  All interactive elements and components communicate information about their state.</li>
 </ul>
 
-<h5 id="4-1-2-name-role-value-a-common-issues">Common issues</h5>
+<h5 id="4-1-2-name-role-value-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>  An <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element contains no text content, and so has no accessible name;</li>
@@ -1312,7 +1312,7 @@ Completing the function on the down-event is essential.</p>
 <li>If focus is always moved to the message users with cognitive impairments may also be confused by unpredictable focus changes. </li>
 </ul>
 
-<h5 id="4-1-3-status-messages-aa-what-to-do">What to do?</h5>
+<h5 id="4-1-3-status-messages-aa-requirements-what-to-do">Requirements / What to do?</h5>
 
 <p>The following are different situations where you will need to cover.</p>
 
@@ -1349,20 +1349,12 @@ Completing the function on the down-event is essential.</p>
 * <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">Using role=log to identify sequential information updates</a>
 * <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">Using role=status to present status messages</a> in combination with <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">Providing help by an assistant in the Web page</a></p>
 
-<h5 id="4-1-3-status-messages-aa-common-mistakes">Common Mistakes</h5>
+<h5 id="4-1-3-status-messages-aa-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Status messages are not to be shown in a way that the AT understands or receive focus.</li>
 <li>Using <code>role=&quot;alert&quot;</code> or <code>aria-live=&quot;assertive&quot;</code> on content which is not important.</li>
 <li>On a page with ARIA live regions - if regions are hidden or not needed - always make sure to switch their active and inactive states accordingly.</li>
-</ul>
-
-<h5 id="4-1-3-status-messages-aa-common-mistakes-2">Common Mistakes</h5>
-
-<ul>
-<li>Functionality that can only be activated via device motion events (e.g., shaking or tilting)</li>
-<li>The user is unable to disable motion actuation.</li>
-<li>The author has turned off system level features which allow the user to disable motion actuation.</li>
 </ul>
 
 <p> </p>

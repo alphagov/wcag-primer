@@ -9,13 +9,13 @@ Parts of graphics required to understand the content of a page. These can be cha
 </ul>
 <h5 id="why-is-this-a-problem">Why is this a problem?</h5>
 <p>Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast. </p>
-<h5 id="what-to-do">What to do?</h5>
+<h5 id="requirements-what-to-do">Requirements / What to do?</h5>
 <p>Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their &lsquo;state&rsquo;. </p>
 
 <p><strong>NOTE:</strong> This does not apply if inactive or if their look is made purely by the browser and not the author. </p>
 
 <p>Make sure parts of any graphics required to understand the content (like a warning icon) have good colour contrast.</p>
-<h5 id="common-mistakes">Common Mistakes</h5>
+<h5 id="common-mistakes">Common mistakes</h5>
 <ul>
 <li> The purpose and meaning of important images that relate to page content - like if a medicine is poisonous, or other warnings - are hard to make our for a user who is sight impaired.</li>
 <li>The purpose or ‘state’ of a control isn’t clear to the user.</li>

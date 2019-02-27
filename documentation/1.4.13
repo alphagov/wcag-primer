@@ -11,7 +11,7 @@
 <li><p>For disabled users on your website who may accidentally trigger content or are using keyboards only or mobile devices it is frustrating when pop up content either doesn’t ‘stay’ on the screen if they need to use it or won’t go away without loosing their place.</p></li>
 <li><p>This also helps sight impaired users who don’t want to zoom in/out a lot to see if content is still active on the page (or not). It also gives all user enough time to understand the ‘extra’ content that appears and what they need to do.</p></li>
 </ul>
-<h5 id="what-to-do">What to do?</h5>
+<h5 id="requirements-what-to-do">Requirements / What to do?</h5>
 <p>This has several approaches depending on the control. 
 For content to be <strong>dismissed</strong>:</p>
 
@@ -35,7 +35,7 @@ For content to be <strong>dismissed</strong>:</p>
 <li>The user dismisses the extra content.</li>
 <li>The information conveyed by the additional content becomes unnecessary.</li>
 </ul>
-<h5 id="common-mistakes">Common Mistakes</h5>
+<h5 id="common-mistakes">Common mistakes</h5>
 <ul>
 <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F95">Content shown on hover not being hoverable</a></li>
 <li>The user can’t dismiss content without moving pointer hover or keyboard focus.</li>
