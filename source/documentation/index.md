@@ -77,15 +77,6 @@ In a responsive website, a full ‘page’ includes each variation of the page t
 
 Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass. 
 
-This next addition may not be relevant but just so you are aware of it.
-
-##### Machine-readable data
-When writing a conformance claim, or details of how you pass WCAG 2.1 - a new option is to add a list of specific accessibility related aspects of your site  content, provided in machine-readable metadata. See [Understanding Metadata](https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata) for more.
-
-This is optional.
-
-#### So why WCAG 2.1?
-
 ## WCAG 2.1 architecture
 
 WCAG 2.1 has twelve guidelines, grouped into four principles. The principle are that content must be:
