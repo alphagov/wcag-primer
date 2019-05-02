@@ -56,7 +56,7 @@ The following Success Criteria are new in WCAG 2.1:
 * 2.5.6 Concurrent Input Mechanisms (AAA)
 * 4.1.3 Status Messages (AA) 
 
-This primer will only focus on new A and AA success criteria.
+This primer will only focus on new A and AA success criteria. [All AAA criteria can be viewed on the W3 website](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=a%2Caa). They aren't included in this primer because you don't need to comply AAA criteria for the Public Body Accessibility Regulations.
 
 #### Numbering changes in WCAG 2.1
 
