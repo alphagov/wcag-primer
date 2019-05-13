@@ -6,7 +6,7 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 
 ## Perceivable
 * Do all images have an appropriate text equivalent? Is essential visual information also available as text?
-* Do all audio files have a transcript? Is essential audio information availble as text?
+* Do all audio files have a transcript? Is essential audio information available as text?
 * Do all videos have captions that are synchronised with the audio?
 * Does video that includes important visual information have an audio description?
 * Is all content structure that is communicated visually available to assistive technologies?
