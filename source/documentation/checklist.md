@@ -37,7 +37,7 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 * Are headings and labels clear and descriptive?
 * When using a keyboard to move through a page can you tell where you are?
 * Do you have shortcuts triggered by only one letter or character? If so can they be turned off or remapped by the user?
-* Does some of your site functionality need several fingers or complex gestures to operate it? 
+* Does some of your site functionality need several fingers or complex gestures to operate it? If so, can the same functionality be used with just single taps or clicks?
 * Does some of your site functionality work using a single point (e.g fingertip) and is it triggered the moment it is touched? 
 * On forms and other components is the accessible name or label the same as any on-screen text? 
 * Does your site respond to motion or movement to operate parts? 
