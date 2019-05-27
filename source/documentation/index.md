@@ -159,7 +159,7 @@ Your service must be navigable and usable no matter how someone uses it (without
 * 2.5.1 <strong>[NEW]</strong> Do not require complex gestures to do things. [More about 2.5.1](/all.html#2-5-1-pointer-gestures-a)
 * 2.5.2 <strong>[NEW]</strong> Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/all.html#2-5-2-pointer-cancellation-a)
 * 2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/all.html#2-5-3-label-in-name-a)
-* 2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by skaing or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
+* 2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
 
 ### Principle 3: Understandable
 
