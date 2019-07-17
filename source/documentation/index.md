@@ -16,7 +16,7 @@ WCAG 2.1 helps make websites, documents and mobile apps accessible to people wit
 
 * Visual impairments, including people who are blind, partially sighted, and people with conditions like being colour blind
 * Hearing impairments, including Deaf people who use sign language, and people who are hard of hearing
-* Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people wwho find it difficult to control a mouse
+* Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people who find it difficult to control a mouse
 * Cognitive impairments, including people who are Dyslexic, on the Autistic Spectrum, and people who have learning difficulties
 
 WCAG 2.1 also helps us think about the different ways people use the web:
