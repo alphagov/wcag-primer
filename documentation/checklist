@@ -5,7 +5,7 @@
 <h2 id="perceivable">Perceivable</h2>
 <ul>
 <li>Do all images have an appropriate text equivalent? Is essential visual information also available as text?</li>
-<li>Do all audio files have a transcript? Is essential audio information availble as text?</li>
+<li>Do all audio files have a transcript? Is essential audio information available as text?</li>
 <li>Do all videos have captions that are synchronised with the audio?</li>
 <li>Does video that includes important visual information have an audio description?</li>
 <li>Is all content structure that is communicated visually available to assistive technologies?</li>
@@ -37,10 +37,10 @@
 <li>Are headings and labels clear and descriptive?</li>
 <li>When using a keyboard to move through a page can you tell where you are?</li>
 <li>Do you have shortcuts triggered by only one letter or character? If so can they be turned off or remapped by the user?</li>
-<li>Does some of your site functionality need several fingers or complex gestures to operate it? </li>
-<li>Does some of your site functionality work using a single point (e.g fingertip) and is it triggered the moment it is touched? </li>
+<li>Does some of your site functionality need several fingers or complex gestures to operate it? If so, can the same functionality be used with just single taps or clicks?</li>
+<li>Does some of your site functionality work using a single point (e.g fingertip)? If so, have you ensured it doesn&rsquo;t get triggered the moment it is touched?</li>
 <li>On forms and other components is the accessible name or label the same as any on-screen text? </li>
-<li>Does your site respond to motion or movement to operate parts? </li>
+<li>Does your site respond to motion or movement? If so, can responding to motion or movement be disabled, and your site still be fully usable?</li>
 </ul>
 <h2 id="understandable">Understandable</h2>
 <ul>
