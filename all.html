@@ -154,7 +154,7 @@
                 <a href="#1-3-3-sensory-characteristics-a">1.3.3 Sensory characteristics (A)</a>
               </li>
               <li>
-                <a href="#1-3-4-sensory-characteristics-a">1.3.4 Sensory characteristics (A)</a>
+                <a href="#1-3-4-orientation-a">1.3.4 Orientation (A)</a>
               </li>
               <li>
                 <a href="#1-3-5-identify-input-purpose-aa">1.3.5 Identify Input Purpose (AA)</a>
@@ -206,6 +206,9 @@
               </li>
               <li>
                 <a href="#2-1-2-no-keyboard-trap-a">2.1.2 No keyboard trap (A)</a>
+              </li>
+              <li>
+                <a href="#2-1-4-character-key-shortcuts-a">2.1.4 Character Key Shortcuts (A)</a>
               </li>
             </ul>
           </li>
@@ -628,7 +631,7 @@
 <li>  An instruction tells users to “follow the biggest link in the tag cloud”.</li>
 </ul>
 
-<h4 id="1-3-4-sensory-characteristics-a"><a href="https://www.w3.org/WAI/WCAG21/Understanding/orientation.html">1.3.4 Sensory characteristics (A)</a></h4>
+<h4 id="1-3-4-orientation-a"><a href="https://www.w3.org/WAI/WCAG21/Understanding/orientation.html">1.3.4 Orientation (A)</a></h4>
 
 <p>A page view must not be locked to either horizontal or vertical views only, unless this is essential.  ‘Essential’ orientation may considered to be in a messaging app, or when making music using a piano type application, viewing slides for a projector show, television or virtual reality content.</p>
 
@@ -636,7 +639,7 @@
 
 <p>Users with low-vision should be able to view content in the orientation that works best for them, due to the need for increased text size. For users with dexterity impairments, who mount a mobile device or tablet, they will need to see content in their preferred way. </p>
 
-<h5 id="1-3-4-sensory-characteristics-a-requirements-what-to-do">Requirements / What to do?</h5>
+<h5 id="1-3-4-orientation-a-requirements-what-to-do">Requirements / What to do?</h5>
 
 <ul>
 <li>Each page should be viewed in an orientation that suits the user. Use CSS to allow both landscape and portrait.</li>
@@ -645,13 +648,13 @@
 <li>Use show/hide controls to allow access to content in different orientations.</li>
 </ul>
 
-<h5 id="1-3-4-sensory-characteristics-a-common-mistakes">Common mistakes</h5>
+<h5 id="1-3-4-orientation-a-common-mistakes">Common mistakes</h5>
 
 <ul>
 <li>Locking the orientation of the device so it is set in one way only, and does not adapt.</li>
 </ul>
 
-<h5 id="1-3-4-sensory-characteristics-a-useful-resources">Useful resources</h5>
+<h5 id="1-3-4-orientation-a-useful-resources">Useful resources</h5>
 
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation">Managing Screen Orientation</a></li>
@@ -1044,6 +1047,47 @@ For content to be <strong>dismissed</strong>:</p>
 <ul>
 <li>  TBC</li>
 </ul>
+
+<h4 id="2-1-4-character-key-shortcuts-a"><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts">2.1.4 Character Key Shortcuts (A)</a></h4>
+
+<p>If your webpage has keyboard shortcuts then one of the following must be true:
+* <strong>Turn off:</strong> The user must be able to turn them off;
+* <strong>Remap:</strong> The user must be able to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);
+* <strong>Active only on focus:</strong>The keyboard shortcut is only active when it has focus.</p>
+
+<p><strong>NOTE:</strong> This success criteria does not apply if you have not implemented keyboard shortcuts.</p>
+
+<h5 id="2-1-4-character-key-shortcuts-a-why-is-this-a-problem">Why is this a problem?</h5>
+
+<ul>
+<li><p>This can be a real problem for users of speech recognition software (like Dragon). Without the ability to turn off single-key shortcuts, they can be triggered accidentally and fire with the user wanting it to happen.</p></li>
+<li><p>Also Keyboard-only users who who may accidentally hit keys, or have involuntary movement will benefit from turning off single character shortcuts or modifying them.</p></li>
+</ul>
+
+<h5 id="2-1-4-character-key-shortcuts-a-requirements-what-to-do">Requirements / What to do?</h5>
+
+<p>Make sure your users have a way to turn off single-key shortcuts. This could be in a preference section of your site.</p>
+
+<p>Or provide a way to allow users to change character-key shortcuts.  </p>
+
+<p>The alternative shortcuts could be longer strings that would act as native speech commands for any speech engine. </p>
+
+<h5 id="2-1-4-character-key-shortcuts-a-common-mistakes">Common mistakes</h5>
+
+<ul>
+<li>Not allowing the user to switch off or remap keyboard shortcuts.</li>
+</ul>
+
+<h5 id="2-1-4-character-key-shortcuts-a-resources">Resources</h5>
+
+<p>You can see the issue in these character key shortcut video, with thanks to Kim Patch.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xzSyIA4OWYE">You Tube Video 1 - See how Speech affects single key shortcuts</a></li>
+<li><a href="https://www.youtube.com/watch?v=OPjfpDU9S08">You Tube Video 2 - See how Speech affects single key shortcuts</a></li>
+</ul>
+
+<p>The remapping method can include <a href="https://en.wikipedia.org/wiki/Control_character">non-printing characters</a>. </p>
 
 <h3 id="2-2-enough-time">2.2 Enough Time</h3>
 

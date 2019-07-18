@@ -14,7 +14,7 @@
 <ul>
 <li>Visual impairments, including people who are blind, partially sighted, and people with conditions like being colour blind</li>
 <li>Hearing impairments, including Deaf people who use sign language, and people who are hard of hearing</li>
-<li>Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people wwho find it difficult to control a mouse</li>
+<li>Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people who find it difficult to control a mouse</li>
 <li>Cognitive impairments, including people who are Dyslexic, on the Autistic Spectrum, and people who have learning difficulties</li>
 </ul>
 
@@ -147,7 +147,7 @@
 <li>2.5.1 <strong>[NEW]</strong> Do not require complex gestures to do things. <a href="../all.html#2-5-1-pointer-gestures-a">More about 2.5.1</a></li>
 <li>2.5.2 <strong>[NEW]</strong> Do not have controls or user interface components that fire as soon as they are touched. <a href="../all.html#2-5-2-pointer-cancellation-a">More about 2.5.2</a></li>
 <li>2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. <a href="../all.html#2-5-3-label-in-name-a">More about 2.5.3</a></li>
-<li>2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by skaing or tilting the device. <a href="../all.html#2-5-4-motion-actuation-a">More about 2.5.4</a></li>
+<li>2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by shaking or tilting the device. <a href="../all.html#2-5-4-motion-actuation-a">More about 2.5.4</a></li>
 </ul>
 <h3 id="principle-3-understandable">Principle 3: Understandable</h3>
 <p>Your service must make information understandable, and make it easy for people to understand how to complete tasks.</p>
