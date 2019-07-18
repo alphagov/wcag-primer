@@ -6,7 +6,7 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 
 ## Perceivable
 * Do all images have an appropriate text equivalent? Is essential visual information also available as text?
-* Do all audio files have a transcript? Is essential audio information availble as text?
+* Do all audio files have a transcript? Is essential audio information available as text?
 * Do all videos have captions that are synchronised with the audio?
 * Does video that includes important visual information have an audio description?
 * Is all content structure that is communicated visually available to assistive technologies?
@@ -37,11 +37,10 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 * Are headings and labels clear and descriptive?
 * When using a keyboard to move through a page can you tell where you are?
 * Do you have shortcuts triggered by only one letter or character? If so can they be turned off or remapped by the user?
-* Does some of your site functionality need several fingers or complex gestures to operate it? 
-* Does some of your site functionality work using a single point (e.g fingertip) and is it triggered the moment it is touched? 
+* Does some of your site functionality need several fingers or complex gestures to operate it? If so, can the same functionality be used with just single taps or clicks?
+* Does some of your site functionality work using a single point (e.g fingertip)? If so, have you ensured it doesn't get triggered the moment it is touched?
 * On forms and other components is the accessible name or label the same as any on-screen text? 
-* Does your site respond to motion or movement to operate parts? 
-
+* Does your site respond to motion or movement? If so, can responding to motion or movement be disabled, and your site still be fully usable?
 
 ## Understandable
 * Has the language of the web page or document (or individual parts of a multilingual document) been defined?
