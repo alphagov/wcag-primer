@@ -1,5 +1,4 @@
-<h4 id="1-4-11-non-text-contrast-aa"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-Text Contrast (AA)</a></h4>
-<p>This is like ‘colour contrast for charts, icons and controls’. User Interface components and graphical objects have <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">contrast ratio of at least 3:1</a>. This also covers where the state of a control changes - a button on mouse over for example.</p>
+<h4 id="1-4-11-non-text-contrast-aa"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-Text Contrast (AA)</a></h4><p>This is like ‘colour contrast for charts, icons and controls’. User Interface components and graphical objects have <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">contrast ratio of at least 3:1</a>. This also covers where the state of a control changes - a button on mouse over for example.</p>
 
 <ul>
 <li><strong>User Interface Components</strong>
@@ -7,13 +6,9 @@ Visual information required to identify user interface components and states, ex
 <li><strong>Graphical Objects</strong>
 Parts of graphics required to understand the content of a page. These can be charts, graphs, infographics and so on.</li>
 </ul>
-<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
-<p>Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast. </p>
-<h5 id="requirements-what-to-do">Requirements / What to do?</h5>
-<p>Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their &lsquo;state&rsquo;. </p>
-
-<p><strong>NOTE:</strong> This does not apply if inactive or if their look is made purely by the browser and not the author. </p>
-
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5><p>Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast.</p>
+<h5 id="requirements-what-to-do">Requirements / What to do?</h5><p>Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their &lsquo;state&rsquo;.</p>
+<p><strong>NOTE:</strong> This does not apply if inactive or if their look is made purely by the browser and not the author.</p>
 <p>Make sure parts of any graphics required to understand the content (like a warning icon) have good colour contrast.</p>
 <h5 id="common-mistakes">Common mistakes</h5>
 <ul>
@@ -35,5 +30,4 @@ Parts of graphics required to understand the content of a page. These can be cha
 <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G174">Providing a control for users to switch to a view with sufficient contrast</a></li>
 <li><a href="https://www.w3.org/WAI/GL/wiki/Using_sufficient_contrast_for_images_that_convey_information">Using sufficient contrast for images that convey information - Draft</a></li>
 </ul>
-<h5 id="1-4-11-non-text-contrast-aa-resources">Resources</h5>
-<p>Find out more about <a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html">Accessibility Requirements for People with Low Vision</a>.</p>
+<h5 id="1-4-11-non-text-contrast-aa-resources">Resources</h5><p>Find out more about <a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html">Accessibility Requirements for People with Low Vision</a>.</p>

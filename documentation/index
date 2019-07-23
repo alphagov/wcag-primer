@@ -1,14 +1,8 @@
-<h1 id="wcag-2-1-getting-started">WCAG 2.1 Getting started</h1>
-<p>This document will help you get up to speed with WCAG 2.1 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content. </p>
-
-<p>WCAG 2.1 is the standard used by EN 301 549, the European procurement rules, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018. </p>
-
+<h1 id="wcag-2-1-getting-started">WCAG 2.1 Getting started</h1><p>This document will help you get up to speed with WCAG 2.1 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content.</p>
+<p>WCAG 2.1 is the standard used by EN 301 549, the European procurement rules, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018.</p>
 <p>See Gov.uk for more on how to <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">Make your public sector website or app accessible</a></p>
-<h2 id="what-is-wcag-2-1">What is WCAG 2.1?</h2>
-<p>The <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a> explain how to make websites accessible for disabled and older people. The guidelines are written by accessibility specialists, volunteers and disabled people at the World Wide Web Consortium <a href="https://w3.org/">W3C</a>.</p>
-
+<h2 id="what-is-wcag-2-1">What is WCAG 2.1?</h2><p>The <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a> explain how to make websites accessible for disabled and older people. The guidelines are written by accessibility specialists, volunteers and disabled people at the World Wide Web Consortium <a href="https://w3.org/">W3C</a>.</p>
 <p>Due to the rapidly changing technology landscape WCAG 2.1 was designed to better meet the needs of three major groups: mobile users, users with low vision, and users with cognitive or learning disabilities.</p>
-
 <p>WCAG 2.1 helps make websites, documents and mobile apps accessible to people with:</p>
 
 <ul>
@@ -17,7 +11,6 @@
 <li>Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people who find it difficult to control a mouse</li>
 <li>Cognitive impairments, including people who are Dyslexic, on the Autistic Spectrum, and people who have learning difficulties</li>
 </ul>
-
 <p>WCAG 2.1 also helps us think about the different ways people use the web:</p>
 
 <ul>
@@ -27,12 +20,9 @@
 <li>By using a screen magnifier to increase the size of everything on-screen</li>
 <li>By using speech recognition to use the web with voice commands and dictation</li>
 </ul>
-<h2 id="how-does-it-relate-to-wcag-2-0">How does it relate to WCAG 2.0?</h2>
-<p>WCAG 2.1 is built on 2.0. So content that passes  WCAG 2.1 will also also pass WCAG 2.0. </p>
-<h2 id="new-things-in-wcag-2-1">New things in WCAG 2.1:</h2>
-<p>WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions, and guidelines to organize the additions. There are some additions to the conformance section.</p>
-<h3 id="new-success-criteria">New Success Criteria</h3>
-<p>The following Success Criteria are new in WCAG 2.1:</p>
+<h2 id="how-does-it-relate-to-wcag-2-0">How does it relate to WCAG 2.0?</h2><p>WCAG 2.1 is built on 2.0. So content that passes  WCAG 2.1 will also also pass WCAG 2.0.</p>
+<h2 id="new-things-in-wcag-2-1">New things in WCAG 2.1:</h2><p>WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions, and guidelines to organize the additions. There are some additions to the conformance section.</p>
+<h3 id="new-success-criteria">New Success Criteria</h3><p>The following Success Criteria are new in WCAG 2.1:</p>
 
 <ul>
 <li>1.3.4 Orientation (AA)</li>
@@ -53,22 +43,14 @@
 <li>2.5.6 Concurrent Input Mechanisms (AAA)</li>
 <li>4.1.3 Status Messages (AA) </li>
 </ul>
-
 <p>This primer will only focus on new A and AA success criteria.</p>
-<h4 id="numbering-changes-in-wcag-2-1">Numbering changes in WCAG 2.1</h4>
-<p>In order to avoid confusion and mixing up any old and new success criteria in WCAG 2.1, or changing existing numbering in 2.0 which people may have gotten used to - any new ones in 2.1 have just been added to the end of the set of success criteria within their guideline.</p>
-
-<p>Also remember that this having them at the end does not relate to its level at all. That is shown clearly on the success criterion itself as either A/AA/AAA. </p>
-<h4 id="conforming-or-passing-wcag-2-1">Conforming or passing WCAG 2.1</h4>
-<p>WCAG 2.1 uses the same conformance or passing model as WCAG 2.0 with some minor changes.  2.1 is designed to be compatible with the earlier version, so sites that conform/pass WCAG 2.1 also conform to WCAG 2.0.</p>
-<h4 id="conformance-passing-addition-and-changes">Conformance/Passing addition and changes</h4>
-<p>There are some minor conformance or passing additions to note, firstly about ‘page variations’, relating to responsive page design which will be relevant if you have a responsive site.</p>
-<h5 id="page-variations">Page variations</h5>
-<p>In a responsive website, a full ‘page’ includes each variation of the page that is automatically presented for different screen sizes. </p>
-
-<p>Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass. </p>
-<h2 id="wcag-2-1-architecture">WCAG 2.1 architecture</h2>
-<p>WCAG 2.1 has twelve guidelines, grouped into four principles. The principle are that content must be:</p>
+<h4 id="numbering-changes-in-wcag-2-1">Numbering changes in WCAG 2.1</h4><p>In order to avoid confusion and mixing up any old and new success criteria in WCAG 2.1, or changing existing numbering in 2.0 which people may have gotten used to - any new ones in 2.1 have just been added to the end of the set of success criteria within their guideline.</p>
+<p>Also remember that this having them at the end does not relate to its level at all. That is shown clearly on the success criterion itself as either A/AA/AAA.</p>
+<h4 id="conforming-or-passing-wcag-2-1">Conforming or passing WCAG 2.1</h4><p>WCAG 2.1 uses the same conformance or passing model as WCAG 2.0 with some minor changes.  2.1 is designed to be compatible with the earlier version, so sites that conform/pass WCAG 2.1 also conform to WCAG 2.0.</p>
+<h4 id="conformance-passing-addition-and-changes">Conformance/Passing addition and changes</h4><p>There are some minor conformance or passing additions to note, firstly about ‘page variations’, relating to responsive page design which will be relevant if you have a responsive site.</p>
+<h5 id="page-variations">Page variations</h5><p>In a responsive website, a full ‘page’ includes each variation of the page that is automatically presented for different screen sizes.</p>
+<p>Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass.</p>
+<h2 id="wcag-2-1-architecture">WCAG 2.1 architecture</h2><p>WCAG 2.1 has twelve guidelines, grouped into four principles. The principle are that content must be:</p>
 
 <ul>
 <li>Perceivable</li>
@@ -76,16 +58,11 @@
 <li>Understandable</li>
 <li>Robust</li>
 </ul>
-
-<p>These principles inform the following twelve guidelines. They cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices. </p>
-
+<p>These principles inform the following twelve guidelines. They cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices.</p>
 <p>Each guideline has a number of Success Criteria (SC). Each SC has a conformance level: A, AA or AAA. These levels can be thought of to match some of the critical areas that need to be firstly addressed (at level A initially) and beyond to reduce barriers for the broadest range of users.</p>
-<h2 id="meeting-accessibility-regulations">Meeting accessibility regulations</h2>
-<p>Public sector websites, documents and mobile apps that meet WCAG 2.1 Level A and AA Success Criteria and publish an accessibility statement will comply with the <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">new accessibility regulations for public sector websites and apps</a>.</p>
-<h2 id="wcag-2-1-overview">WCAG 2.1 overview</h2>
-<p>Here is a short description of the principles, guidelines and success criteria you must meet.</p>
-<h3 id="principle-1-perceivable">Principle 1: Perceivable</h3>
-<p>Your service must present information in ways people can recognise and use, no matter how they consume content (by touch, sound or sight for example)</p>
+<h2 id="meeting-accessibility-regulations">Meeting accessibility regulations</h2><p>Public sector websites, documents and mobile apps that meet WCAG 2.1 Level A and AA Success Criteria and publish an accessibility statement will comply with the <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">new accessibility regulations for public sector websites and apps</a>.</p>
+<h2 id="wcag-2-1-overview">WCAG 2.1 overview</h2><p>Here is a short description of the principles, guidelines and success criteria you must meet.</p>
+<h3 id="principle-1-perceivable">Principle 1: Perceivable</h3><p>Your service must present information in ways people can recognise and use, no matter how they consume content (by touch, sound or sight for example)</p>
 <h4 id="guideline-1-1-provide-text-alternatives">Guideline 1.1: Provide text alternatives</h4>
 <ul>
 <li>1.1.1 Provide a text description for images, and make sure the description serves the same purpose as the image. <a href="../all.html#1-1-1-non-text-content-a">More about 1.1.1</a></li>
@@ -118,8 +95,7 @@
 <li>1.4.12 <strong>[NEW]</strong> Make sure users can modify text line height, letter or word spacing. <a href="../all.html#1-4-12-text-spacing-aa">More about 1.4.12</a></li>
 <li>1.4.13 <strong><strong>[NEW]</strong></strong> Provide a way to control how people can interact with or dismiss any ‘extra’ content that becomes visible. <a href="../all.html#1-4-13-content-on-hover-or-focus-aa">More about 1.4.13</a></li>
 </ul>
-<h3 id="principle-2-operable">Principle 2: Operable</h3>
-<p>Your service must be navigable and usable no matter how someone uses it (without a mouse, with voice commands, or with a screen magnifier for example).</p>
+<h3 id="principle-2-operable">Principle 2: Operable</h3><p>Your service must be navigable and usable no matter how someone uses it (without a mouse, with voice commands, or with a screen magnifier for example).</p>
 <h4 id="guideline-2-1-make-functionality-work-with-a-keyboard">Guideline 2.1: Make functionality work with a keyboard</h4>
 <ul>
 <li>2.1.1 Make sure every task can be completed without a mouse. <a href="../all.html#2-1-1-keyboard-a">More about 2.1.1</a></li>
@@ -149,8 +125,7 @@
 <li>2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. <a href="../all.html#2-5-3-label-in-name-a">More about 2.5.3</a></li>
 <li>2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by shaking or tilting the device. <a href="../all.html#2-5-4-motion-actuation-a">More about 2.5.4</a></li>
 </ul>
-<h3 id="principle-3-understandable">Principle 3: Understandable</h3>
-<p>Your service must make information understandable, and make it easy for people to understand how to complete tasks.</p>
+<h3 id="principle-3-understandable">Principle 3: Understandable</h3><p>Your service must make information understandable, and make it easy for people to understand how to complete tasks.</p>
 <h4 id="guideline-3-1-make-text-readable-and-understandable">Guideline 3.1: Make text readable and understandable</h4>
 <ul>
 <li>3.1.1 Identify the language that the content is written in. <a href="../all.html#3-1-1-language-of-page-a">More about 3.1.1</a></li>
@@ -170,15 +145,12 @@
 <li>3.3.3 When someone makes a mistake give them suggestions on how to correct it, but do not offer suggestions that will have a negative impact on security. <a href="../all.html#3-3-3-error-suggestion-a">More about 3.3.3</a></li>
 <li>3.4.4 Give people a way to review and check the information they have entered, and to correct any mistakes they have made. <a href="../all.html#3-3-4-error-prevention-legal-financial-data-a">More about 3.4.4</a></li>
 </ul>
-<h3 id="principle-4-robust">Principle 4: Robust</h3>
-<p>Your service must work with different browsers and assistive technologies in use now, and use technologies in ways that will make your service usable with the browsers and assistive technologies of the future.</p>
+<h3 id="principle-4-robust">Principle 4: Robust</h3><p>Your service must work with different browsers and assistive technologies in use now, and use technologies in ways that will make your service usable with the browsers and assistive technologies of the future.</p>
 <h4 id="guideline-4-1-make-content-compatible-with-different-browsers-and-assistive-technologies">Guideline 4.1: Make content compatible with different browsers and assistive technologies</h4>
 <ul>
 <li>4.1.1 Make sure the code of each page does not contain errors that will have a negative impact on the way browsers and assistive technologies work together. <a href="../all.html#4-1-1-parsing-a">More about 4.1.1</a></li>
 <li><p>4.1.2 Make sure the code of each page enables assistive technologies to discover the purpose of every feature, the way that feature is identified, and the state it is currently in. <a href="../all.html#4-1-2-name-role-value-a">More about 4.1.2</a></p></li>
 <li><p>4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that AT understands without recieving focus. <a href="../all.html#4-1-3-status-messages-aa">More about 4.1.3</a></p></li>
 </ul>
-<h2 id="how-to-meet-the-wcag-2-1">How to meet the WCAG 2.1</h2>
-<p>Use our primer to find out more about the success criteria to understand how to meet WCAG 2.1. </p>
-
+<h2 id="how-to-meet-the-wcag-2-1">How to meet the WCAG 2.1</h2><p>Use our primer to find out more about the success criteria to understand how to meet WCAG 2.1.</p>
 <p>View <a href="../all.html">all success criteria</a>, or view those that are related to <a href="../content.html">content</a>, <a href="../design.html">design</a> or <a href="../code.html">code</a>.</p>
