@@ -137,7 +137,7 @@ Your service must present information in ways people can recognise and use, no m
 Your service must be navigable and usable no matter how someone uses it (without a mouse, with voice commands, or with a screen magnifier for example).
 
 #### Guideline 2.1: Make functionality work with a keyboard
-* 2.1.1 Make sure every task can be completed without a mouse. [More about 2.1.1](/all.html#2-1-1-keyboard-a)
+* 2.1.1 Make sure every task can be completed using just a keyboard. [More about 2.1.1](/all.html#2-1-1-keyboard-a)
 * 2.1.2 Make sure that keyboard users don't get stuck when navigating through content. [More about 2.1.2](/all.html#2-1-2-no-keyboard-trap-a)
 * 2.1.4 <strong>[NEW]</strong> Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/all.html#2-1-4-character-key-shortcuts-a)
 
