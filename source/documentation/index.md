@@ -156,6 +156,8 @@ Your service must be navigable and usable no matter how someone uses it (without
 * 2.4.5 Unless a page is a step in a process, give people different ways of finding content (like searching or browsing links). [More about 2.4.5](/all.html#2-4-5-multiple-ways)
 * 2.4.6 Provide headings and form labels that will help people find content and complete tasks. [More about 2.4.6](/all.html#2-4-6-headings-and-labels-aa)
 * 2.4.7 Make sure that people using a keyboard to navigate can always see where they are on a page. [More about 2.4.7](/all.html#2-4-7-focus-visible-aa)
+
+#### Guideline 2.5: Make functionality easy to use through various inputs beyond keyboard
 * 2.5.1 <strong>[NEW]</strong> Do not require complex gestures to do things. [More about 2.5.1](/all.html#2-5-1-pointer-gestures-a)
 * 2.5.2 <strong>[NEW]</strong> Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/all.html#2-5-2-pointer-cancellation-a)
 * 2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/all.html#2-5-3-label-in-name-a)
