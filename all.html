@@ -138,9 +138,6 @@
                 <a href="#1-3-2-meaningful-sequence-a">1.3.2 Meaningful sequence (A)</a>
               </li>
               <li>
-                <a href="#1-3-2-meaningful-sequence-a-2">1.3.2 Meaningful sequence (A)</a>
-              </li>
-              <li>
                 <a href="#1-3-3-sensory-characteristics-a">1.3.3 Sensory characteristics (A)</a>
               </li>
               <li>
@@ -491,24 +488,6 @@
 <li>  The tabindex attribute has been used to force a tab order through the content.</li>
 </ul>
 <h5 id="1-3-2-meaningful-sequence-a-useful-resources">Useful resources</h5>
-<ul>
-<li>  <a href="http://tink.uk/flexbox-the-keyboard-navigation-disconnect/">FlexBox and the keyboard navigation disconnect</a></li>
-<li>  <a href="https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/">Using the tabindex attribute</a></li>
-</ul></p>
-<p><h4 id="1-3-2-meaningful-sequence-a-2"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">1.3.2 Meaningful sequence (A)</a></h4><p>When the order of content is important, the content order must be preserved no matter how it is presented to the user. This ensures that the order of content is meaningful whether someone is looking at it, listening to it with a screen reader, or has stripped out visual styling using a browser plugin.</p>
-<h5 id="1-3-2-meaningful-sequence-a-2-requirements-what-to-do">Requirements / What to do?</h5>
-<ul>
-<li>  The visual order of content matches the underlying code order;</li>
-<li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements).</li>
-</ul>
-<h5 id="1-3-2-meaningful-sequence-a-2-common-mistakes">Common mistakes</h5>
-<ul>
-<li>  The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;</li>
-<li>  When CSS styles are disabled, the content order is meaningless;</li>
-<li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
-<li>  The tabindex attribute has been used to force a tab order through the content.</li>
-</ul>
-<h5 id="1-3-2-meaningful-sequence-a-2-useful-resources">Useful resources</h5>
 <ul>
 <li>  <a href="http://tink.uk/flexbox-the-keyboard-navigation-disconnect/">FlexBox and the keyboard navigation disconnect</a></li>
 <li>  <a href="https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/">Using the tabindex attribute</a></li>
@@ -1254,7 +1233,7 @@ Completing the function on the down-event is essential.</p>
 <li>  <a href="https://www.paciellogroup.com/blog/2014/12/using-aria-describedby-to-provide-helpful-form-hints/">Using aria-describedby to provide form hints</a></li>
 <li>  <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints">Basic form hints</a></li>
 </ul></p>
-<p><h4 id="3-3-3-error-suggestion-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">3.3.3 Error suggestion (AA)</a></h4><p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion comprimises security. This helps everyone resolve issues more easily, but especially people with cognitive disabilities who find processing information difficult.</p>
+<p><h4 id="3-3-3-error-suggestion-aa"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">3.3.3 Error suggestion (AA)</a></h4><p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion compromises security. This helps everyone resolve issues more easily, but especially people with cognitive disabilities who find processing information difficult.</p>
 <h5 id="3-3-3-error-suggestion-aa-requirements-what-to-do">Requirements / What to do?</h5>
 <ul>
 <li>  When an error is detected, a suggestion is provided to help the user correct the issue.</li>
@@ -1322,7 +1301,7 @@ Completing the function on the down-event is essential.</p>
 <li>  <a href="https://www.paciellogroup.com/blog/2016/08/what-does-accessibility-supported-mean/">What does accessibility supported mean?</a></li>
 <li>  <a href="http://tink.uk/understanding-semantics/">Understanding semantics</a></li>
 </ul></p>
-<p><h4 id="4-1-3-status-messages-aa"><a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3 Status Messages (AA)</a></h4><p>There are different situations where a Status messages needs to be shown in a way that the AT understands. These these messages need to be presented without receiving focus themselves or disturbing the users place in a page.</p>
+<p><h4 id="4-1-3-status-messages-aa"><a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3 Status Messages (AA)</a></h4><p>There are different situations where a status message needs to be shown in a way that assistive technologies understand. These messages need to be presented to the user without receiving focus themselves, or disturbing the user&rsquo;s place in a page.</p>
 <h5 id="4-1-3-status-messages-aa-why-is-this-a-problem">Why is this a problem?</h5>
 <ul>
 <li>A sighted person can quickly see status messages on a page, and them go back to what they were doing or reading. Moving focus to a message can be disruptive for screen reader users, users of speech recognition software and keyboard only users.</li>
