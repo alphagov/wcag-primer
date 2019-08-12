@@ -180,7 +180,7 @@ Your service must make information understandable, and make it easy for people t
 #### Guideline 3.3: Help people avoid and correct mistakes
 * 3.3.1 When someone makes a mistake, provide an error message and make it obvious where the mistake was made. [More about 3.3.1](/all.html#3-3-1-error-identification-a)
 * 3.3.2 Provide form labels to make it clear what information is expected, and optionally provide extra hints to help people avoid mistakes. [More about 3.3.2](/all.html#3-3-2-labels-or-instructions-a)
-* 3.3.3 When someone makes a mistake give them suggestions on how to correct it, but do not offer suggestions that will have a negative impact on security. [More about 3.3.3](/all.html#3-3-3-error-suggestion-a)
+* 3.3.3 When someone makes a mistake give them suggestions on how to correct it, but do not offer suggestions that will have a negative impact on security. [More about 3.3.3](/all.html#3-3-3-error-suggestion-aa)
 * 3.4.4 Give people a way to review and check the information they have entered, and to correct any mistakes they have made. [More about 3.4.4](/all.html#3-3-4-error-prevention-legal-financial-data-a)
 
 ### Principle 4: Robust
