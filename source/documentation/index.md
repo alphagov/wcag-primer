@@ -190,8 +190,7 @@ Your service must work with different browsers and assistive technologies in use
 #### Guideline 4.1: Make content compatible with different browsers and assistive technologies
 * 4.1.1 Make sure the code of each page does not contain errors that will have a negative impact on the way browsers and assistive technologies work together. [More about 4.1.1](/all.html#4-1-1-parsing-a)
 * 4.1.2 Make sure the code of each page enables assistive technologies to discover the purpose of every feature, the way that feature is identified, and the state it is currently in. [More about 4.1.2](/all.html#4-1-2-name-role-value-a)
-
-* 4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that AT understands without recieving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
+* 4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
 
 ## How to meet the WCAG 2.1
 
