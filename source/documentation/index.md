@@ -116,7 +116,7 @@ Your service must present information in ways people can recognise and use, no m
 * 1.3.1 Use elements like headings, lists and tables to properly convey the structure of content. [More about 1.3.1](/all.html#1-3-1-info-and-relationships-a)
 * 1.3.2 Make sure content can always be read in a logical order even when stylesheets are disabled. [More about 1.3.2](/all.html#1-3-2-meaningful-sequence-a)
 * 1.3.3 Do not use colour, size, shape, sound or location as the only way to convey instructions. [More about 1.3.3](/all.html#1-3-3-sensory-characteristics-a)
-* 1.3.4 <strong>[NEW]</strong> Make sure a page view is not be locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
+* 1.3.4 <strong>[NEW]</strong> Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
 * 1.3.5 <strong>[NEW]</strong> In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/all.html#1-3-5-input-purpose-aa)
 
 #### Guideline 1.4: Make content easy for people to see and hear
