@@ -16,7 +16,7 @@ WCAG 2.1 helps make websites, documents and mobile apps accessible to people wit
 
 * Visual impairments, including people who are blind, partially sighted, and people with conditions like being colour blind
 * Hearing impairments, including Deaf people who use sign language, and people who are hard of hearing
-* Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people wwho find it difficult to control a mouse
+* Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people who find it difficult to control a mouse
 * Cognitive impairments, including people who are Dyslexic, on the Autistic Spectrum, and people who have learning difficulties
 
 WCAG 2.1 also helps us think about the different ways people use the web:
@@ -116,7 +116,7 @@ Your service must present information in ways people can recognise and use, no m
 * 1.3.1 Use elements like headings, lists and tables to properly convey the structure of content. [More about 1.3.1](/all.html#1-3-1-info-and-relationships-a)
 * 1.3.2 Make sure content can always be read in a logical order even when stylesheets are disabled. [More about 1.3.2](/all.html#1-3-2-meaningful-sequence-a)
 * 1.3.3 Do not use colour, size, shape, sound or location as the only way to convey instructions. [More about 1.3.3](/all.html#1-3-3-sensory-characteristics-a)
-* 1.3.4 <strong>[NEW]</strong> Make sure a page view is not be locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
+* 1.3.4 <strong>[NEW]</strong> Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
 * 1.3.5 <strong>[NEW]</strong> In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/all.html#1-3-5-input-purpose-aa)
 
 #### Guideline 1.4: Make content easy for people to see and hear
@@ -156,10 +156,12 @@ Your service must be navigable and usable no matter how someone uses it (without
 * 2.4.5 Unless a page is a step in a process, give people different ways of finding content (like searching or browsing links). [More about 2.4.5](/all.html#2-4-5-multiple-ways)
 * 2.4.6 Provide headings and form labels that will help people find content and complete tasks. [More about 2.4.6](/all.html#2-4-6-headings-and-labels-aa)
 * 2.4.7 Make sure that people using a keyboard to navigate can always see where they are on a page. [More about 2.4.7](/all.html#2-4-7-focus-visible-aa)
+
+#### Guideline 2.5: Make functionality easy to use through various inputs beyond keyboard
 * 2.5.1 <strong>[NEW]</strong> Do not require complex gestures to do things. [More about 2.5.1](/all.html#2-5-1-pointer-gestures-a)
 * 2.5.2 <strong>[NEW]</strong> Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/all.html#2-5-2-pointer-cancellation-a)
 * 2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/all.html#2-5-3-label-in-name-a)
-* 2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by skaing or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
+* 2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
 
 ### Principle 3: Understandable
 
@@ -178,7 +180,7 @@ Your service must make information understandable, and make it easy for people t
 #### Guideline 3.3: Help people avoid and correct mistakes
 * 3.3.1 When someone makes a mistake, provide an error message and make it obvious where the mistake was made. [More about 3.3.1](/all.html#3-3-1-error-identification-a)
 * 3.3.2 Provide form labels to make it clear what information is expected, and optionally provide extra hints to help people avoid mistakes. [More about 3.3.2](/all.html#3-3-2-labels-or-instructions-a)
-* 3.3.3 When someone makes a mistake give them suggestions on how to correct it, but do not offer suggestions that will have a negative impact on security. [More about 3.3.3](/all.html#3-3-3-error-suggestion-a)
+* 3.3.3 When someone makes a mistake give them suggestions on how to correct it, but do not offer suggestions that will have a negative impact on security. [More about 3.3.3](/all.html#3-3-3-error-suggestion-aa)
 * 3.4.4 Give people a way to review and check the information they have entered, and to correct any mistakes they have made. [More about 3.4.4](/all.html#3-3-4-error-prevention-legal-financial-data-a)
 
 ### Principle 4: Robust
@@ -188,8 +190,7 @@ Your service must work with different browsers and assistive technologies in use
 #### Guideline 4.1: Make content compatible with different browsers and assistive technologies
 * 4.1.1 Make sure the code of each page does not contain errors that will have a negative impact on the way browsers and assistive technologies work together. [More about 4.1.1](/all.html#4-1-1-parsing-a)
 * 4.1.2 Make sure the code of each page enables assistive technologies to discover the purpose of every feature, the way that feature is identified, and the state it is currently in. [More about 4.1.2](/all.html#4-1-2-name-role-value-a)
-
-* 4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that AT understands without recieving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
+* 4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
 
 ## How to meet the WCAG 2.1
 

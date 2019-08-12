@@ -19,3 +19,12 @@ This repo uses Middleman. To test changes locally, run:
 ```bundle exec middleman server```
 
 The text lives in the `source/documentation` folder, and is in markdown format.
+
+## Deploying changes
+
+This project uses the [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages) gem to deploy to GitHub Pages.
+
+To deploy, ensure you're on the master branch with the latest changes and then run `rake publish`.
+
+This will build the site, commit it to the `gh-pages` branch and push it to GitHub, updating the site.
+
