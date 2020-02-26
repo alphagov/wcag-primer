@@ -1,4 +1,4 @@
-<h4 id="1-4-13-content-on-hover-or-focus-aa"><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 Content on Hover or Focus (AA)</a></h4><p>This is for mobile or tablet devices - where pointer hover or keyboard focus triggers additional content to become visible and then hidden (like pops or other options) you need make sure:</p>
+<h4 id="1-4-13-content-on-hover-or-focus-aa"><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 Content on Hover or Focus (AA)</a></h4><p>This is for mobile or tablet devices - where pointer hover or keyboard focus triggers additional content to become visible and then hidden (like pop-ups or other options) you need make sure:</p>
 
 <ul>
 <li>The ‘extra’ content can be <strong>dismissed</strong> without moving focus and it does not obscure other page content.</li>
