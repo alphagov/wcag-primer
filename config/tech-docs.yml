@@ -1,5 +1,5 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: 
+host:
 
 # Header-related options
 show_govuk_logo: true
@@ -15,6 +15,8 @@ header_links:
   Design: design.html
   Code: code.html
   Checklist: checklist.html
+footer_links:
+  Accessibility: /accessibility.html
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: false
