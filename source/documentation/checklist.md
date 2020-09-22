@@ -18,10 +18,10 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 * Is the content fully usable when text is enlarged up to 200%?
 * Have you avoided using images of text?
 * Can users flip the content horizontally and vertically?  
-* Have you added HTML autocomplete tokens to any forms collecting information about the user? 
-* Does the page content resize to a single column with no horizontal and vertical scrolling? 
+* Have you added HTML autocomplete tokens to any forms collecting information about the user?
+* Does the page content resize to a single column with no horizontal and vertical scrolling?
 * Do all important graphical objects, interface components, and states have a colour contrast of 3:1?  
-* Can line height, spacing between paragraphs and letter and word spacing be changed without breaking anything? 
+* Can line height, spacing between paragraphs and letter and word spacing be changed without breaking anything?
 * Where extra content is shown or hidden on focus, can it be dismissed, interacted with (and not disappear when the user moves to it) and will stay visible until dismissed by the user?
 
 ## Operable
@@ -38,8 +38,8 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 * When using a keyboard to move through a page can you tell where you are?
 * Do you have shortcuts triggered by only one letter or character? If so can they be turned off or remapped by the user?
 * Does some of your site functionality need several fingers or complex gestures to operate it? If so, can the same functionality be used with just single taps or clicks?
-* Does some of your site functionality work using a single point (e.g fingertip)? If so, have you ensured it doesn't get triggered the moment it is touched?
-* On forms and other components is the accessible name or label the same as any on-screen text? 
+* Does some of your site functionality work using a single point (e.g fingertip)? If so, have you ensured it does not get triggered the moment it is touched?
+* On forms and other components is the accessible name or label the same as any on-screen text?
 * Does your site respond to motion or movement? If so, can responding to motion or movement be disabled, and your site still be fully usable?
 
 ## Understandable
@@ -52,4 +52,4 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 ## Robust
 * Is the web page coded using valid HTML?
 * Do all interactive components have an accessible name and role, and when required state? Has the correct ARIA markup been used and does it validate?
-* Are status messages and updates given appropriate roles that can be understood by AT, without receiving focus? 
+* Are status messages and updates given appropriate roles that can be understood by AT, without receiving focus?

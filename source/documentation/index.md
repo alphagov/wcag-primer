@@ -1,8 +1,8 @@
 # WCAG 2.1 Getting started
 
-This document will help you get up to speed with WCAG 2.1 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content. 
+This document will help you get up to speed with WCAG 2.1 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content.
 
-WCAG 2.1 is the standard used by EN 301 549, the European procurement rules, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018. 
+WCAG 2.1 is the standard used by EN 301 549, the European procurement rules, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018.
 
 See Gov.uk for more on how to [Make your public sector website or app accessible](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
 
@@ -28,7 +28,7 @@ WCAG 2.1 also helps us think about the different ways people use the web:
 * By using speech recognition to use the web with voice commands and dictation
 
 ## How does it relate to WCAG 2.0?
-WCAG 2.1 is built on 2.0. So content that passes  WCAG 2.1 will also also pass WCAG 2.0. 
+WCAG 2.1 is built on 2.0. So content that passes  WCAG 2.1 will also also pass WCAG 2.0.
 
 
 ## New things in WCAG 2.1:
@@ -39,7 +39,7 @@ WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions, and guide
 The following Success Criteria are new in WCAG 2.1:
 
 * 1.3.4 Orientation (AA)
-* 1.3.5 Identify Input Purpose (AA) 
+* 1.3.5 Identify Input Purpose (AA)
 * 1.3.6 Identify Purpose (AAA)
 * 1.4.10 Reflow (AA)
 * 1.4.11 Non-Text Contrast (AA)
@@ -50,11 +50,11 @@ The following Success Criteria are new in WCAG 2.1:
 * 2.3.3 Animation from Interactions (AAA)
 * 2.5.1 Pointer Gestures (A)
 * 2.5.2 Pointer Cancellation (A)
-* 2.5.3 Label in Name (A) 
+* 2.5.3 Label in Name (A)
 * 2.5.4 Motion Actuation (A)
 * 2.5.5 Target Size (AAA)
 * 2.5.6 Concurrent Input Mechanisms (AAA)
-* 4.1.3 Status Messages (AA) 
+* 4.1.3 Status Messages (AA)
 
 This primer will only focus on new A and AA success criteria.
 
@@ -62,7 +62,7 @@ This primer will only focus on new A and AA success criteria.
 
 In order to avoid confusion and mixing up any old and new success criteria in WCAG 2.1, or changing existing numbering in 2.0 which people may have gotten used to - any new ones in 2.1 have just been added to the end of the set of success criteria within their guideline.
 
-Also remember that this having them at the end does not relate to its level at all. That is shown clearly on the success criterion itself as either A/AA/AAA. 
+Also remember that this having them at the end does not relate to its level at all. That is shown clearly on the success criterion itself as either A/AA/AAA.
 
 #### Conforming or passing WCAG 2.1
 
@@ -73,9 +73,9 @@ There are some minor conformance or passing additions to note, firstly about ‘
 
 ##### Page variations
 
-In a responsive website, a full ‘page’ includes each variation of the page that is automatically presented for different screen sizes. 
+In a responsive website, a full ‘page’ includes each variation of the page that is automatically presented for different screen sizes.
 
-Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass. 
+Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass.
 
 ## WCAG 2.1 architecture
 
@@ -86,7 +86,7 @@ WCAG 2.1 has twelve guidelines, grouped into four principles. The principle are 
 * Understandable
 * Robust
 
-These principles inform the following twelve guidelines. They cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices. 
+These principles inform the following twelve guidelines. They cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices.
 
 Each guideline has a number of Success Criteria (SC). Each SC has a conformance level: A, AA or AAA. These levels can be thought of to match some of the critical areas that need to be firstly addressed (at level A initially) and beyond to reduce barriers for the broadest range of users.
 
@@ -116,8 +116,8 @@ Your service must present information in ways people can recognise and use, no m
 * 1.3.1 Use elements like headings, lists and tables to properly convey the structure of content. [More about 1.3.1](/all.html#1-3-1-info-and-relationships-a)
 * 1.3.2 Make sure content can always be read in a logical order even when stylesheets are disabled. [More about 1.3.2](/all.html#1-3-2-meaningful-sequence-a)
 * 1.3.3 Do not use colour, size, shape, sound or location as the only way to convey instructions. [More about 1.3.3](/all.html#1-3-3-sensory-characteristics-a)
-* 1.3.4 <strong>[NEW]</strong> Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
-* 1.3.5 <strong>[NEW]</strong> In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/all.html#1-3-5-input-purpose-aa)
+* 1.3.4 [New] Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/all.html#1-3-4-orientation-aa)
+* 1.3.5 [New] In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/all.html#1-3-5-input-purpose-aa)
 
 #### Guideline 1.4: Make content easy for people to see and hear
 * 1.4.1 Do not use colour as the only way to convey information of any kind. [More about 1.4.1](/all.html#1-4-1-use-of-colour-a)
@@ -125,10 +125,10 @@ Your service must present information in ways people can recognise and use, no m
 * 1.4.3 Make sure that the colour of text contrasts clearly against its background colour. [More about 1.4.3](/all.html#1-4-3-contrast-minimum-aa)
 * 1.4.4 Make sure it is possible to complete all tasks when text is resized up to 200% in the browser. [More about 1.4.4](/all.html#1-4-4-resize-text-aa)
 * 1.4.5 Do not use images that contain text. [More about 1.4.5](/all.html#1-4-5-images-of-text-aa)
-* 1.4.10 <strong>[NEW]</strong> Make sure content will reflow to a single column when zoomed and not produce scrolling in both directions. [More about 1.4.10](/all.html#1-4-10-reflow-aa)
-* 1.4.11 <strong>[NEW]</strong> Make sure sight impaired users can see important controls and understand graphics. [More about 1.4.11](/all.html#1-4-11-non-text-contrast-aa)
-* 1.4.12 <strong>[NEW]</strong> Make sure users can modify text line height, letter or word spacing. [More about 1.4.12](/all.html#1-4-12-text-spacing-aa)
-* 1.4.13 <strong><strong>[NEW]</strong></strong> Provide a way to control how people can interact with or dismiss any ‘extra’ content that becomes visible. [More about 1.4.13](/all.html#1-4-13-content-on-hover-or-focus-aa)
+* 1.4.10 [New] Make sure content will reflow to a single column when zoomed and not produce scrolling in both directions. [More about 1.4.10](/all.html#1-4-10-reflow-aa)
+* 1.4.11 [New] Make sure sight impaired users can see important controls and understand graphics. [More about 1.4.11](/all.html#1-4-11-non-text-contrast-aa)
+* 1.4.12 [New] Make sure users can modify text line height, letter or word spacing. [More about 1.4.12](/all.html#1-4-12-text-spacing-aa)
+* 1.4.13 <strong>[New]</strong> Provide a way to control how people can interact with or dismiss any ‘extra’ content that becomes visible. [More about 1.4.13](/all.html#1-4-13-content-on-hover-or-focus-aa)
 
 
 
@@ -138,8 +138,8 @@ Your service must be navigable and usable no matter how someone uses it (without
 
 #### Guideline 2.1: Make functionality work with a keyboard
 * 2.1.1 Make sure every task can be completed without a mouse. [More about 2.1.1](/all.html#2-1-1-keyboard-a)
-* 2.1.2 Make sure that keyboard users don't get stuck when navigating through content. [More about 2.1.2](/all.html#2-1-2-no-keyboard-trap-a)
-* 2.1.4 <strong>[NEW]</strong> Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/all.html#2-1-4-character-key-shortcuts-a)
+* 2.1.2 Make sure that keyboard users do not get stuck when navigating through content. [More about 2.1.2](/all.html#2-1-2-no-keyboard-trap-a)
+* 2.1.4 [New] Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/all.html#2-1-4-character-key-shortcuts-a)
 
 #### Guideline 2.2: Give people enough time to read and use content
 * 2.2.1 Give people a way to turn off or extend time limits. [More about 2.2.1](/all.html#2-2-1-timing-adjustable-a)
@@ -158,10 +158,10 @@ Your service must be navigable and usable no matter how someone uses it (without
 * 2.4.7 Make sure that people using a keyboard to navigate can always see where they are on a page. [More about 2.4.7](/all.html#2-4-7-focus-visible-aa)
 
 #### Guideline 2.5: Make functionality easy to use through various inputs beyond keyboard
-* 2.5.1 <strong>[NEW]</strong> Do not require complex gestures to do things. [More about 2.5.1](/all.html#2-5-1-pointer-gestures-a)
-* 2.5.2 <strong>[NEW]</strong> Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/all.html#2-5-2-pointer-cancellation-a)
-* 2.5.3 <strong>[NEW]</strong> Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/all.html#2-5-3-label-in-name-a)
-* 2.5.4 <strong>[NEW]</strong> Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
+* 2.5.1 [New] Do not require complex gestures to do things. [More about 2.5.1](/all.html#2-5-1-pointer-gestures-a)
+* 2.5.2 [New] Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/all.html#2-5-2-pointer-cancellation-a)
+* 2.5.3 [New] Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/all.html#2-5-3-label-in-name-a)
+* 2.5.4 [New] Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/all.html#2-5-4-motion-actuation-a)
 
 ### Principle 3: Understandable
 
@@ -190,10 +190,10 @@ Your service must work with different browsers and assistive technologies in use
 #### Guideline 4.1: Make content compatible with different browsers and assistive technologies
 * 4.1.1 Make sure the code of each page does not contain errors that will have a negative impact on the way browsers and assistive technologies work together. [More about 4.1.1](/all.html#4-1-1-parsing-a)
 * 4.1.2 Make sure the code of each page enables assistive technologies to discover the purpose of every feature, the way that feature is identified, and the state it is currently in. [More about 4.1.2](/all.html#4-1-2-name-role-value-a)
-* 4.1.3 <strong>[NEW]</strong> Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
+* 4.1.3 [New] Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/all.html#4-1-3-status-messages-aa)
 
 ## How to meet the WCAG 2.1
 
-Use our primer to find out more about the success criteria to understand how to meet WCAG 2.1. 
+Use our primer to find out more about the success criteria to understand how to meet WCAG 2.1.
 
 View [all success criteria](/all.html), or view those that are related to [content](/content.html), [design](/design.html) or [code](/code.html).
