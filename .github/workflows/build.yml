@@ -1,0 +1,28 @@
+name: Build and deploy WCAG Primer
+
+on:
+- push
+
+jobs:
+  # A really basic check to see if this builds okay.
+  only-build:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main' || github.ref != 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - run: bundle install
+    - run: bundle exec middleman build --clean
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - run: bundle install
+    - run: bundle exec rake publish
