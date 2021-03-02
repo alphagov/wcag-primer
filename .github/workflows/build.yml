@@ -2,9 +2,9 @@ name: Build the WCAG Primer
 
 on:
   push:
-    branches: # Ignore the main branch please
-      - "!main"
-      - "!master"
+    branches-ignore:
+      - main
+      - master
 
 jobs:
   # A really basic check to see if this builds okay.
