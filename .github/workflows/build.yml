@@ -13,7 +13,6 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-    - run: bundle install
     - run: bundle exec middleman build --clean
 
   build-and-deploy:
@@ -24,5 +23,4 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-    - run: bundle install
     - run: bundle exec rake publish
