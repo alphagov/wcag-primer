@@ -1,0 +1,18 @@
+name: Build the WCAG Primer
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - master
+
+jobs:
+  # A really basic check to see if this builds okay.
+  only-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - run: bundle exec middleman build --clean

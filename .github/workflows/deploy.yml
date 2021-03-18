@@ -1,0 +1,28 @@
+name: Build and deploy the WCAG Primer
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - run: bundle exec middleman build --clean
+    - name: Deploy to GitHub pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        commit_message: "Site updated to" # GITHUB_SHA will be appended to the
+                                          # end of this message.
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        user_email: github-actions[bot]@users.noreply.github.com
+        user_name: github-actions[bot]
