@@ -1,15 +1,17 @@
 # Checklist
 
-To meet WCAG 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.
+To meet Web Content Accessibility Guidelines (WCAG) 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.
 
 Answering NO means that you are not meeting WCAG and your content will have barriers that will prevent some users, especially disabled users and older people from accessing it.
 
+Each link points to the relevant WCAG "understanding" page with more detail.
+
 ## Perceivable
-* Do all images have an appropriate text equivalent? Is essential visual information also available as text?
-* Do all audio files have a transcript? Is essential audio information available as text?
-* Do all videos have captions that are synchronised with the audio?
-* Does video that includes important visual information have an audio description?
-* Is all content structure that is communicated visually available to assistive technologies?
+* Do all images have an appropriate text equivalent? Is essential visual information also available as text? [1.1.1 Non-text content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+* Do all audio files have a transcript? Is essential audio information available as text? [1.2.1 Audio/video only](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
+* Do all videos have captions that are synchronised with the audio? [1.2.2 Captions](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* Does video that includes important visual information have an audio description? [1.2.5 Audio description](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
+* Is all content structure that is communicated visually available to assistive technologies? [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * If styling is removed is the content in a logical order?
 * Have you avoided using visual characteristics to communicate information?
 * Have you avoided using colour as the only way to convey some information?
