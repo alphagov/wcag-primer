@@ -12,7 +12,13 @@ https://alphagov.github.io/wcag-primer/
 
 # Contributing
 
-To contribute to this repository, you first need to [fork it](https://help.github.com/en/articles/fork-a-repo). You can raise PRs from your forked copy.
+This WCAG Primer is for everyone.You can help make sure it stays up to date by:
+
+1. Making changes to the [WCAG primer on Github](https://github.com/alphagov/wcag-primer).
+
+To contribute to this repository, you first need to [fork it](https://help.github.com/en/articles/fork-a-repo)* You can raise PRs from your forked copy.
+
+2. Emailing the Accessibility Capability team at <accessibility@digital.cabinet-office.gov.uk> with suggestions
 
 This repo uses Middleman. To test changes locally, run:
 
