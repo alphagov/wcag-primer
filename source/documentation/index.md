@@ -138,7 +138,7 @@ Your service must be navigable and usable no matter how someone uses it (without
 
 #### Guideline 2.1: Make functionality work with a keyboard
 * 2.1.1 Make sure every task can be completed using just a keyboard. [More about 2.1.1](/all.html#2-1-1-keyboard-a)
-* 2.1.2 Make sure that keyboard users don't get stuck when navigating through content. [More about 2.1.2](/all.html#2-1-2-no-keyboard-trap-a)
+* 2.1.2 Make sure that keyboard users do not get stuck when navigating through content. [More about 2.1.2](/all.html#2-1-2-no-keyboard-trap-a)
 * 2.1.4 <strong>[New]</strong> Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/all.html#2-1-4-character-key-shortcuts-a)
 
 #### Guideline 2.2: Give people enough time to read and use content
