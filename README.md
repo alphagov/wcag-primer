@@ -12,7 +12,7 @@ https://alphagov.github.io/wcag-primer/
 
 # Contributing
 
-This WCAG Primer is for everyone.You can help make sure it stays up to date by:
+This WCAG Primer is for everyone. You can help make sure it stays up to date by:
 
 1. Making changes to the [WCAG primer on Github](https://github.com/alphagov/wcag-primer).
 
