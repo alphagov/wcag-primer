@@ -31,7 +31,7 @@ Answering NO means that you are not meeting WCAG and your content will have barr
 * Can any content that moves or auto updates be stopped? [2.2.1 Timing adjustable](/all.html#2-2-1-timing-adjustable-a) and [2.2.2 Pause, stop, hide](/all.html#2-2-2-pause-stop-hide-a)
 * Have you avoided using content that flashes or flickers? [2.3.1 Three flashes or below threshold](/all.html#2-3-1-three-flashes-or-below-threshold-a)
 * Can blocks of links and other interactive elements be bypassed by keyboard users? [2.4.1 Bypass blocks](/all.html#2-4-1-bypass-blocks-a)
-* Does each page have a unique title that indicates its purpose and context? [2.4.2 Page titled](/all.html#2-4-2-page-titled`~-a)
+* Does each page have a unique title that indicates its purpose and context? [2.4.2 Page titled](/all.html#2-4-2-page-titled-a)
 * When using a keyboard to move through a page does the order make sense? [2.4.3 Focus order](/all.html#2-4-3-focus-order-a)
 * Is the purpose of every link clear from its link text? [2.4.4 Link purpose in context](/all.html#2-4-4-link-purpose-in-context-a)
 * Does the website have two or more ways of finding content, such as a navigation menu, search feature, or site map? [2.4.5 Multiple ways](/all.html#2-4-5-multiple-ways-aa)
