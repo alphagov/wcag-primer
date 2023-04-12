@@ -18,8 +18,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    commonmarker (0.20.1)
-      ruby-enum (~> 0.5)
+    commonmarker (0.23.9)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -32,7 +31,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.2.2)
     contracts (0.13.0)
     dotenv (2.7.6)
     em-websocket (0.5.1)
@@ -156,8 +155,6 @@ GEM
     redcarpet (3.3.4)
     rexml (3.2.5)
     rouge (2.2.1)
-    ruby-enum (0.7.2)
-      i18n
     sass (3.4.25)
     sassc (2.4.0)
       ffi (~> 1.9)
