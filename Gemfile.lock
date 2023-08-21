@@ -94,7 +94,7 @@ GEM
       hamster (~> 3.0)
       hashie (~> 3.4)
       i18n (~> 1.6.0)
-      listen (~> 3.8.0)
+      listen (~> 3.0)
       memoist (~> 0.14)
       padrino-helpers (~> 0.15.0)
       parallel
@@ -152,7 +152,6 @@ GEM
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
-    temple (0.10.2)
     thor (1.2.2)
     tilt (2.0.11)
     toml (0.3.0)
