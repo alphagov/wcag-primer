@@ -1,13 +1,3 @@
-# WCAG 2.1 Getting started
-
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    The WCAG Primer is not currently being maintained and is out of date in places.
-  </strong>
-</div>
-
 This document will help you get up to speed with WCAG 2.1 quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content.
 
 WCAG 2.1 is the standard used by EN 301 549, the European procurement rules, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018.

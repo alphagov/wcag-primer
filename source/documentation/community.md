@@ -1,13 +1,3 @@
-# Community
-
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    The WCAG Primer is not currently being maintained and is out of date in places.
-  </strong>
-</div>
-
 This WCAG Primer is for everyone.
 
 ## Contributing

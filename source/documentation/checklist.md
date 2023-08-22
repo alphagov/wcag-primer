@@ -1,13 +1,3 @@
-# Checklist
-
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    The WCAG Primer is not currently being maintained and is out of date in places.
-  </strong>
-</div>
-
 To meet WCAG 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.
 
 Answering NO means that you are not meeting WCAG and your content will have barriers that will prevent some users, especially disabled users and older people from accessing it.
