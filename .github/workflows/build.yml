@@ -8,6 +8,8 @@ on:
 
 jobs:
   # A really basic check to see if this builds okay.
+  permissions:
+    contents: write
   only-build:
     runs-on: ubuntu-latest
     steps:
