@@ -1,4 +1,5 @@
-<h4 id="2-5-2-pointer-cancellation-a"><a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation">2.5.2 Pointer Cancellation (A)</a></h4><p>For mobile devices or tablets where if there is functionality triggered by a single pointer, at least one of the following is true:</p>
+<h4 id="2-5-2-pointer-cancellation-a"><a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation">2.5.2 Pointer Cancellation (A)</a></h4>
+<p>For mobile devices or tablets where if there is functionality triggered by a single pointer, at least one of the following is true:</p>
 <p><strong>No Down-Event</strong><br />
 The down-event of the pointer is not used to ‘fire’ the function;</p>
 <p><strong>Stop the action or Undo</strong><br />
@@ -7,25 +8,31 @@ The function is triggered on the up-event, and a method  is available to stop co
 The up-event reverses what happens on the down-event;</p>
 <p><strong>Essential</strong><br />
 Completing the function on the down-event is essential.</p>
-<h5 id="why-is-this-a-problem">Why is this a problem?</h5><p>This aims to reduce accidentally triggering things on a page. Any interaction were a control fires as soon as it is touched is problematic for a range of users (and not just disabled users). It is better when there is a way to ‘undo’ or change your mind. This is what the success criterion aims to address and will help people with visual disabilities, cognitive disabilities, and motor impairments.</p>
+<h5 id="why-is-this-a-problem">Why is this a problem?</h5>
+<p>This aims to reduce accidentally triggering things on a page. Any interaction were a control fires as soon as it is touched is problematic for a range of users (and not just disabled users). It is better when there is a way to ‘undo’ or change your mind. This is what the success criterion aims to address and will help people with visual disabilities, cognitive disabilities, and motor impairments.</p>
 <p>However, it can present problems for users with dexterity issues.</p>
 <h5 id="requirements-what-to-do">Requirements / What to do?</h5>
+
 <ul>
 <li><strong>Simply make activation of any function occur on the up-event</strong>. This is where the control is released by the user. This can be by the users finger or a mouse for example. Using the click event by default will only trigger the event on release.</li>
 <li><strong>To ‘Cancel’ or ‘Undo’ a function.</strong> You can add a ‘confirmation dialog’ or an ‘undo button’. This asks the user to confirm the interaction and by doing so, you give them time to reflect and choose one way or another.</li>
 <li><strong>Up Reversal:</strong> You can design a control where the down-event trigger an action that can be reversed when the up-event is ended. Examples of this include press-and-hold actions such which make a popup appear and on release it disappears. </li>
 <li><strong>Some just things will need to fire on the ‘down-event’</strong> such as games or on screen keyboards.</li>
 </ul>
-<h6 id="what-are-down-events">What are down-events?</h6><p>A down-event is when an action is caused to &lsquo;fire&rsquo; when the trigger stimulus of a pointer (like a finger) is pressed.</p>
+<h6 id="what-are-down-events">What are down-events?</h6>
+<p>A down-event is when an action is caused to &lsquo;fire&rsquo; when the trigger stimulus of a pointer (like a finger) is pressed.</p>
 <p>The down-event may have different names, such as &ldquo;touchstart&rdquo; or &ldquo;mousedown&rdquo;.</p>
-<h6 id="what-are-up-events">What are up-events?</h6><p>A up-event is when an action is caused to &#39;fire&rsquo; when the trigger stimulus of a pointer (like a finger) is released.</p>
+<h6 id="what-are-up-events">What are up-events?</h6>
+<p>A up-event is when an action is caused to &lsquo;fire&rsquo; when the trigger stimulus of a pointer (like a finger) is released.</p>
 <p>The up-event may have different names, such as &ldquo;touchend&rdquo; or &ldquo;mouseup&rdquo;.</p>
 <h5 id="common-mistakes">Common mistakes</h5>
+
 <ul>
 <li>Allowing controls or user interface components to fire as soon as they are touched.</li>
 <li>After a user has made a selection of a user interface component, there is no way to dismiss the selection or undo the function.</li>
 </ul>
 <h5 id="resources">Resources</h5>
+
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events">Mozilla - Using Touch Events</a></li>
 <li><a href="https://developer.android.com/guide/topics/ui/ui-events">Input events on Android</a></li>

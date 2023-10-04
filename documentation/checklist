@@ -1,6 +1,8 @@
-<h1 id="checklist">Checklist</h1><p>To meet WCAG 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.</p>
+<h1 id="checklist">Checklist</h1>
+<p>To meet WCAG 2.1 to level AA you must be able to answer YES or Not Applicable to all of the following questions.</p>
 <p>Answering NO means that you are not meeting WCAG and your content will have barriers that will prevent some users, especially disabled users and older people from accessing it.</p>
 <h2 id="perceivable">Perceivable</h2>
+
 <ul>
 <li>Do all images have an appropriate text equivalent? Is essential visual information also available as text?</li>
 <li>Do all audio files have a transcript? Is essential audio information available as text?</li>
@@ -22,6 +24,7 @@
 <li>Where extra content is shown or hidden on focus, can it be dismissed, interacted with (and not disappear when the user moves to it) and will stay visible until dismissed by the user?</li>
 </ul>
 <h2 id="operable">Operable</h2>
+
 <ul>
 <li>Can all menus, links, buttons, and other controls be operated by keyboard?</li>
 <li>Do pages that have time limits include mechanisms for adjusting those limits?</li>
@@ -41,6 +44,7 @@
 <li>Does your site respond to motion or movement? If so, can responding to motion or movement be disabled, and your site still be fully usable?</li>
 </ul>
 <h2 id="understandable">Understandable</h2>
+
 <ul>
 <li>Has the language of the web page or document (or individual parts of a multilingual document) been defined?</li>
 <li>Have you avoided links, controls, or form fields that automatically trigger a change in context?</li>
@@ -49,6 +53,7 @@
 <li>Do forms provide helpful, understandable error and verification messages?</li>
 </ul>
 <h2 id="robust">Robust</h2>
+
 <ul>
 <li>Is the web page coded using valid HTML?</li>
 <li>Do all interactive components have an accessible name and role, and when required state? Has the correct ARIA markup been used and does it validate?</li>
