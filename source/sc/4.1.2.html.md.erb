@@ -1,0 +1,29 @@
+---
+title: 4.1.2 Name, role, value (A)
+---
+
+# <%= link_to current_page.data.title, "https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html" %>
+
+All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies. This ensures that screen reader users understand the purpose (role) of every component, how to identify it (name), and what state it is in.
+
+## Requirements / What to do?
+
+*   All interactive elements and components have an accessible name;
+*   All interactive elements and components have a role (either implicit or explicit);
+*   All interactive elements and components communicate information about their state.
+
+## Common mistakes
+
+*   An `<a>` or `<button>` element contains no text content, and so has no accessible name;
+*   A form field has no associated `<label>` element, and so has no accessible name;
+*   A set of tabs is created using `<ul>`, `<li>`, and `<a>` elements, but ARIA has not been used to provide the `tablist`, `tab`, and `tabpanel` roles;
+*   An `<a>` element has been used as the basis for a button, but the ARIA `button` role has not been applied;
+*   A button is used as the trigger to disclose content, but the `aria-expanded` attribute has not been used to communicate the disclosure component’s current state;
+*   A `<div>` or `<span>` has been used as the basis for an interactive component, but ARIA has not been used to identify the purpose of the component (or its constituent parts).
+
+## Useful resources
+
+*   [What is an accessible name?](https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/)
+*   [WCAG 2.0 parsing criterion is a PITA](https://www.paciellogroup.com/blog/2015/11/wcag-2-0-parsing-criterion-is-a-pita/)
+*   [What does accessibility supported mean?](https://www.paciellogroup.com/blog/2016/08/what-does-accessibility-supported-mean/)
+*   [Understanding semantics](http://tink.uk/understanding-semantics/)
