@@ -1,0 +1,36 @@
+---
+title: 1.4.10 Reflow (AA)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
+
+Where content is zoomed there should be no loss of information or functionality. In particular on smaller devices or resolutions of 320px (vertically) or 256px (horizontally) there should be no scrolling in two directions when resized.
+
+## Why is this a problem?
+
+* People who are sight impaired often use screen magnification to resize page content and this can cause info to get lost.
+* Scrolling can often be difficult for some disabled users, more so when horizontally or both horizontally and vertically at the same time.
+* Some languages scroll vertically like Chinese, Japanese, Mongolian or Korean.
+
+## Requirements / What to do?
+
+* Make sure your pages are responsive and the content will ‘reflow’ to a single column gracefully. 
+* A simple browser based test is to try a <strong>width</strong> of 1280px at 400% zoom. You can zoom in on a Mac in Chrome by pressing CMD and + key (until you see the resolution hit 400%).
+* For web content which is designed to scroll horizontally with vertical text, set viewport <strong>height</strong> of 1024px and then the 400% zoom.
+
+## Common mistakes
+
+* Content does not reflow to a single column when zoomed.
+* Horizontal scrolling appears in both directions at some low resolutions when content is zoomed.
+* Using fixed sized containers and fixed position content (CSS)
+* Use of &lt;code&gt;&lt;pre&gt; formatted content (such as code) can cause horizontal scrolling. Using the CSS declarations such as word-wrap: break-word; on &lt;code&gt;&lt;pre&gt; in small viewports will help to avoid horizontal scrolling at all.
+
+## Useful resources
+
+* Try [triggering horizontal scrolling in vertical languages](https://www.w3.org/International/articles/vertical-text/index-data/embedded-ar.html).  
+
+
+
+

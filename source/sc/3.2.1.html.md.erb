@@ -1,0 +1,24 @@
+---
+title: 3.2.1 On Focus (A)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
+
+When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page/tab. This stops unexpected things happening without screen reader and screen magnifer users being aware of it.
+
+## Requirements / What to do?
+
+*   `focus` events do not cause navigation, nor form submission
+*   components that respond to `focus` do not initiate a “focus trap”, where it is impossible or unclear how to navigate out of the component using the keyboard.
+
+## Common mistakes
+
+*   Dropdown menus trigger navigation as the user tabs between options
+*   Javascript triggers navigation when a user is merely leaving a form control
+*   focus is moved by script in ways that surprise the user
+
+## Useful resources
+
+*   TBC

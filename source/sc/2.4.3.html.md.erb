@@ -1,0 +1,23 @@
+---
+title: 2.4.3 Focus Order (A)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
+
+It must be possible to navigate through content in a way that makes sense. This ensures that content can be navigated in a logical way by screen reader users, keyboard users, and people who choose to use their own CSS style sheets.
+
+## Requirements / What to do?
+
+*   The visible focus order matches the DOM focus order.
+
+## Common mistakes
+
+*   The DOM order does not match the visual order because CSS properties like flexbox and grid-layout have been used to alter the visual presentation;
+*   When CSS styles are disabled, the focus order is meaningless;
+*   When a user interaction causes content to be displayed, it does so before the trigger control in the DOM order.
+
+## Useful resources
+
+*   TBC

@@ -1,0 +1,43 @@
+---
+title: 2.5.4 Motion Actuation (A)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html)
+
+In a page or on a mobile device functionality that can be operated by device motion or user motion can also be operated by alternatives like buttons, links or other controls. There should be a way for disabling responding motion, unless the motion can operate in an accessible way or is essential
+
+## Why is this a problem?
+
+This Success Criterion helps people who may be unable to perform tilting, shaking, or gesturing to use an interface - or the device may be mounted. Fixing this will ensure users can still operate all functionality by other means.
+
+Notice how most of these following example are just about common sense alternatives to using motion to do things on a mobile device.
+
+* A user can’t hold and move the device to navigate content. A control exists to navigate also.
+* When inputting text - shaking a device shows a dialog where you can undo the text input. A cancel button next to the text field offers the same functionality.
+* A user can tilt a device to advance to the next or a previous page. Buttons or links are also provided to perform the same function.
+* A user can move the device to change the view of an image. A control is also available to do the same thing.
+
+## Requirements / What to do?
+
+* Do not use the <code>devicemotion</code> event to activate content functionality.
+* Ensure that alternative means of input exist when using device motion sensor input.
+* Provide a user preference to disable motion actuation.
+* Support OS features which allow the user to disable motion actuation.
+* Use the new <code>prefers-reduced-motion</code> CSS declaration. This will detect if the user would like to reduce animation or motion on the pages they visit.
+
+## Common mistakes
+
+* Functionality that can only be activated via device motion events (e.g., shaking or tilting)
+* The user is unable to disable motion actuation.
+* The author has turned off system level features which allow the user to disable motion actuation.
+
+## Resources
+
+* [Mozilla - prefers-reduced-motion documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+* [Demonstration of 'prefers-reduced-motion' in Webkit](https://webkit.org/blog-files/prefers-reduced-motion/prm.htm)
+* [iOS: Reduce Motion on iPhone, iPad or iPod touch](https://support.apple.com/en-gb/HT202655)
+* [Mac: Reduce Motion](https://apple.stackexchange.com/questions/253756/speed-up-mission-control-animations-in-macos-sierra)
+* [Windows 10: Reduce motion](https://www.laptopmag.com/articles/disable-minimize-maximize-animations-windows-10)
+
