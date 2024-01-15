@@ -24,7 +24,7 @@ This repo uses Middleman. To test changes locally, run:
 
 ```bundle exec middleman server```
 
-The text lives in the `source/documentation` folder, and is in markdown format.
+The text lives in the `source/sc` folder, and is in markdown format.
 
 ## Deploying changes
 

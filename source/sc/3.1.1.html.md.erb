@@ -1,0 +1,23 @@
+---
+title: 3.1.1 Language of Page (A)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
+
+The written language of the page must be identified in the code of the web page. This makes sure that screen readers automatically use the correct speech libraries for accent and pronunciation.
+
+## Requirements / What to do?
+
+*   The language is identified using the `lang` attribute of the `<html>` element.
+
+## Common mistakes
+
+*   No `lang` attribute is present on the `<html>` element.
+*   The `lang` attribute is present on the `<html>` element, but it incorrectly identifies the language of the page.
+
+## Useful resources
+
+*   [Working with Language on the Web - W3C i18n tutorial](https://www.w3.org/International/tutorials/language-decl/)
+*   [Language on the Web](https://www.w3.org/International/getting-started/language)

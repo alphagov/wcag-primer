@@ -4,18 +4,18 @@ host:
 # Header-related options
 show_govuk_logo: true
 service_name: WCAG 2.1 Primer
-service_link: index.html
+service_link: /index.html
 phase: alpha
 
 # Links to show on right-hand-side of header
 header_links:
-  Overview: index.html
-  All requirements: all.html
-  Content: content.html
-  Design: design.html
-  Code: code.html
-  Checklist: checklist.html
-  Community: community.html
+  Overview: /index.html
+  All requirements: /all.html
+  Content: /content.html
+  Design: /design.html
+  Code: /code.html
+  Checklist: /checklist.html
+  Community: /community.html
 footer_links:
   Accessibility: /accessibility.html
 

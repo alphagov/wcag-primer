@@ -1,0 +1,63 @@
+---
+title: 4.1.3 Status Messages (AA)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html)
+
+There are different situations where a status message needs to be shown in a way that assistive technologies understand. These messages need to be presented to the user without receiving focus themselves, or disturbing the user's place in a page. 
+
+## Why is this a problem?
+
+* A sighted person can quickly see status messages on a page, and them go back to what they were doing or reading. Moving focus to a message can be disruptive for screen reader users, users of speech recognition software and keyboard only users.
+* If focus is always moved to the message users with cognitive impairments may also be confused by unpredictable focus changes. 
+
+## Requirements / What to do?
+
+The following are different situations where you will need to cover.
+
+### When a status message tells the user something is successful
+
+When a status message tells the user something is successful or is the results of an action. This can also be used for a state change when part of a page updates:
+
+You can use these following techniques:
+
+[Use the ARIA role=status to present status messages](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22) in combination with the technique [Providing success feedback when data is submitted successfully](https://www.w3.org/WAI/WCAG21/Techniques/general/G199).
+
+### If a status message conveys a suggestion, or a warning or error:
+
+<strong>NOTE:</strong> There may be time when you do want to move focus to a message, such as an error, as a part of form validation etc.
+
+Use the following techniques:
+
+[Use ARIA role=alert or Live Regions to Identify Errors](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19) in combination with any of the following:
+
+* [Providing text descriptions to identify required fields that were not completed](https://www.w3.org/WAI/WCAG21/Techniques/general/G83)
+* [Providing a text description when the user provides information that is not in the list of allowed values](https://www.w3.org/WAI/WCAG21/Techniques/general/G84)
+* [Providing a text description when user input falls outside the required format or values](https://www.w3.org/WAI/WCAG21/Techniques/general/G85)
+* [Creating a mechanism that allows users to jump to errors](https://www.w3.org/WAI/WCAG21/Techniques/general/G139)
+* [Providing suggested correction text](https://www.w3.org/WAI/WCAG21/Techniques/general/G177)
+* [Providing spell checking and suggestions for text input](https://www.w3.org/WAI/WCAG21/Techniques/general/G194)
+
+### If a status message conveys information on the progress of a process:
+
+The ARIA <code>role="progressbar"</code> can be used but may not be enough on its own (depending on AT and browser support). For some examples of <code>progressbar</code> role see:
+
+* [Mozilla - Using the progressbar role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role)
+* [ARIA Progress bar example - LevelAccess Labs](https://labs.levelaccess.com/index.php/ARIA_Progressbar)
+
+You can use the following techniques:
+
+* [Using role=log to identify sequential information updates](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23)
+* [Using role=status to present status messages](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22) in combination with [Providing help by an assistant in the Web page](https://www.w3.org/WAI/WCAG21/Techniques/general/G193)
+
+
+## Common mistakes
+
+* Status messages are not to be shown in a way that the AT understands or receive focus.
+* Using <code>role="alert"</code> or <code>aria-live="assertive"</code> on content which is not important.
+* On a page with ARIA live regions - if regions are hidden or not needed - always make sure to switch their active and inactive states accordingly.
+
+
+

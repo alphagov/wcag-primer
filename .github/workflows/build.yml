@@ -10,6 +10,8 @@ jobs:
   # A really basic check to see if this builds okay.
   only-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1

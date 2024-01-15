@@ -1,0 +1,25 @@
+---
+title: 4.1.1 Parsing (A)
+---
+
+# <%= current_page.data.title %>
+
+[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
+
+The code of the page must not cause browser or assistive technology conflicts. This ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies.
+
+## Requirements / What to do?
+
+*   HTML code must conform to the standard identified in the doctype statement;
+*   ARIA code must conform to the rules for use with the host language (HTML).
+
+## Common mistakes
+
+*   HTML elements are not well formed (opened and closed properly);
+*   HTML elements include invalid attributes;
+*   HTML id attributes use duplicate values within the same page;
+*   ARIA attributes are invalid.
+
+## Useful resources
+
+*   [W3C conformance validator](https://validator.w3.org/nu/)
