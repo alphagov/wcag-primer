@@ -56,7 +56,9 @@ GEM
       nokogiri
       openapi3_parser (~> 0.9.0)
       redcarpet (~> 3.5.1)
-    haml (4.0.7)
+    haml (6.3.0)
+      temple (>= 0.8.2)
+      thor
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
@@ -156,6 +158,7 @@ GEM
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
+    temple (0.10.3)
     thor (1.2.2)
     tilt (2.0.11)
     toml (0.3.0)
