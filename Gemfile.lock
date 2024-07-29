@@ -147,7 +147,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redcarpet (3.5.1)
-    rexml (3.2.6)
+    rexml (3.3.2)
+      strscan
     rouge (3.30.0)
     sass (3.4.25)
     sassc (2.4.0)
@@ -156,6 +157,7 @@ GEM
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
+    strscan (3.1.0)
     thor (1.2.2)
     tilt (2.0.11)
     toml (0.3.0)
