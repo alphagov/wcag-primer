@@ -2,7 +2,7 @@
 host:
 
 # Header-related options
-show_govuk_logo: true
+show_govuk_logo: false
 service_name: WCAG 2.1 Primer
 service_link: /index.html
 phase: alpha
@@ -38,3 +38,7 @@ max_toc_heading_level: 4
 
 # Prevent robots from indexing (e.g. whilst in development)
 prevent_indexing: true
+
+# Show GitHub source/issue/repo links at the bottom of each page
+show_contribution_banner: true
+github_repo: alphagov/wcag-primer
