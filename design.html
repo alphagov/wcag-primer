@@ -10,14 +10,19 @@
     <link href="stylesheets/manifest.css" rel="stylesheet" />
 
     <link rel="canonical" href="/design.html">
+    <link rel="icon" sizes="48x48" href="assets/govuk/assets/images/favicon.ico">
+    <link rel="icon" sizes="any" href="assets/govuk/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="mask-icon" href="assets/govuk/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" href="assets/govuk/assets/images/govuk-icon-180.png">
+    <link rel="manifest" href="/assets/govuk/assets/manifest.json">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:image" content="/images/govuk-large.png" />
+      <meta name="twitter:image" content="assets/govuk/assets/images/govuk-opengraph-image.png" />
       <meta name="twitter:title" content="Design related WCAG 2.1 A and AA Success Criteria - WCAG 2.1 Primer" />
       <meta name="twitter:url" content="/design.html" />
 
-      <meta property="og:image" content="/images/govuk-large.png" />
+      <meta property="og:image" content="assets/govuk/assets/images/govuk-opengraph-image.png" />
       <meta property="og:site_name" content="WCAG 2.1 Primer" />
       <meta property="og:title" content="Design related WCAG 2.1 A and AA Success Criteria" />
       <meta property="og:type" content="object" />
@@ -27,7 +32,7 @@
   </head>
 
   <body class="govuk-template__body">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
@@ -36,37 +41,37 @@
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
     <div class="govuk-header__logo">
-      <a href="./" class="govuk-header__link govuk-header__link--homepage">
+      <a href="./index.html" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__product-name">
           WCAG 2.1 Primer
         </span>
       </a>
-        <strong class="govuk-tag">alpha</strong>
+        <strong class="govuk-tag">Alpha</strong>
     </div>
     <div class="govuk-header__content">
       <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="./">Overview</a>
+              <a class="govuk-header__link" href="./index.html">Overview</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="all.html">All requirements</a>
+              <a class="govuk-header__link" href="./all.html">All requirements</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="content.html">Content</a>
+              <a class="govuk-header__link" href="./content.html">Content</a>
             </li>
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="design.html">Design</a>
+              <a class="govuk-header__link" href="./design.html">Design</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="code.html">Code</a>
+              <a class="govuk-header__link" href="./code.html">Code</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="checklist.html">Checklist</a>
+              <a class="govuk-header__link" href="./checklist.html">Checklist</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="community.html">Community</a>
+              <a class="govuk-header__link" href="./community.html">Community</a>
             </li>
         </ul>
       </nav>
@@ -84,7 +89,7 @@
 
       <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
-            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents" role="dialog">
+            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents">
               
               <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
@@ -257,7 +262,7 @@
 
         <ul class="govuk-footer__inline-list">
             <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" href="accessibility.html">Accessibility</a>
+              <a class="govuk-footer__link" href="./accessibility.html">Accessibility</a>
             </li>
         </ul>
 
@@ -298,6 +303,7 @@
     </div>
 
     
+    <script src="javascripts/govuk_frontend.js" type="module"></script>
     <script src="javascripts/application.js"></script>
   </body>
 </html>
