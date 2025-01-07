@@ -5028,6 +5028,7 @@
   }
   .toc__list li a:focus {
     text-decoration: none;
+    outline: none;
   }
   .toc__list li a:focus span {
     outline: 3px solid transparent;
