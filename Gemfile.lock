@@ -141,7 +141,7 @@ GEM
     minitest (5.25.4)
     multi_json (1.15.0)
     mutex_m (0.3.0)
-    nokogiri (1.17.2)
+    nokogiri (1.18.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     openapi3_parser (0.9.2)
