@@ -3,7 +3,7 @@ host:
 
 # Header-related options
 show_govuk_logo: false
-service_name: WCAG 2.1 Primer
+service_name: WCAG Primer
 service_link: /index.html
 phase: Alpha
 
