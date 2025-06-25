@@ -36,6 +36,9 @@ collapsible_nav: false
 # headings.
 max_toc_heading_level: 4
 
+# Enable hoverable anchor links next to every heading
+enable_anchored_headings: false
+
 # Prevent robots from indexing (e.g. whilst in development)
 prevent_indexing: true
 
