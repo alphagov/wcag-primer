@@ -10,19 +10,16 @@
     <link href="stylesheets/manifest.css" rel="stylesheet" />
 
     <link rel="canonical" href="/">
-    <link rel="icon" sizes="48x48" href="assets/govuk/assets/images/favicon.ico">
-    <link rel="icon" sizes="any" href="assets/govuk/assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="mask-icon" href="assets/govuk/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
-    <link rel="apple-touch-icon" href="assets/govuk/assets/images/govuk-icon-180.png">
-    <link rel="manifest" href="/assets/govuk/assets/manifest.json">
+      <link rel="icon" sizes="48x48" href="/images/favicon.ico">
+      <link rel="icon" sizes="any" href="/images/favicon.svg" type="image/svg+xml">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:image" content="assets/govuk/assets/images/govuk-opengraph-image.png" />
+      <meta name="twitter:image" content="/images/opengraph-image.png" />
       <meta name="twitter:title" content="Home - WCAG Primer" />
       <meta name="twitter:url" content="/" />
 
-      <meta property="og:image" content="assets/govuk/assets/images/govuk-opengraph-image.png" />
+      <meta property="og:image" content="/images/opengraph-image.png" />
       <meta property="og:site_name" content="WCAG Primer" />
       <meta property="og:title" content="Home" />
       <meta property="og:type" content="object" />
@@ -53,7 +50,7 @@
         <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="./index.html">Overview</a>
+              <a class="govuk-header__link" href="./index.html" aria-current="page">Overview</a>
             </li>
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="./all.html">All requirements</a>
@@ -89,7 +86,7 @@
 
       <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
-            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents">
+            <div class="toc" data-module="table-of-contents" tabindex="-1">
               
               <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
@@ -204,8 +201,8 @@
             </div>
           </div>
 
-        <div class="app-pane__content toc-open-disabled" aria-label="Content" tabindex="0">
-          <main id="content" class="technical-documentation" data-module="anchored-headings">
+        <div class="app-pane__content toc-open-disabled" aria-label="Content">
+          <main id="content" class="technical-documentation">
               <div class="app-internal-banner">
   <p><strong>The WCAG Primer is intended for use by the UK cross government accessibility community.</strong></p>
 </div>
