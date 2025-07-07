@@ -4,19 +4,95 @@ title: 3.1.2 Language of Parts (AA)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
+## What WCAG says:
 
-When content is displayed in a language that is different from the primary language of the page, it must be indicated in a way that assistive technologies understand. This ensures that screen readers switch to the appropriate accent and pronunciation for that language.
+"The human language of each passage or phrase in the content can be programmatically determined" (with exceptions)
 
-## Requirements / What to do?
+[Understanding 3.1.2 Language of Parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html)
 
-*   Content that is written in a different language from the primary language of the page, is identified using HTML (the lang attribute).
+## What this means
+
+Written content that's in a language different from the primary language on the page must be identified using HTML's `lang` attribute, with the exception of names, technical terms, and loan words.
+
+## Why it matters
+
+Identifying the language of the content allows text-to-speech software, like screen readers, to switch to the appropriate pronunciation for that language.
+
+## How to check
+
+Using your browser's developer tools, check that any areas with content in a language different to the rest of the page have a `lang` attribute with the correct value.
+
+The language value must be valid. Some examples of valid language values are:
+
+* `cy` -- Welsh
+* `en` -- English
+* `en-GB` -- British English
+* `en-US` -- American English
+* `uk-Cyrl` -- Ukrainian written in Cyrillic script
+* `uk-Latn` -- Ukrainian written in Latin script
+* `en-Brai-GB` -- British English in Braille script
+
+[How to test in detail for 3.1.2 Language of Parts](https://github.com/alphagov/wcag-primer/wiki/3.1.2)
+
+## Good example
+
+### Text marked up in a different language
+
+```html
+<html lang="en">
+  <body>
+    <p>The audience had been invaded by <span lang="fr">agents provocateurs</span>.</p>
+  </body>
+</html>
+```
+
+This passes because the phrase '<span lang="fr">agents provocateurs</span>' has been marked up correctly. This phrase is pronounced differently in French to how it would be said in English, so specifying the language of origin helps screen readers pronounce it correctly.
 
 ## Common mistakes
 
-*   Content uses a different language, but the change in language is not identified in the HTML;
-*   Content uses a different language, and the wrong language is identified in the HTML.
+### Text in another language not marked up
+
+```html
+<html lang="en">
+  <body>
+    <p>They've started a tête-à-tête with one another.</p>
+  </body>
+</html>
+```
+
+This fails as the French phrase '<span lang="fr">tête-à-tête</span>' is not marked up with the appropriate `lang` attribute.
+
+### Loan words marked up unnecessarily
+
+```html
+<html lang="en">
+  <body>
+    <p>I bought an <span lang="it">espresso</span> at the <span lang="fr">café</span> earlier.</p>
+  </body>
+</html>
+```
+
+This is unnecessary as 'espresso' and 'café' are both loan words in English, so they do not need to be marked up separately.
+
+### Invalid language value
+
+```html
+<html lang="en">
+  <body>
+    <p>Locke argued that the human mind starts as a <span lang="Latin">tabula rasa</span>, a blank slate.</p>
+  </body>
+</html>
+```
+
+This fails as the `lang` attribute's value is not valid.
+
+## Related success criteria
+
+[3.1.1 Language of Page (A)](3.1.1.html) covers the language of the entire page being marked up correctly.
 
 ## Useful resources
 
-*   [Using the HTML lang attribute](https://www.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/)
+* [Working with language on the Web - W3C Internationalization tutorial](https://www.w3.org/International/tutorials/language-decl/)
+* [Why use the language attribute? - W3C](https://www.w3.org/International/questions/qa-lang-why)
+* [Language on the Web - W3C](https://www.w3.org/International/getting-started/language)
+* [BCP 47 language tags - MDN](https://developer.mozilla.org/en-US/docs/Glossary/BCP\_47\_language\_tag)
