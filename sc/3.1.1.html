@@ -95,10 +95,36 @@
     <a href="#3-1-1-language-of-page-a"><span>3.1.1 Language of Page (A)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-example"><span>Good example</span></a>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#no-page-language"><span>No page language</span></a>
+          </li>
+          <li>
+            <a href="#incorrect-page-language"><span>Incorrect page language</span></a>
+          </li>
+          <li>
+            <a href="#invalid-page-language"><span>Invalid page language</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
       <li>
         <a href="#useful-resources"><span>Useful resources</span></a>
@@ -119,24 +145,66 @@
 </div>
 
   <h1 id="3-1-1-language-of-page-a">3.1.1 Language of Page (A)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding 3.1.1 Language of Page (A)</a></p>
-<p>The written language of the page must be identified in the code of the web page. This makes sure that screen readers automatically use the correct speech libraries for accent and pronunciation.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says:</h2>
+<p>The default human language of each web page can be programmatically determined.</p>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html">Understanding 3.1.1 Language of Page</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>A web page&rsquo;s code must explicitly state what language it&rsquo;s written in.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>The page&rsquo;s language can alter how text-to-speech software, such as screen readers, pronounces words.</p>
+<p>It can also help in other areas, such as allowing search engines to provide results in a user&rsquo;s own language.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>Using your browser&rsquo;s developer tools, check that the page&rsquo;s <code>&lt;html&gt;</code> element has a <code>lang</code> attribute with the correct value.</p>
+<p>The language value must be valid. Some examples of valid language values are:</p>
 
 <ul>
-<li>  The language is identified using the <code>lang</code> attribute of the <code>&lt;html&gt;</code> element.</li>
+<li><code>cy</code> &ndash; Welsh</li>
+<li><code>en</code> &ndash; English</li>
+<li><code>en-GB</code> &ndash; British English</li>
+<li><code>en-US</code> &ndash; American English</li>
+<li><code>uk-Cyrl</code> &ndash; Ukrainian written in Cyrillic script</li>
+<li><code>uk-Latn</code> &ndash; Ukrainian written in Latin script</li>
+<li><code>en-Brai-GB</code> &ndash; British English in Braille script<br></li>
 </ul>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/3.1.1">How to test in detail for 3.1.1 Language of Page</a></p>
+<h2 id="good-example">Good example</h2>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello world<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This passes because the <code>lang</code> attribute&rsquo;s value matches the language of the page.</p>
 <h2 id="common-mistakes">Common mistakes</h2>
-
-<ul>
-<li>  No <code>lang</code> attribute is present on the <code>&lt;html&gt;</code> element.</li>
-<li>  The <code>lang</code> attribute is present on the <code>&lt;html&gt;</code> element, but it incorrectly identifies the language of the page.</li>
-</ul>
+<h3 id="no-page-language">No page language</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello world<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This fails as the page&rsquo;s <code>lang</code> attribute is missing.</p>
+<h3 id="incorrect-page-language">Incorrect page language</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hola Mundo<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This fails as the <code>lang</code> attribute&rsquo;s value does not match the language of the content.</p>
+<h3 id="invalid-page-language">Invalid page language</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"English"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello world<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This fails as the <code>lang</code> attribute&rsquo;s value is not valid.</p>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p>The <code>lang</code> attribute does not necessarily have to match the language of the majority of the page, as long as each part of the page is correctly marked up to meet <a href="3.1.2.html">3.1.2 Language of Parts (AA)</a>.</p>
 <h2 id="useful-resources">Useful resources</h2>
 
 <ul>
-<li>  <a href="https://www.w3.org/International/tutorials/language-decl/">Working with Language on the Web - W3C i18n tutorial</a></li>
-<li>  <a href="https://www.w3.org/International/getting-started/language">Language on the Web</a></li>
+<li><a href="https://www.w3.org/International/tutorials/language-decl/">Working with language on the Web - W3C Internationalization tutorial</a></li>
+<li><a href="https://www.w3.org/International/questions/qa-lang-why">Why use the language attribute? - W3C</a></li>
+<li><a href="https://www.w3.org/International/getting-started/language">Language on the Web - W3C</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag">BCP 47 language tags - MDN</a></li>
 </ul>
 
 
