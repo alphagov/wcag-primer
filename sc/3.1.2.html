@@ -95,10 +95,41 @@
     <a href="#3-1-2-language-of-parts-aa"><span>3.1.2 Language of Parts (AA)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-example"><span>Good example</span></a>
+        <ul>
+          <li>
+            <a href="#text-marked-up-in-a-different-language"><span>Text marked up in a different language</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#text-in-another-language-not-marked-up"><span>Text in another language not marked up</span></a>
+          </li>
+          <li>
+            <a href="#loan-words-marked-up-unnecessarily"><span>Loan words marked up unnecessarily</span></a>
+          </li>
+          <li>
+            <a href="#invalid-language-value"><span>Invalid language value</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
       <li>
         <a href="#useful-resources"><span>Useful resources</span></a>
@@ -119,23 +150,66 @@
 </div>
 
   <h1 id="3-1-2-language-of-parts-aa">3.1.2 Language of Parts (AA)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Understanding 3.1.2 Language of Parts (AA)</a></p>
-<p>When content is displayed in a language that is different from the primary language of the page, it must be indicated in a way that assistive technologies understand. This ensures that screen readers switch to the appropriate accent and pronunciation for that language.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says:</h2>
+<p>&ldquo;The human language of each passage or phrase in the content can be programmatically determined&rdquo; (with exceptions)</p>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html">Understanding 3.1.2 Language of Parts</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>Written content that&rsquo;s in a language different from the primary language on the page must be identified using HTML&rsquo;s <code>lang</code> attribute, with the exception of names, technical terms, and loan words.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>Identifying the language of the content allows text-to-speech software, like screen readers, to switch to the appropriate pronunciation for that language.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>Using your browser&rsquo;s developer tools, check that any areas with content in a language different to the rest of the page have a <code>lang</code> attribute with the correct value.</p>
+<p>The language value must be valid. Some examples of valid language values are:</p>
 
 <ul>
-<li>  Content that is written in a different language from the primary language of the page, is identified using HTML (the lang attribute).</li>
+<li><code>cy</code> &ndash; Welsh</li>
+<li><code>en</code> &ndash; English</li>
+<li><code>en-GB</code> &ndash; British English</li>
+<li><code>en-US</code> &ndash; American English</li>
+<li><code>uk-Cyrl</code> &ndash; Ukrainian written in Cyrillic script</li>
+<li><code>uk-Latn</code> &ndash; Ukrainian written in Latin script</li>
+<li><code>en-Brai-GB</code> &ndash; British English in Braille script</li>
 </ul>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/3.1.2">How to test in detail for 3.1.2 Language of Parts</a></p>
+<h2 id="good-example">Good example</h2>
+<h3 id="text-marked-up-in-a-different-language">Text marked up in a different language</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The audience had been invaded by <span class="nt">&lt;span</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>agents provocateurs<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This passes because the phrase &lsquo;<span lang="fr">agents provocateurs</span>&rsquo; has been marked up correctly. This phrase is pronounced differently in French to how it would be said in English, so specifying the language of origin helps screen readers pronounce it correctly.</p>
 <h2 id="common-mistakes">Common mistakes</h2>
-
-<ul>
-<li>  Content uses a different language, but the change in language is not identified in the HTML;</li>
-<li>  Content uses a different language, and the wrong language is identified in the HTML.</li>
-</ul>
+<h3 id="text-in-another-language-not-marked-up">Text in another language not marked up</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>They've started a tête-à-tête with one another.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This fails as the French phrase &lsquo;<span lang="fr">tête-à-tête</span>&rsquo; is not marked up with the appropriate <code>lang</code> attribute.</p>
+<h3 id="loan-words-marked-up-unnecessarily">Loan words marked up unnecessarily</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>I bought an <span class="nt">&lt;span</span> <span class="na">lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>espresso<span class="nt">&lt;/span&gt;</span> at the <span class="nt">&lt;span</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>café<span class="nt">&lt;/span&gt;</span> earlier.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This is unnecessary as &lsquo;espresso&rsquo; and &lsquo;café&rsquo; are both loan words in English, so they do not need to be marked up separately.</p>
+<h3 id="invalid-language-value">Invalid language value</h3>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Locke argued that the human mind starts as a <span class="nt">&lt;span</span> <span class="na">lang=</span><span class="s">"Latin"</span><span class="nt">&gt;</span>tabula rasa<span class="nt">&lt;/span&gt;</span>, a blank slate.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div><p>This fails as the <code>lang</code> attribute&rsquo;s value is not valid.</p>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p><a href="3.1.1.html">3.1.1 Language of Page (A)</a> covers the language of the entire page being marked up correctly.</p>
 <h2 id="useful-resources">Useful resources</h2>
 
 <ul>
-<li>  <a href="https://www.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/">Using the HTML lang attribute</a></li>
+<li><a href="https://www.w3.org/International/tutorials/language-decl/">Working with language on the Web - W3C Internationalization tutorial</a></li>
+<li><a href="https://www.w3.org/International/questions/qa-lang-why">Why use the language attribute? - W3C</a></li>
+<li><a href="https://www.w3.org/International/getting-started/language">Language on the Web - W3C</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag">BCP 47 language tags - MDN</a></li>
 </ul>
 
 
