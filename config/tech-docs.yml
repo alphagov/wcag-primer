@@ -17,7 +17,7 @@ header_links:
   Checklist: /checklist.html
   Community: /community.html
 footer_links:
-  Accessibility: /accessibility.html
+  Accessibility statement: /accessibility.html
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: false
