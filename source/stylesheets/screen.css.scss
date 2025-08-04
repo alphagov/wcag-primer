@@ -3,6 +3,7 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica",
 
 @import "govuk_tech_docs";
 
+// Banner at the top of the page
 .app-internal-banner {
   margin: govuk-spacing(5) 0;
   padding-bottom: govuk-spacing(2);
@@ -10,5 +11,19 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica",
 
   p {
     margin: 0;
+  }
+}
+
+// Style figure/figcaption elements
+.technical-documentation > figure {
+  margin: 0;
+  border: 1px solid govuk-colour("dark-grey");
+  line-height: 0; // needed to remove extra whitespace beneath images
+  @include govuk-responsive-margin(5, $direction: bottom);
+
+  figcaption {
+    @include govuk-font(16);
+    @include govuk-responsive-padding(2);
+    border-top: 1px solid govuk-colour("dark-grey");
   }
 }
