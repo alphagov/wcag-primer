@@ -4,7 +4,7 @@ title: 2.4.4 Link Purpose (In Context) (A)
 
 # <%= current_page.data.title %>
 
-## WCAG says:
+## What WCAG says:
 
 > "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context" (with one exception)
 
@@ -18,7 +18,7 @@ Every link must have text which describes its purpose within its immediate conte
 
 This makes sure that screen reader users can understand the purpose of links in their context, and that speech recognition users can target links accurately using voice commands.
 
-## What to check
+## How to check
 
 The accessible name is the name used by assistive technologies such as screen readers and voice control tools. To find the accessible name of each link, you can use:
 
@@ -31,23 +31,23 @@ Automated tools such as Axe can detect links with no text, but they cannot deter
 
 [How to test in detail for 2.4.4 Link Purpose (in context)](https://github.com/alphagov/wcag-primer/wiki/2.4.4)
 
-## Good example
+## Good examples
 
-### Links with unique accessible names
-
-The following screenshot includes three "Change" links related to a fictional person's name, date of birth and customer reference.
+### A self-explanatory link
 
 <figure>
-    <%= image_tag "../images/244/244-pass-change-links.png", { :alt => 'Change links' } %>
-    <figcaption>Personal details with links to change the user's name, date of birth or customer reference.</figcaption>
+    <%= image_tag "../images/244/244-pass-self-explanatory-link.png", { :alt => 'A "Financial support" link after a paragraph of text.' } %>
 </figure>
 
-To help make the "Change" link as descriptive as possible, additional text has been added for assistive technology users. For example, the first link has an accessible name of "Change name".
+Ideally, all links should make sense out of context. In this case, the "Financial support" link does not depend on the previous text for you to understand it.
+
+### A link that makes sense in context
 
 <figure>
-    <%= image_tag "../images/244/244-pass-change-links-properties.png", { :alt => 'Accessible name' } %>
-    <figcaption>Developer tools showing the accessible name of 'Change name'</figcaption>
+    <%= image_tag "../images/244/244-pass-link-in-context.png", { :alt => 'The text "We provide support to help you manage your finances" with a link on the word "support".' } %>
 </figure>
+
+While the link text of "support" is not very specific in itself, the surrounding context makes the link meaningful.
 
 ## Common mistakes
 
@@ -56,8 +56,8 @@ To help make the "Change" link as descriptive as possible, additional text has b
 A link fails this criterion if it is an image with no associated text. In this example, the Twitter and Search icons are described as "Unlabeled" when using a screen reader.
 
 <figure>
-    <%= image_tag "../images/244/244-fail-links-with-no-name.png", { :alt => 'Unlabelled icons' } %>
-    <figcaption>Twitter and Search icons showing as unlabelled.</figcaption>
+    <%= image_tag "../images/244/244-fail-links-with-no-name.png", { :alt => 'Instagram and Search icons' } %>
+        <figcaption>The accessible names of these links are unreadable symbols rather than text.</figcaption>
 </figure>
 
 ### Links out of context
@@ -65,8 +65,8 @@ A link fails this criterion if it is an image with no associated text. In this e
 The following link has generic text of "Read more" and is not in the same paragraph as the wording leading up to it, meaning it has no immediate context.
 
 <figure>
-    <%= image_tag "../images/244/244-fail-read-more.png", { :alt => 'Generic button' } %>
-    <figcaption>A "Read More" button after some text, with a gap in the middle.</figcaption>
+    <%= image_tag "../images/244/244-fail-read-more.png", { :alt => 'A "read more" link after a paragraph of text introducing an article.' } %>
+    <figcaption>In this case, there is no link in the code between the paragraph and the link.</figcaption>
 </figure>
 
 ## Related success criteria
