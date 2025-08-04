@@ -5554,3 +5554,42 @@
 .app-internal-banner p {
   margin: 0;
 }
+
+.technical-documentation > figure {
+  margin: 0;
+  border: 1px solid #505a5f;
+  line-height: 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 40.0625em) {
+  .technical-documentation > figure {
+    margin-bottom: 25px;
+  }
+}
+.technical-documentation > figure figcaption {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  padding: 10px;
+  border-top: 1px solid #505a5f;
+}
+@media print {
+  .technical-documentation > figure figcaption {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .technical-documentation > figure figcaption {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+@media print {
+  .technical-documentation > figure figcaption {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
