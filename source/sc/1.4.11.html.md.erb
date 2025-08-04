@@ -4,53 +4,67 @@ title: 1.4.11 Non-text Contrast (AA)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
+## What WCAG says:
 
-This is like ‘colour contrast for charts, icons and controls’. User Interface components and graphical objects have [contrast ratio of at least 3:1](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio). This also covers where the state of a control changes - a button on mouse over for example.
+> “The visual presentation of [user interface components and graphics] have a contrast ratio of at least 3:1 against adjacent colours” (with exceptions)
 
-* <strong>User Interface Components</strong>
-Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
-* <strong>Graphical Objects</strong>
-Parts of graphics required to understand the content of a page. These can be charts, graphs, infographics and so on.
+[Understanding 1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast)
 
-## Why is this a problem?
+## What this means
 
-Many sight impaired users cannot see important controls or understand graphics if they have poor colour contrast. 
+Important visual information that is not text (for example, form controls, icons and charts) needs a contrast ratio of at least 3:1 with its surroundings. This applies unless:
 
-## Requirements / What to do?
+* the style is a default for the browser or device, or
+* it is "essential" that the information is presented with low contrast
 
-Check that buttons or other inputs and controls have a ratio of 3:1 or higher. This also includes their 'state'. 
+## Why it matters
 
-<strong>NOTE:</strong> This does not apply if inactive or if their look is made purely by the browser and not the author. 
+People with visual impairments may not be able to see graphical information with poor contrast.
 
-Make sure parts of any graphics required to understand the content (like a warning icon) have good colour contrast.
+## What to check
+
+Check that any important information not conveyed through text has a contrast ratio of at least 3:1 against its surroundings.
+
+For a colour generated using the page's code, the colour is likely to be findable using your browser's developer tools. Otherwise, colours can be checked using a colour picker tool such as [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/). It is best to test this criterion manually as it is not covered by most common automated test tools.
+
+[How to test in detail for 1.4.11 Non-text contrast](https://github.com/alphagov/wcag-primer/wiki/1.4.11)
+
+## Good example
+
+The selected state of [radio buttons on the GOV.UK Design System](https://design-system.service.gov.uk/components/radios/) uses a large black spot on a white background, making it very clear to see:
+
+<figure>
+    <%= image_tag "../images/1411/1411-pass-radio-selected.png", { :alt => 'Selected radio button' } %>
+    <figcaption>Four radio buttons showing UK countries. Wales is selected.</figcaption>
+</figure>
 
 ## Common mistakes
 
-* The purpose and meaning of important images that relate to page content - like if a medicine is poisonous, or other warnings - are hard to make out for a user who is sight impaired.
-* The purpose or ‘state’ of a control isn’t clear to the user.
+### Low contrast form field
 
-## Resources
+The following form field is difficult to see. A form field should be clearly identified by using a high contrast border or by having a different enough colour to its surroundings.
 
-### For User Interface Component contrast
+<figure>
+    <%= image_tag "../images/1411/1411-fail-low-contrast-search.png", { :alt => 'Search box' } %>
+    <figcaption>A dark grey search field on a darker grey background.</figcaption>
+</figure>
 
-* [Using an author-supplied, highly visible focus indicator](https://www.w3.org/WAI/WCAG21/Techniques/general/G195)
+### Low contrast focus indicator
 
-### For graphics with sufficient contrast
+An orange focus indicator on a white page has insufficient contrast to be able to see it easily.
 
-* [Ensuring that a contrast ratio of 3:1 is provided for icons](https://www.w3.org/WAI/WCAG21/Techniques/general/G207)
+<figure>
+    <%= image_tag "../images/1411/1411-fail-low-contrast-focus.png", { :alt => 'Orange focus indicator' } %>
+    <figcaption>Password field surrounded by an orange border on a white background.</figcaption>
+</figure>
 
-### For text in or over graphics
+## Related success criteria
 
-* [Ensuring that a contrast ratio of at least 4.5:1 exists between text and background](https://www.w3.org/WAI/WCAG21/Techniques/general/G18)
-* [Ensuring that a contrast ratio of at least 3:1 exists between text and background](https://www.w3.org/WAI/WCAG21/Techniques/general/G145)
-* [Providing a control for users to switch to a view with sufficient contrast](https://www.w3.org/WAI/WCAG21/Techniques/general/G174)
-* [Using sufficient contrast for images that convey information - Draft](https://www.w3.org/WAI/GL/wiki/Using_sufficient_contrast_for_images_that_convey_information)
+* [1.4.1 Use of Colour](1.4.1.html) covers elements being identified by colour alone.
+* [1.4.3 Contrast (Minimum)](1.4.3.html) covers the contrast of text.
+* [2.4.7 Focus Visible](2.4.7.html) covers focus indicators being visible, but 1.4.11 Non-text Contrast determines how visible they should be.
 
-## Resources
-Find out more about [Accessibility Requirements for People with Low Vision](http://w3c.github.io/low-vision-a11y-tf/requirements.html).
+## Useful links
 
-
-
-
-
+* [Understanding 1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast) has several visual examples of good and bad practice.
+* [WebAim Contrast Checker](https://webaim.org/resources/contrastchecker/) is a free online tool that can be used for checking contrast.
