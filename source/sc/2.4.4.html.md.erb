@@ -42,7 +42,7 @@ The following screenshot includes three "Change" links related to a fictional pe
     <figcaption>Personal details with links to change the user's name, date of birth or customer reference.</figcaption>
 </figure>
 
-As the word "Change" alone is not enough to describe the purpose of each link, additional text has been added for assistive technology users. For example, the first link has an accessible name of "Change name".
+To help make the "Change" link as descriptive as possible, additional text has been added for assistive technology users. For example, the first link has an accessible name of "Change name".
 
 <figure>
     <%= image_tag "../images/244/244-pass-change-links-properties.png", { :alt => 'Accessible name' } %>
@@ -56,7 +56,7 @@ As the word "Change" alone is not enough to describe the purpose of each link, a
 A link fails this criterion if it is an image with no associated text. In this example, the Twitter and Search icons are described as "Unlabeled" when using a screen reader.
 
 <figure>
-    <%= image_tag "../images/244/244-fail-unlabelled-links.png", { :alt => 'Unlabelled icons' } %>
+    <%= image_tag "../images/244/244-fail-links-with-no-name.png", { :alt => 'Unlabelled icons' } %>
     <figcaption>Twitter and Search icons showing as unlabelled.</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ The following link has generic text of "Read more" and is not in the same paragr
 This success criterion specifically relates to links being descriptive.
 
 * [1.1.1 Non-text Content](1.1.1.html) relates to images having alternative text. If a link only contains an image which fails Non-text Content, it is likely to fail 2.4.4 Link Purpose too.
-* [2.4.6 Headings and Labels](2.4.6.html) relates to all types of elements having descriptive labels, not just links.
+* [2.4.6 Headings and Labels](2.4.6.html) relates to other components having descriptive labels, not just links.
 * [2.5.3 Label in Name](2.5.3.html) requires that the accessible name includes any text that's presented visually.
 * [4.1.2 Name, Role, Value](4.1.2.html) requires that links also have an appropriate role.
 
