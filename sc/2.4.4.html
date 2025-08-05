@@ -95,13 +95,44 @@
     <a href="#2-4-4-link-purpose-in-context-a"><span>2.4.4 Link Purpose (In Context) (A)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-examples"><span>Good examples</span></a>
+        <ul>
+          <li>
+            <a href="#a-self-explanatory-link"><span>A self-explanatory link</span></a>
+          </li>
+          <li>
+            <a href="#a-link-that-makes-sense-in-context"><span>A link that makes sense in context</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#links-with-no-text"><span>Links with no text</span></a>
+          </li>
+          <li>
+            <a href="#links-out-of-context"><span>Links out of context</span></a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="#useful-resources"><span>Useful resources</span></a>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
+      </li>
+      <li>
+        <a href="#useful-links"><span>Useful links</span></a>
       </li>
     </ul>
   </li>
@@ -119,31 +150,69 @@
 </div>
 
   <h1 id="2-4-4-link-purpose-in-context-a">2.4.4 Link Purpose (In Context) (A)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html">Understanding 2.4.4 Link Purpose (In Context) (A)</a></p>
-<p>The purpose of every link must be clear from its link text, or its link text plus associated content if assistive technologies recognise the association. This ensures that screen reader users can understand the purpose of links without reading nearby content, and that speech recognition users can target links accurately using voice commands.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says:</h2>
+
+<blockquote>
+<p>&ldquo;The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context&rdquo; (with one exception)</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">Understanding 2.4.4 Link Purpose (In Context)</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>Every link must have text which describes its purpose within its immediate context. The text does not have to be visible, but it must be conveyed to assistive technologies.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>This makes sure that screen reader users can understand the purpose of links in their context, and that speech recognition users can target links accurately using voice commands.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>The accessible name is the name used by assistive technologies such as screen readers and voice control tools. To find the accessible name of each link, you can use:</p>
 
 <ul>
-<li>  Link text clearly indicates the purpose of the link;</li>
-<li>  Multiple links that point to the same destination have the same link text;</li>
-<li>  Links have accessible names.</li>
+<li>your browser&rsquo;s developer tools</li>
+<li>a screen reader</li>
 </ul>
+<p>Check that each link describes the link&rsquo;s purpose. If the link text itself is not enough to understand the purpose, then also check its immediate context, such as the same paragraph, list item, table cell or an associated table header.</p>
+<p>Automated tools such as Axe can detect links with no text, but they cannot determine whether link text is appropriate when it exists.</p>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/2.4.4">How to test in detail for 2.4.4 Link Purpose (in context)</a></p>
+<h2 id="good-examples">Good examples</h2>
+<h3 id="a-self-explanatory-link">A self-explanatory link</h3>
+
+<figure>
+    <img src="../images/244/244-pass-self-explanatory-link.png" alt="A &quot;Financial support&quot; link after a paragraph of text." />
+</figure>
+<p>Ideally, all links should make sense out of context. In this case, the &ldquo;Financial support&rdquo; link does not depend on the previous text for you to understand it.</p>
+<h3 id="a-link-that-makes-sense-in-context">A link that makes sense in context</h3>
+
+<figure>
+    <img src="../images/244/244-pass-link-in-context.png" alt="The text &quot;We provide support to help you manage your finances&quot; with a link on the word &quot;support&quot;." />
+</figure>
+<p>While the link text of &ldquo;support&rdquo; is not very specific in itself, the surrounding context makes the link meaningful.</p>
 <h2 id="common-mistakes">Common mistakes</h2>
+<h3 id="links-with-no-text">Links with no text</h3>
+<p>A link fails this criterion if it is an image with no associated text. In this example, the Instagram and Search icons are described as &ldquo;Unlabeled&rdquo; when using a screen reader.</p>
+
+<figure>
+    <img src="../images/244/244-fail-links-with-no-name.png" alt="Instagram and Search icons" />
+        <figcaption>The accessible names of these links are unreadable symbols rather than text.</figcaption>
+</figure>
+<p>Adding meaningful alternative text to the icons, for example &ldquo;Instagram&rdquo; and &ldquo;Search&rdquo;, would give the links appropriate names.</p>
+<h3 id="links-out-of-context">Links out of context</h3>
+<p>The following link has generic text of &ldquo;Read more&rdquo; and is not in the same paragraph as the wording leading up to it, meaning it has no immediate context.</p>
+
+<figure>
+    <img src="../images/244/244-fail-read-more.png" alt="A &quot;read more&quot; link after a paragraph of text talking about education." />
+    <figcaption>In this case, there is no link in the code between the paragraph and the link.</figcaption>
+</figure>
+<p>Either the link text could be made self-explanatory, or extra visually hidden text could be added to the link&rsquo;s accessible name. For example, the screen reader output could be changed to &ldquo;Read more about our educational experience.&rdquo;</p>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p>This success criterion specifically relates to links being descriptive.</p>
 
 <ul>
-<li>  A link has text that does not indicate its purpose;</li>
-<li>  A link points to the same destination as another link, but uses different link text;</li>
-<li>  A link points to a unique destination, but uses the same text as other links;</li>
-<li>  A link has text that depends on nearby content to be understood, but that content is not automatically identified by assistive technologies;</li>
-<li>  A link uses a CSS background image, and has no visible accessible name.</li>
+<li><a href="1.1.1.html">1.1.1 Non-text Content</a> relates to images having alternative text. If a link only contains an image which fails Non-text Content, it is likely to fail 2.4.4 Link Purpose too.</li>
+<li><a href="2.4.6.html">2.4.6 Headings and Labels</a> relates to other components having descriptive labels, not just links.</li>
+<li><a href="2.5.3.html">2.5.3 Label in Name</a> requires that the accessible name includes any text that&rsquo;s presented visually.</li>
+<li><a href="4.1.2.html">4.1.2 Name, Role, Value</a> requires that links also have an appropriate role.</li>
 </ul>
-<h2 id="useful-resources">Useful resources</h2>
+<h2 id="useful-links">Useful links</h2>
 
 <ul>
-<li>  <a href="https://www.nomensa.com/blog/2011/writing-good-link-text">Writing good link text</a></li>
-<li>  <a href="https://www.gov.uk/guidance/content-design/links#using-links-in-content">GOV.UK: Using links in content</a></li>
-<li>  <a href="https://www.paciellogroup.com/blog/2012/08/notes-on-accessible-css-image-sprites/">Notes on accessible CSS image sprites</a></li>
-<li>  <a href="https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/">What is an accessible name?</a></li>
+<li><a href="https://www.gov.uk/guidance/content-design/links#using-links-in-content">GOV.UK content design guidance: Using links in content</a></li>
 </ul>
 
 
