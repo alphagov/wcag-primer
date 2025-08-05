@@ -53,21 +53,25 @@ While the link text of "support" is not very specific in itself, the surrounding
 
 ### Links with no text
 
-A link fails this criterion if it is an image with no associated text. In this example, the Twitter and Search icons are described as "Unlabeled" when using a screen reader.
+A link fails this criterion if it is an image with no associated text. In this example, the Instagram and Search icons are described as "Unlabeled" when using a screen reader.
 
 <figure>
     <%= image_tag "../images/244/244-fail-links-with-no-name.png", { :alt => 'Instagram and Search icons' } %>
         <figcaption>The accessible names of these links are unreadable symbols rather than text.</figcaption>
 </figure>
 
+Adding meaningful alternative text to the icons, for example "Instagram" and "Search", would give the links appropriate names.
+
 ### Links out of context
 
 The following link has generic text of "Read more" and is not in the same paragraph as the wording leading up to it, meaning it has no immediate context.
 
 <figure>
-    <%= image_tag "../images/244/244-fail-read-more.png", { :alt => 'A "read more" link after a paragraph of text introducing an article.' } %>
+    <%= image_tag "../images/244/244-fail-read-more.png", { :alt => 'A "read more" link after a paragraph of text talking about education.' } %>
     <figcaption>In this case, there is no link in the code between the paragraph and the link.</figcaption>
 </figure>
+
+Either the link text could be made self-explanatory, or extra visually hidden text could be added to the link's accessible name. For example, the screen reader output could be changed to "Read more about our educational experience."
 
 ## Related success criteria
 
