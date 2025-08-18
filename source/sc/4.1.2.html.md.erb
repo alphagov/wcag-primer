@@ -18,7 +18,11 @@ All interactive components must have a name, role and (where applicable) a value
 * Role: textbox
 * Value: "Victoria"
 
-Where you can, it is best to use standard HTML (Hypertext Markup Language) components (such as links, buttons and checkboxes) as these properties are often read out by default.
+<figure>
+    <%= image_tag "../images/412/412-pass-example-textbox.png", { :alt => 'A standard text box labelled "What is your first name?" with value "Victoria"' } %>
+</figure>
+
+HTML (Hypertext Markup Language) components such as links, buttons and checkboxes already have a role, and make it easier to apply names and values.
 
 ARIA (Accessible Rich Internet Applications) is another common method to convey names, roles and values to assistive technologies - this is done by adding attributes to HTML tags. However, the [first rule of ARIA](https://www.w3.org/TR/using-aria/#rule1) is not to use it - unless there is no HTML alternative.
 
@@ -28,7 +32,7 @@ An accessible name, role and value are vital to ensure that assistive technology
 
 For example:
 
-* A speech recognition user might use the commands “click Search” or “click button”.
+* A speech recognition user might use the commands “click Search” or “click button”. If the accessible name is not provided then that action will be much more difficult.
 * A screen reader user needs to understand whether a checkbox to sign them up for marketing is checked or not.
 
 ## How to check
@@ -48,15 +52,13 @@ A radio button has the following properties which are read out by a screen reade
 * Name: England
 * Role: Radio button
 * State: Selected
-* The radio button is also within a grouping of "What is the principal place of business".
 * Sample screen reader output: "Now in, What is the principal place of business? England, selected, radio button, 1 of 5"
 
 <figure>
     <%= image_tag "../images/412/412-pass-radio-button-group.png", { :alt => 'A selected radio button on GOV.UK' } %>
-    <figcaption>When the England radio button is selected, a screen reader also reads out the question "What is the principal place of business?"</figcaption>
 </figure>
 
-The radio buttons are created using standard HTML with the name coming from a `<label>` tag. The grouping of "What is your principal place of business" has been provided using `<fieldset>` and `<legend>` elements.
+The radio buttons are created using standard HTML with the name coming from a `<label>` tag. The grouping of "What is your principal place of business" is also read to screen reader users, due to a correctly coded legend.
 
 ## Common mistakes
 
@@ -66,6 +68,8 @@ A “close window” button with a picture of a cross but no accessible name:
 
 <%= image_tag "../images/412/412-fail-cross-button.png", { :alt => 'Cross button in the corner of a window' } %>
 
+Without an accessible name, a screen reader will simply say "button" and a speech recognition user is likely to be unsuccessful in closing the window - for example "click close" will not work.
+
 The button needs an accessible name, for example, "Close window".
 
 ### A component with no role
@@ -74,10 +78,9 @@ A custom button with a valid accessible name of "Submit" but no role:
 
 <%= image_tag "../images/412/412-fail-submit-button.png", { :alt => 'Submit button' } %>
 
-<figure>
-    <%= image_tag "../images/412/412-fail-submit-button-role.png", { :alt => 'Accessibility information from the browser showing "Role: generic"' } %>
-    <figcaption>When creating custom components, a role such as "button" is not automatically applied.</figcaption>
-</figure>
+This button has been created by customising a generic HTML element with no meaning (`<div>`). However, the author has not given it a role (such as `button`) in the code.
+
+<%= image_tag "../images/412/412-fail-submit-button-role.png", { :alt => 'Accessibility information from the browser showing "Role: generic"' } %>
 
 The button could be improved by using a standard HTML `<button>` element or adding an ARIA `role`.
 
@@ -90,7 +93,7 @@ This is an expandable accordion which does not convey a state (value) of expande
     <figcaption>This button is expanded but this state is not read to screen reader users.</figcaption>
 </figure>
 
-Adding ARIA to the button's code (such as `aria-expanded="true"`) would allow the expanded state to be read out.
+Adding ARIA to the button's code (such as `aria-expanded="true"`), and updating it to reflect the current state of the button, would allow the correct state to be read out.
 
 ## Related success criteria
 
@@ -100,4 +103,4 @@ Other criteria cover the need for interactive components to be descriptive (2.4.
 
 * [1.3.1 Info and Relationships](1.3.1.html) relates to visual and programmatic information being presented consistently. While there is an overlap, Info and Relationships is more concerned with the structure of a page, and covers non-interactive elements.
 * [2.4.6 Headings and Labels](2.4.6.html) requires that any accessible names are descriptive. Name, Role, Value only ensures that they exist.
-* [3.3.2 Labels or Instructions](3.3.2.html) requires that labels are provided for all users, not just users of assistive technology
+* [3.3.2 Labels or Instructions](3.3.2.html) requires that labels exist for all users.
