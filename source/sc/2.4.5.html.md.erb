@@ -4,6 +4,59 @@ title: 2.4.5 Multiple Ways (AA)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
+## What WCAG says:
 
-Unless the service is a series of steps, there must be different ways for people to locate and navigate content. Different people will have different preferences, for example someone with a cognitive disability may prefer to browse a sitemap to locate content, whereas someone using magnification may prefer to use search instead of scrolling through a lengthy navigation block.
+> More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+
+[Understanding 2.4.5 Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways)
+
+## What this means
+
+Users can locate and navigate content easily, quickly and in a way that works best for them.
+
+## Why it matters
+
+Users have different needs and different preferences. For example, someone with a cognitive disability may use a sitemap to locate content, or someone with a visual impairment may use a search function instead of scrolling through a large page of content.
+
+## How to check
+
+Look for at least 2 ways to navigate to all pages that are not part of a process (such as applying for a licence). All navigation methods must work and be easy to find.
+
+The most common navigation tools to check are:
+
+* breadcrumbs or sub-navigation that usually appears at the top of a page
+* a sitemap – a page with links to all pages counts as a sitemap, as well as links in the footer
+* search functionality, allowing you to search for the page name or content within
+
+[How to test in detail for 2.4.5 Multiple Ways](https://github.com/alphagov/wcag-primer/wiki/2.4.5)
+
+## Good example
+
+### A page which appears in search results
+
+<figure>
+    <%= image_tag "../images/245/245-passfail-initial-search.png", { :alt => 'A search field for "accessibility statement for pay by card"' } %>
+    <%= image_tag "../images/245/245-pass-search-result.png", { :alt => 'Search result for "accessibility statetement for pay by card".' } %>
+    <figcaption>This is an example of a working "alternative way", assuming that the page is also reachable by navigating around the site.</figcaption>
+</figure>
+
+## Common mistakes
+
+Common mistakes include:
+
+* There are pages that are not part of the navigation structure.
+* A second navigation structure (like a sitemap or a search) is not present or easy to find.
+* Navigation methods do not work correctly - for example, some pages do not appear in search results.
+
+### Dead link in search results
+
+<figure>
+    <%= image_tag "../images/245/245-passfail-initial-search.png", { :alt => 'A search field for "accessibility statement for pay by card"' } %>
+    <%= image_tag "../images/245/245-fail-dead-link.jpg", { :alt => 'Arrow pointing to a "this link is dead" message with a skull.' } %>
+    <figcaption>As this search leads to a broken link, it does not count as an alternative way to access the page.</figcaption>
+</figure>
+
+## Related success criteria
+
+* [2.4.2 Page Titled](2.4.2.html) helps to make it easier to find pages by making sure they have descriptive titles.
+* [3.2.3 Consistent Navigation](3.2.3.html) makes sure that navigation menus are always presented in a consistent order.
