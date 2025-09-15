@@ -4,27 +4,57 @@ title: 1.4.1 Use of Colour (A)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
+## What WCAG says
 
-Colour must not be the only thing used to tell different content apart. This ensures that people who are unable to see colours, or who have difficulty telling different colours apart, have some other way to do so.
+> Colour is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
 
-## Requirements / What to do?
+[Understanding 1.4.1 Use of Colour](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color)
 
-*   When rendered in monochrome, information does not disappear.
-*   Text identified by colour as having special meaning has another indicator - a visible border and label, underline or other visual effect.
-*   Information graphics and charts that use colour as a key also provide distinctive non-colour differences - hatching patterns or directly applied labels.
+## What this means
+
+Colour must not be the only thing used to tell different content apart.
+
+## Why it matters
+
+Not everyone can easily tell the difference between colours, such as people with a visual impairment, using assistive technology or with certain screen settings.
+
+## How to check
+
+Check that:
+
+* Information is just as understandable in greyscale as it is in colour.
+* Colour alone is not used to identify an object or text - for example, links should be underlined as well as using colour.
+* Information graphics and charts that use colour as a key also provide non-colour differences, such as applying patterns or labels.
+
+[How to test in detail for 1.4.1 Use of Colour](https://github.com/alphagov/wcag-primer/wiki/1.4.1)
+
+## Good example
+
+### Indicating status using words
+
+A 'set password' field uses words to show which requirements are met:
+
+<figure>
+    <%= image_tag "../images/141/141-pass-colour-password-requirements-with-words.png", { :alt => 'Password requirements with words' } %>
+    <figcaption>A field used for setting a password includes four requirements that the password must meet. While the symbols alone would pass Use of Colour, there are also words (Pass or Fail) to show which requirements are met.</figcaption>
+</figure>
 
 ## Common mistakes
 
-*   A form uses only colour to indicate a required field.
-*   Colour-coding text or backgrounds to indicate essential content, pass/fail categorisation, etc.
-*   Links are only distinguished from plain text by colour and the colour may not vary from the main body text.
-* Text alternatives that do not include information conveyed by colour differences in the original image.
+### Colour is used to convey success or failure
 
-## Useful resources
+<figure>
+    <%= image_tag "../images/141/141-fail-colour-password-requirements.png", { :alt => 'Password requirements in red or green' } %>
+    <figcaption>In this example, the green text indicates the password requirement has passed and the red indicates the password does not meet that requirement. There is no other way, beyond the colour, to check which requirement is met.</figcaption>
+</figure>
 
-* [Understanding Colour Blindness](https://webaim.org/articles/visual/colorblind)
-* [Colour Blindness in Gaming](https://steamcommunity.com/sharedfiles/filedetails/?id=1165988039)
-* [More Colour Blindess in Gaming](https://www.gamersexperience.com/colorblind-accessibility-in-video-games-is-the-industry-heading-in-the-right-direction/)
+In general, the following examples fail:
 
+* A form uses only colour to indicate a required field.
+* Using coloured text or backgrounds for essential information, such as a pass or fail.     
+* Links are only different from plain text by colour, with no other visual differences.     
 
+## Related success criteria
+
+* [1.4.3 Contrast (Minimum)](1.4.3.html) makes sure that text has enough contrast, regardless of whether it relies on colour to distinguish it.
+* [1.4.11 Non-text Contrast](1.4.11.html) makes sure that components have enough contrast to be visible, regardless of whether they are distinguishable using colour. This can apply to icons, form fields or keyboard focus indicators.
