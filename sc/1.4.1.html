@@ -95,13 +95,35 @@
     <a href="#1-4-1-use-of-colour-a"><span>1.4.1 Use of Colour (A)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-example"><span>Good example</span></a>
+        <ul>
+          <li>
+            <a href="#indicating-status-using-words"><span>Indicating status using words</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#colour-is-used-to-convey-success-or-failure"><span>Colour is used to convey success or failure</span></a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="#useful-resources"><span>Useful resources</span></a>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
     </ul>
   </li>
@@ -119,29 +141,52 @@
 </div>
 
   <h1 id="1-4-1-use-of-colour-a">1.4.1 Use of Colour (A)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html">Understanding 1.4.1 Use of Colour (A)</a></p>
-<p>Colour must not be the only thing used to tell different content apart. This ensures that people who are unable to see colours, or who have difficulty telling different colours apart, have some other way to do so.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says</h2>
+
+<blockquote>
+<p>Colour is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Understanding 1.4.1 Use of Colour</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>Colour must not be the only thing used to tell different content apart.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>Not everyone can easily tell the difference between colours, such as people with a visual impairment, using assistive technology or with certain screen settings.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>Check that:</p>
 
 <ul>
-<li>  When rendered in monochrome, information does not disappear.</li>
-<li>  Text identified by colour as having special meaning has another indicator - a visible border and label, underline or other visual effect.</li>
-<li>  Information graphics and charts that use colour as a key also provide distinctive non-colour differences - hatching patterns or directly applied labels.</li>
+<li>Information is just as understandable in greyscale as it is in colour.</li>
+<li>Colour alone is not used to identify an object or text - for example, links should be underlined as well as using colour.</li>
+<li>Information graphics and charts that use colour as a key also provide non-colour differences, such as applying patterns or labels.</li>
 </ul>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/1.4.1">How to test in detail for 1.4.1 Use of Colour</a></p>
+<h2 id="good-example">Good example</h2>
+<h3 id="indicating-status-using-words">Indicating status using words</h3>
+<p>A &lsquo;set password&rsquo; field uses words to show which requirements are met:</p>
+
+<figure>
+    <img src="../images/141/141-pass-colour-password-requirements-with-words.png" alt="Password requirements with words" />
+    <figcaption>A field used for setting a password includes four requirements that the password must meet. While the symbols alone would pass Use of Colour, there are also words (Pass or Fail) to show which requirements are met.</figcaption>
+</figure>
 <h2 id="common-mistakes">Common mistakes</h2>
+<h3 id="colour-is-used-to-convey-success-or-failure">Colour is used to convey success or failure</h3>
+
+<figure>
+    <img src="../images/141/141-fail-colour-password-requirements.png" alt="Password requirements in red or green" />
+    <figcaption>In this example, the green text indicates the password requirement has passed and the red indicates the password does not meet that requirement. There is no other way, beyond the colour, to check which requirement is met.</figcaption>
+</figure>
+<p>In general, the following examples fail:</p>
 
 <ul>
-<li>  A form uses only colour to indicate a required field.</li>
-<li>  Colour-coding text or backgrounds to indicate essential content, pass/fail categorisation, etc.</li>
-<li>  Links are only distinguished from plain text by colour and the colour may not vary from the main body text.</li>
-<li>Text alternatives that do not include information conveyed by colour differences in the original image.</li>
+<li>A form uses only colour to indicate a required field.</li>
+<li>Using coloured text or backgrounds for essential information, such as a pass or fail.<br></li>
+<li>Links are only different from plain text by colour, with no other visual differences.<br></li>
 </ul>
-<h2 id="useful-resources">Useful resources</h2>
+<h2 id="related-success-criteria">Related success criteria</h2>
 
 <ul>
-<li><a href="https://webaim.org/articles/visual/colorblind">Understanding Colour Blindness</a></li>
-<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1165988039">Colour Blindness in Gaming</a></li>
-<li><a href="https://www.gamersexperience.com/colorblind-accessibility-in-video-games-is-the-industry-heading-in-the-right-direction/">More Colour Blindess in Gaming</a></li>
+<li><a href="1.4.3.html">1.4.3 Contrast (Minimum)</a> makes sure that text has enough contrast, regardless of whether it relies on colour to distinguish it.</li>
+<li><a href="1.4.11.html">1.4.11 Non-text Contrast</a> makes sure that components have enough contrast to be visible, regardless of whether they are distinguishable using colour. This can apply to icons, form fields or keyboard focus indicators.</li>
 </ul>
 
 
