@@ -10,16 +10,16 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     autoprefixer-rails (10.4.21.0)
       execjs (~> 2)
-    backports (3.25.1)
+    backports (3.25.2)
     base64 (0.3.0)
-    bigdecimal (3.2.2)
+    bigdecimal (3.3.1)
     chronic (0.10.2)
     chunky_png (1.4.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    commonmarker (0.23.11)
+    commonmarker (0.23.12)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -45,10 +45,10 @@ GEM
     fast_blank (1.0.1)
     fastimage (2.4.0)
     ffi (1.17.2)
-    google-protobuf (4.31.1)
+    google-protobuf (4.32.1)
       bigdecimal
       rake (>= 13)
-    govuk_tech_docs (5.0.2)
+    govuk_tech_docs (5.1.1)
       autoprefixer-rails (~> 10.2)
       base64
       bigdecimal
@@ -62,7 +62,7 @@ GEM
       middleman-livereload
       middleman-search-gds
       middleman-sprockets (~> 4.0.0)
-      middleman-syntax (~> 3.4)
+      middleman-syntax (~> 3.6)
       mutex_m
       nokogiri
       openapi3_parser (~> 0.9.0)
@@ -136,14 +136,14 @@ GEM
     middleman-sprockets (4.0.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
-    middleman-syntax (3.5.0)
+    middleman-syntax (3.6.1)
       middleman-core (>= 3.2)
       rouge (~> 3.2)
     mini_portile2 (2.8.9)
-    minitest (5.25.5)
-    multi_json (1.15.0)
+    minitest (5.26.0)
+    multi_json (1.17.0)
     mutex_m (0.3.0)
-    nokogiri (1.18.9)
+    nokogiri (1.18.10)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     openapi3_parser (0.9.2)
@@ -157,7 +157,7 @@ GEM
     parslet (2.0.0)
     public_suffix (6.0.2)
     racc (1.8.1)
-    rack (2.2.17)
+    rack (2.2.20)
     rack-livereload (0.3.17)
       rack
     rake (13.3.0)
@@ -165,10 +165,10 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     redcarpet (3.6.1)
-    rexml (3.4.1)
+    rexml (3.4.4)
     rouge (3.30.0)
     sass (3.4.25)
-    sass-embedded (1.89.2)
+    sass-embedded (1.93.2)
       google-protobuf (~> 4.31)
       rake (>= 13)
     sassc (2.4.0)
@@ -180,7 +180,7 @@ GEM
       concurrent-ruby (~> 1.0)
       logger
       rack (>= 2.2.4, < 4)
-    temple (0.10.3)
+    temple (0.10.4)
     terser (1.2.6)
       execjs (>= 0.3.0, < 3)
     thor (1.2.2)
