@@ -96,13 +96,38 @@
     <a href="#2-4-1-bypass-blocks-a"><span>2.4.1 Bypass Blocks (A)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+        <ul>
+          <li>
+            <a href="#with-a-keyboard"><span>With a keyboard</span></a>
+          </li>
+          <li>
+            <a href="#with-a-screen-reader"><span>With a screen reader</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#good-example"><span>Good example</span></a>
+        <ul>
+          <li>
+            <a href="#working-skip-link"><span>Working skip link</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
       </li>
       <li>
-        <a href="#useful-resources"><span>Useful resources</span></a>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
     </ul>
   </li>
@@ -120,26 +145,38 @@
 </div>
 
   <h1 id="2-4-1-bypass-blocks-a">2.4.1 Bypass Blocks (A)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">Understanding 2.4.1 Bypass Blocks (A)</a></p>
-<p>When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page. This ensures that people who do not use a mouse can quickly and easily reach the primary content of the page.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says:</h2>
 
-<ul>
-<li>  A “Skip to main content” link is provided, and the link is located close to the start of the page;</li>
-<li>  The <code>&lt;main&gt;</code> element is used to represent the main content area of the page.</li>
-</ul>
+<blockquote>
+<p>A mechanism is available to bypass blocks of content that are repeated on multiple web pages.</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">Understanding 2.4.1 Bypass Blocks</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>When there is repeated content (like a header or a navigation menu with lots of links at the top of the page), there must be a way for keyboard users to move focus directly past that content.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>People who use assistive technology, such as screen readers or a keyboard to navigate through pages, should have a way to quickly skip over repeated content. This means they don&rsquo;t have to go through lots of menus or links before getting to the main part of the website with important content.</p>
+<h2 id="how-to-check">How to check</h2>
+<h3 id="with-a-keyboard">With a keyboard</h3>
+<p>Use the Tab key to navigate the page and check that a skip link (for example, a link at the top of the page that says &lsquo;Skip to main content&rsquo;) appears before any repeated content.</p>
+<p>Check that activating the link moves the visual and keyboard focus past the repeated content.</p>
+<h3 id="with-a-screen-reader">With a screen reader</h3>
+<p>Use commands to open a list of links and check that a working skip link is present on the page. Alternatively, if there&rsquo;s no skip link, check that there is a logical heading or landmark structure which would work as a backup method for screen reader users.</p>
+<h2 id="good-example">Good example</h2>
+<h3 id="working-skip-link">Working skip link</h3>
+<p>The following page has a skip link close to the start of the page.</p>
+<p>This link moves the visual and keyboard focus to the main content area, skipping the navigation.</p>
+
+<figure>
+    <img src="../images/241/241-pass-skip-link.png" alt="&quot;Skip to main content&quot; link in a yellow bar at the top of a GOV.UK Design System page" />
+</figure>
 <h2 id="common-mistakes">Common mistakes</h2>
 
 <ul>
-<li>  The <code>&lt;main&gt;</code> element has been used, but there is no skip link that points to it;</li>
-<li>  A skip link has been provided, but it does not work in all supported browsers;</li>
-<li>  A skip link is provided, but it is only available to screen reader users.</li>
+<li>A page has a skip link but it does not work as intended.</li>
+<li>A page has no skip link, and no logical heading or landmark structure to work as a backup method.</li>
 </ul>
-<h2 id="useful-resources">Useful resources</h2>
-
-<ul>
-<li>  TBC</li>
-</ul>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p><a href="2.4.3.html">2.4.3 Focus Order</a> ensures that the focus order around the page is logical, to help users navigate predictably using a keyboard.</p>
 
 
             
