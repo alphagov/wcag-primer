@@ -4,21 +4,49 @@ title: 2.4.1 Bypass Blocks (A)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
+## What WCAG says:
 
-When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page. This ensures that people who do not use a mouse can quickly and easily reach the primary content of the page.
+> A mechanism is available to bypass blocks of content that are repeated on multiple web pages.
 
-## Requirements / What to do?
+[Understanding 2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks)
 
-*   A “Skip to main content” link is provided, and the link is located close to the start of the page;
-*   The `<main>` element is used to represent the main content area of the page.
+## What this means
+
+When there is repeated content (like a header or a navigation menu with lots of links at the top of the page), there must be a way for keyboard users to move focus directly past that content.
+
+## Why it matters
+
+People who use assistive technology, such as screen readers or a keyboard to navigate through pages, should have a way to quickly skip over repeated content. This means they don't have to go through lots of menus or links before getting to the main part of the website with important content.
+
+## How to check
+
+### With a keyboard
+
+Use the Tab key to navigate the page and check that a skip link (for example, a link at the top of the page that says 'Skip to main content') appears before any repeated content.
+
+Check that activating the link moves the visual and keyboard focus past the repeated content.
+
+### With a screen reader
+
+Use commands to open a list of links and check that a working skip link is present on the page. Alternatively, if there's no skip link, check that there is a logical heading or landmark structure which would work as a backup method for screen reader users.
+
+## Good example
+
+### Working skip link
+
+The following page has a skip link close to the start of the page.
+
+This link moves the visual and keyboard focus to the main content area, skipping the navigation.
+
+<figure>
+    <%= image_tag "../images/241/241-pass-skip-link.png", { :alt => '"Skip to main content" link in a yellow bar at the top of a GOV.UK Design System page' } %>
+</figure>
 
 ## Common mistakes
 
-*   The `<main>` element has been used, but there is no skip link that points to it;
-*   A skip link has been provided, but it does not work in all supported browsers;
-*   A skip link is provided, but it is only available to screen reader users.
+* A page has a skip link but it does not work as intended.
+* A page has no skip link, and no logical heading or landmark structure to work as a backup method.
 
-## Useful resources
+## Related success criteria
 
-*   TBC
+[2.4.3 Focus Order](2.4.3.html) ensures that the focus order around the page is logical, to help users navigate predictably using a keyboard.
