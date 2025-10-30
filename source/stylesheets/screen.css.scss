@@ -3,17 +3,6 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica",
 
 @import "govuk_tech_docs";
 
-// Banner at the top of the page
-.app-internal-banner {
-  margin: govuk-spacing(5) 0;
-  padding-bottom: govuk-spacing(2);
-  border-bottom: 1px solid govuk-colour("mid-grey");
-
-  p {
-    margin: 0;
-  }
-}
-
 // Style figure/figcaption elements
 .technical-documentation > figure {
   margin: 0;
