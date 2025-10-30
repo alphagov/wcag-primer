@@ -5772,15 +5772,6 @@
   display: block;
 }
 
-.app-internal-banner {
-  margin: 25px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #b1b4b6;
-}
-.app-internal-banner p {
-  margin: 0;
-}
-
 .technical-documentation > figure {
   margin: 0;
   border: 1px solid #505a5f;
