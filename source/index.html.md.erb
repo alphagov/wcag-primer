@@ -1,104 +1,80 @@
 ---
-title: Home
+title: WCAG Primer
 ---
 
-# WCAG Getting started
+# WCAG Primer
 
-This document will help you get up to speed with the Web Content Accessibility Guidelines (WCAG) quickly and avoid common mistakes people make when creating or updating web content. You will find this really helpful if you design, build or create web content. It currently includes criteria from WCAG 2.1 but there is work underway to update it to WCAG 2.2.
+This guide will help you make websites, documents and apps that are accessible to everyone. This includes disabled people, and those with health conditions or impairments to their:
 
-WCAG is the standard used by the UK public sector, and you need to pass these success criteria to comply with the UK Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018.
+* vision - such as blind, partially sighted or colour blind people
+* hearing - such as people who are deaf or hard of hearing
+* movement - such as motor skills which make it hard to use a mouse or keyboard
+* thinking and understanding - including people with dyslexia, autism or learning difficulties
 
-See Gov.uk for more on how to [Make your public sector website or app accessible](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
+This guide gives you an overview of the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG22/), also known as the WCAG standard. It does not replace the official WCAG standard.
 
-## What is WCAG 2.1?
+It's updated by volunteers from across the UK public sector.
 
-The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) explain how to make websites accessible for disabled and older people. The guidelines are written by accessibility specialists, volunteers and disabled people at the World Wide Web Consortium [W3C](https://w3.org/).
+## Who this guide is for
 
-Due to the rapidly changing technology landscape WCAG 2.1 was designed to better meet the needs of three major groups: mobile users, users with low vision, and users with cognitive or learning disabilities.
+This guide has been created for the UK cross government accessibility community.
 
-WCAG 2.1 helps make websites, documents and mobile apps accessible to people with:
+Anyone can use it, but it will be most useful if you work in content, design or code.
 
-* Visual impairments, including people who are blind, partially sighted, and people with conditions like being colour blind
-* Hearing impairments, including Deaf people who use sign language, and people who are hard of hearing
-* Mobility impairments, including people with restricted movement that stops them using a mouse or keyboard, and people who find it difficult to control a mouse
-* Cognitive impairments, including people who are Dyslexic, on the Autistic Spectrum, and people who have learning difficulties
+## About WCAG
 
-WCAG 2.1 also helps us think about the different ways people use the web:
+WCAG is a set of guidelines to help you to make sure websites and apps work for all users, including people who:
 
-* By changing the way a website looks in their browser
-* By using a keyboard instead of a mouse
-* By using a screen reader to navigate and present the website content as speech or on an electronic Braille display
-* By using a screen magnifier to increase the size of everything on-screen
-* By using speech recognition to use the web with voice commands and dictation
+* change the way a website looks in their browser
+* use a keyboard instead of a mouse
+* use a screen reader to navigate and present website content as speech
+* use an an electronic braille display
+* use a screen magnifier to increase the size of everything on-screen
+* use speech recognition to use the web with voice commands and dictation
 
-## How does it relate to WCAG 2.0?
+WCAG is written by accessibility specialists, volunteers and disabled people at the World Wide Web Consortium W3C.
 
-WCAG 2.1 is built on 2.0. So content that passes WCAG 2.1 will also pass WCAG 2.0.
+## WCAG guidelines and levels
 
-## New things in WCAG 2.1:
+There are 13 guidelines, grouped into 4 themes ('principles'):
 
-WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions, and guidelines to organise the additions. There are some additions to the conformance section.
+* Perceivable: people need to know that content or functionality is there
+* Operable: people need to be able to use things
+* Understandable: people need to understand things easily
+* Robust: things need to be compatible with different technology
 
-### New Success Criteria
+The things you need to do ('success criteria') are grouped under these guidelines. There are 3 levels of success criteria:
 
-The following Success Criteria are new in WCAG 2.1:
+* A: basic, essential - this covers vital areas such as images having text alternatives and functionality working with a keyboard.
+* AA: important. Meeting level AA will mean most people can use the website.
+* AAA: complex or specialist. For example, a sign language interpretation of a video.
 
-* 1.3.4 Orientation (AA)
-* 1.3.5 Identify Input Purpose (AA)
-* 1.3.6 Identify Purpose (AAA)
-* 1.4.10 Reflow (AA)
-* 1.4.11 Non-text Contrast (AA)
-* 1.4.12 Text Spacing (AA)
-* 1.4.13 Content on Hover or Focus (AA)
-* 2.1.4 Character Key Shortcuts (A)
-* 2.2.6 Timeouts (AAA)
-* 2.3.3 Animation from Interactions (AAA)
-* 2.5.1 Pointer Gestures (A)
-* 2.5.2 Pointer Cancellation (A)
-* 2.5.3 Label in Name (A)
-* 2.5.4 Motion Actuation (A)
-* 2.5.5 Target Size (AAA)
-* 2.5.6 Concurrent Input Mechanisms (AAA)
-* 4.1.3 Status Messages (AA)
+This guide focuses on A and AA success criteria to help you meet the minimum legal standard. Find out more about [AAA success criteria](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_customize&levels=a%2Caa).
 
-This primer only focuses on the level A and AA success criteria. [All AAA criteria can be viewed on the W3C website](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_customize&levels=a%2Caa). They are not included in this primer because the Public Sector Bodies Accessibility Regulations do not require AAA compliance.
+## Rules for public sector websites and apps
 
-#### Numbering changes in WCAG 2.1
+Public sector websites and apps in the UK must meet WCAG 2.2 level AA. 
 
-In order to avoid confusion and mixing up any old and new success criteria in WCAG 2.1, or changing existing numbering in 2.0 which people may have gotten used to - any new ones in 2.1 have just been added to the end of the set of success criteria within their guideline.
+This means you must pass the success criteria for both level A and level AA. You may be breaking the law if your website or app does not. 
 
-Also remember that this having them at the end does not relate to its level at all. That is shown clearly on the success criterion itself as either A/AA/AAA.
+Find out more about the [accessibility regulations for public sector websites and apps](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps).
 
-#### Conforming or passing WCAG 2.1
+## What's new in WCAG 2.2
 
-WCAG 2.1 uses the same conformance or passing model as WCAG 2.0 with some minor changes.  2.1 is designed to be compatible with the earlier version, so sites that conform/pass WCAG 2.1 also conform to WCAG 2.0.
+This guide will introduce you to WCAG version 2.2.
 
-#### Conformance/Passing addition and changes
+WCAG 2.2 has added 6 new AA criteria you need to meet to reach the legal level for accessible websites and apps:
 
-There are some minor conformance or passing additions to note, firstly about ‘page variations’, relating to responsive page design which will be relevant if you have a responsive site.
+* 2.4.11 Focus Not Obscured (Minimum) (AA) 
+* 2.5.7 Dragging Movements (AA)
+* 2.5.8 Target Size (Minimum) (AA)
+* 3.2.6 Consistent Help (A)
+* 3.3.7 Redundant Entry (A)
+* 3.3.8 Accessible Authentication (Minimum) (AA)
 
-##### Page variations
+WCAG 2.2 has also removed 4.1.1 Parsing, which is covered by other criteria. If your website or app meets WCAG 2.2, it also meets versions 2.1 and 2.0.
 
-In a responsive website, a full ‘page’ includes each variation of the page that is automatically presented for different screen sizes.
-
-Each of these responsive page ‘versions’ needs to pass (or have an alternative) in order for the entire page to pass.
-
-## WCAG 2.1 architecture
-
-WCAG 2.1 has twelve guidelines, grouped into four principles. The principles are that content must be:
-
-* Perceivable
-* Operable
-* Understandable
-* Robust
-
-These principles inform the following twelve guidelines. They cover areas like alternative formats, keyboard accessibility, content readability, and functionality across different devices.
-
-Each guideline has a number of Success Criteria (SC). Each SC has a conformance level: A, AA or AAA. These levels can be thought of to match some of the critical areas that need to be firstly addressed (at level A initially) and beyond to reduce barriers for the broadest range of users.
-
-## Meeting accessibility regulations
-
-Public sector websites, documents and mobile apps that meet WCAG 2.1 Level A and AA Success Criteria and publish an accessibility statement will comply with the [new accessibility regulations for public sector websites and apps](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps).
+Find out more about [what's new in WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
 ## WCAG overview
 
@@ -122,8 +98,8 @@ Your service must present information in ways people can recognise and use, no m
 * 1.3.1 Use elements like headings, lists and tables to properly convey the structure of content. [More about 1.3.1](/sc/1.3.1.html)
 * 1.3.2 Make sure content can always be read in a logical order even when stylesheets are disabled. [More about 1.3.2](/sc/1.3.2.html)
 * 1.3.3 Do not use colour, size, shape, sound or location as the only way to convey instructions. [More about 1.3.3](/sc/1.3.3.html)
-* 1.3.4 [New] Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/sc/1.3.4.html)
-* 1.3.5 [New] In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/sc/1.3.5.html)
+* 1.3.4 Make sure a page view is not locked to either horizontal or vertical views only, unless this is essential. [More about 1.3.4](/sc/1.3.4.html)
+* 1.3.5 In forms that collect information <strong>about the user</strong> add HTML autocomplete attributes to identify the purpose of the input. [More about 1.3.5](/sc/1.3.5.html)
 
 #### Guideline 1.4: Make content easy for people to see and hear
 * 1.4.1 Do not use colour as the only way to convey information of any kind. [More about 1.4.1](/sc/1.4.1.html)
@@ -131,10 +107,10 @@ Your service must present information in ways people can recognise and use, no m
 * 1.4.3 Make sure that the colour of text contrasts clearly against its background colour. [More about 1.4.3](/sc/1.4.3.html)
 * 1.4.4 Make sure it is possible to complete all tasks when text is resized up to 200% in the browser. [More about 1.4.4](/sc/1.4.4.html)
 * 1.4.5 Do not use images that contain text. [More about 1.4.5](/sc/1.4.5.html)
-* 1.4.10 [New] Make sure content will reflow to a single column when zoomed and not produce scrolling in both directions. [More about 1.4.10](/sc/1.4.10.html)
-* 1.4.11 [New] Make sure sight impaired users can see important controls and understand graphics. [More about 1.4.11](/sc/1.4.11.html)
-* 1.4.12 [New] Make sure users can modify text line height, letter or word spacing. [More about 1.4.12](/sc/1.4.12.html)
-* 1.4.13 [New] Provide a way to control how people can interact with or dismiss any ‘extra’ content that becomes visible. [More about 1.4.13](/sc/1.4.13.html)
+* 1.4.10 Make sure content will reflow to a single column when zoomed and not produce scrolling in both directions. [More about 1.4.10](/sc/1.4.10.html)
+* 1.4.11 Make sure sight impaired users can see important controls and understand graphics. [More about 1.4.11](/sc/1.4.11.html)
+* 1.4.12 Make sure users can modify text line height, letter or word spacing. [More about 1.4.12](/sc/1.4.12.html)
+* 1.4.13 Provide a way to control how people can interact with or dismiss any ‘extra’ content that becomes visible. [More about 1.4.13](/sc/1.4.13.html)
 
 ### Principle 2: Operable
 
@@ -143,7 +119,7 @@ Your service must be navigable and usable no matter how someone uses it (without
 #### Guideline 2.1: Make functionality work with a keyboard
 * 2.1.1 Make sure every task can be completed using just a keyboard. [More about 2.1.1](/sc/2.1.1.html)
 * 2.1.2 Make sure that keyboard users do not get stuck when navigating through content. [More about 2.1.2](/sc/2.1.2.html)
-* 2.1.4 <strong>[New]</strong> Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/sc/2.1.4.html)
+* 2.1.4 Provide a way to switch off or remap keyboard shortcuts. [More about 2.1.4](/sc/2.1.4.html)
 
 #### Guideline 2.2: Give people enough time to read and use content
 * 2.2.1 Give people a way to turn off or extend time limits. [More about 2.2.1](/sc/2.2.1.html)
@@ -162,10 +138,10 @@ Your service must be navigable and usable no matter how someone uses it (without
 * 2.4.7 Make sure that people using a keyboard to navigate can always see where they are on a page. [More about 2.4.7](/sc/2.4.7.html)
 
 #### Guideline 2.5: Make functionality easy to use through various inputs beyond keyboard
-* 2.5.1 [New] Do not require complex gestures to do things. [More about 2.5.1](/sc/2.5.1.html)
-* 2.5.2 [New] Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/sc/2.5.2.html)
-* 2.5.3 [New] Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/sc/2.5.3.html)
-* 2.5.4 [New] Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/sc/2.5.4.html)
+* 2.5.1 Do not require complex gestures to do things. [More about 2.5.1](/sc/2.5.1.html)
+* 2.5.2 Do not have controls or user interface components that fire as soon as they are touched. [More about 2.5.2](/sc/2.5.2.html)
+* 2.5.3 Make sure that for user interface components with a visible label the accessible name matches. [More about 2.5.3](/sc/2.5.3.html)
+* 2.5.4 Make sure functionality can not only be activated by shaking or tilting the device. [More about 2.5.4](/sc/2.5.4.html)
 
 ### Principle 3: Understandable
 
@@ -194,11 +170,14 @@ Your service must work with different browsers and assistive technologies in use
 #### Guideline 4.1: Make content compatible with different browsers and assistive technologies
 * 4.1.1 Make sure the code of each page does not contain errors that will have a negative impact on the way browsers and assistive technologies work together. [More about 4.1.1](/sc/4.1.1.html)
 * 4.1.2 Make sure the code of each page enables assistive technologies to discover the purpose of every feature, the way that feature is identified, and the state it is currently in. [More about 4.1.2](/sc/4.1.2.html)
-* 4.1.3 [New] Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/sc/4.1.3.html)
+* 4.1.3 Make sure status messages are shown in a way that assistive technologies understand without receiving focus. [More about 4.1.3](/sc/4.1.3.html)
 
 ## How to meet WCAG
 
-Use our primer to find out more about the success criteria to understand how to meet WCAG.
+Use this guide to find out more about the things you need to do to meet WCAG.
 
-View [all success criteria](/all.html), or view those that are related to [content](/content.html), [design](/design.html) or [code](/code.html).
+View [all success criteria](/all.html), or those that are related to [content](/content.html), [design](/design.html) or [code](/code.html).
 
+## How to give feedback
+
+Use the "Report problem" link below if you spot any issues with this guide.
