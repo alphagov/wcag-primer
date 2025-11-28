@@ -27,7 +27,7 @@ Use your browser's developer tools, assistive technologies or a plugin such as W
 * headings using `<h1>` to `<h6>` elements
 * form fields have descriptive labels using `<label>`
 * radio buttons or checkboxes have a `<fieldset>` element to group them, and a `<legend>` element to provide a label for the group
-* form fields with format requirements or other additional information have hints available to all users using HTML or text 
+* form fields with extra information (such as a hint to say what format the input needs to be in) must have a link to that information in the code
 
 If HTML cannot be used to convey all visual relationships then ARIA (Accessible Rich Internet Applications) code may also be used. However, standard HTML should be used wherever possible.
 
@@ -37,13 +37,24 @@ If HTML cannot be used to convey all visual relationships then ARIA (Accessible 
 
 ### Headings and lists marked up correctly
 
-When text heading up a section of content is correctly coded as a heading, it allows people to navigate between those headings using assistive technology. It also helps to break up the page visually. This also applies to lists. When correctly coded, a screen reader will announce how many list items there are. 
+When content introducing a section is correctly coded as a heading, it allows people to navigate between those headings using assistive technology. It also helps to break up the page visually. This applies to lists as well. When correctly coded, a screen reader will announce how many list items there are. 
 
 The following screenshot shows a heading of "Who can have an NHS account" followed by a bullet point list containing 2 items.
 
 <figure>
     <%= image_tag "../images/131/131-pass-heading-and-list.png", { :alt => 'Heading followed by text and a list' } %>
 </figure>
+
+Simplified code:
+
+```html
+<h2>Who can have an NHS account</h2>
+<p>You can have an account if you are:</p>
+<ul>
+    <li>registered with a GP surgery in England</li>
+    <li>aged 13 or over</li>
+</ul>
+```
 
 ### Table with correctly marked up headers
 
@@ -53,7 +64,7 @@ The header cells are usually in the first row, and sometimes in the first column
 
 In the following example, a screen reader should read "Second album" when navigating across to the data cell "Post". This is essential so the user knows what the content is referring to.
 
-This is achieved by using correctly marked up table header (`<th>`) tags.
+This is achieved by using correctly marked up table header (`<th>`) tags which include `scope="col"`. This links the cells in each column to their headers.
 
 <figure>
     <%= image_tag "../images/131/131-pass-table-headers.png", { :alt => 'Table with a header row in bold, showing the first two albums by Kate Bush (The Kick Inside and Lionheart), Björk (Debut and Post), and FKA Twigs (LP1 and Magdalene)' } %>
@@ -61,11 +72,43 @@ This is achieved by using correctly marked up table header (`<th>`) tags.
 
 The top row of the table uses code `<th scope="col">`, meaning a table header (such as "Second album") that is linked to the rest of its column.
 
+Simplified code:
+
+```html
+<table>
+    <caption>Albums</caption>
+    <thead>
+        <tr>
+            <th scope="col">Artist</th>
+            <th scope="col">First album</th>
+            <th scope="col">Second album</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kate Bush</td>
+            <td>The Kick Inside</td>
+            <td>Lionheart</td>
+        </tr>
+        <tr>
+            <td>Björk</td>
+            <td>Debut</td>
+            <td>Post</td>
+        </tr>
+        <tr>
+            <td>FKA Twigs</td>
+            <td>LP1</td>
+            <td>Magdalene</td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ## Common mistakes
 
 ### Heading not correctly marked up
 
-A common issue is where headings have been indicated using only bold and large text, rather than using a heading element such as `<h1>`. This makes navigation much more difficult for people who navigate by headings.
+A common issue is where headings have been styled using only bold and large text, rather than using a heading element such as `<h1>`. This makes navigation much more difficult for people who navigate by headings.
 
 <figure>
     <%= image_tag "../images/131/131-fail-not-a-heading.png", { :alt => 'Large, bold text followed by smaller text' } %>
@@ -73,22 +116,43 @@ A common issue is where headings have been indicated using only bold and large t
 
 Code:
 
-```HTML
+```html
 <!-- Don't do this -->
 <p style="font-size: 36px; font-weight:bold">
   I look like a heading but am not
 </p>
 <p>The above text is simply large, bold text.</p>
 ```
+
+### List not correctly marked up
+
+When a list of items is presented using line breaks to separate each item, it will not be announced as a list to screen reader users.
+
+For example, the following "list" is not read out to screen reader users as a list:
+
+apples<br>
+bananas<br>
+cherries<br>
+
+Code:
+
+```html
+<!-- don't do this -->
+<p>
+	apples<br>
+	bananas<br>
+	cherries<br>
+</p>
+```
+This should instead be coded using an unordered list (`<ul>`) and list item (`<li>`) tags.
+
 ### Further examples
 
 In general, this success criterion fails when the code does not match the visual appearance. Some more examples of failures are:
 
 * tables using styles to present the appearance of a table, instead of the correct HTML
 * table header rows rely on styled text instead of the correct HTML
-* a list of items is presented using line breaks to separate each item, without the correct HTML
-* headings rely on styled text instead of the correct HTML
-* headings use the proper HTML markup, but do not follow the hierarchy of content on the page (starting with `<h1>`, then `<h2>` for each section, `<h3>` for each sub-section and so on)
+* headings use the proper HTML markup, but the heading levels do not match the visual appearance - for example, an `<h2>` section heading appears smaller than an `<h3>` subsection heading
 * form fields have labels but they are not associated with the relevant field
 * form fields have format requirements or additional information, but this is not associated with the corresponding field
 * sets of radio buttons or checkboxes are not grouped inside a `<fieldset>` element, and do not have a `<legend>` element to provide a label for the group
@@ -98,7 +162,7 @@ In general, this success criterion fails when the code does not match the visual
 This success criterion is closely related to several others. In some cases, more than one of these criteria might fail at the same time:
 
 * [1.1.1 Non-text Content](1.1.1.html) covers images and symbols having appropriate alternative text.
-* [1.3.2 Meaningful Sequence](1.3.2.html)  makes sure that the reading order of content is logical.
+* [1.3.2 Meaningful Sequence](1.3.2.html) makes sure that the reading order of content is logical.
 * [2.4.6 Headings and Labels](2.4.6.html) makes sure that labels are descriptive.
 * [2.5.3 Label in Name](2.5.3.html) makes sure that a component's name (in the code) contains the visible label.
 * [3.3.2 Labels or Instructions](3.3.2.html) makes sure that elements have labels, but does not require them to be linked to each other.
