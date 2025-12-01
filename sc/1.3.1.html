@@ -96,13 +96,44 @@
     <a href="#1-3-1-info-and-relationships-a"><span>1.3.1 Info and Relationships (A)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#what-wcag-says"><span>What WCAG says</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-examples"><span>Good examples</span></a>
+        <ul>
+          <li>
+            <a href="#headings-and-lists-marked-up-correctly"><span>Headings and lists marked up correctly</span></a>
+          </li>
+          <li>
+            <a href="#table-with-correctly-marked-up-headers"><span>Table with correctly marked up headers</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#heading-not-correctly-marked-up"><span>Heading not correctly marked up</span></a>
+          </li>
+          <li>
+            <a href="#list-not-correctly-marked-up"><span>List not correctly marked up</span></a>
+          </li>
+          <li>
+            <a href="#further-examples"><span>Further examples</span></a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="#useful-resources"><span>Useful resources</span></a>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
     </ul>
   </li>
@@ -116,36 +147,127 @@
         <div class="app-pane__content toc-open-disabled" aria-label="Content">
           <main id="content" class="technical-documentation">
             <h1 id="1-3-1-info-and-relationships-a">1.3.1 Info and Relationships (A)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Understanding 1.3.1 Info and Relationships (A)</a></p>
-<p>When content structures like tables, lists and headings are communicated visually, they must also be communicated in ways that assistive technologies can understand. This ensures that content structures are available to screen reader, screen magnifier and speech recognition tool users.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="what-wcag-says">What WCAG says</h2>
+
+<blockquote>
+<p>Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding 1.3.1 Info and Relationships</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>When the structure of content is presented visually, such as in tables, lists and headings, that structure must also be understandable to assistive technologies such as screen readers and speech recognition tools.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>Structure is important to understand information correctly. If different content types were only represented visually, people using assistive technology may miss information.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>Use your browser&rsquo;s developer tools, assistive technologies or a plugin such as WAVE to check that all content uses the correct HTML (Hypertext Markup Language). This includes:</p>
 
 <ul>
-<li>  Tabular data is presented using proper HTML markup (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements);</li>
-<li>  Lists of items are presented using proper HTML markup (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements);</li>
-<li>  Headings are presented using proper HTML markup (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> elements);</li>
-<li>  Form fields have properly associated <code>&lt;label&gt;</code> elements;</li>
-<li>  Sets of radio buttons or checkboxes have a <code>&lt;fieldset&gt;</code> element to group them together, and a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
-<li>  Form fields with format requirements or other additional information have properly associated hints.</li>
+<li>tables using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements</li>
+<li>lists using <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> elements</li>
+<li>headings using <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> elements</li>
+<li>form fields have descriptive labels using <code>&lt;label&gt;</code></li>
+<li>radio buttons or checkboxes have a <code>&lt;fieldset&gt;</code> element to group them, and a <code>&lt;legend&gt;</code> element to provide a label for the group</li>
+<li>form fields with extra information (such as a hint to say what format the input needs to be in) must be associated with that information in the code, for example using <code>aria-describedby</code> - making the information more readable to screen reader users</li>
 </ul>
-<h2 id="common-mistakes">Common mistakes</h2>
+<p>If HTML cannot be used to convey all visual relationships then ARIA (Accessible Rich Internet Applications) code may also be used. However, standard HTML should be used wherever possible.</p>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/1.3.1">How to test in detail for 1.3.1 Info and Relationships</a></p>
+<h2 id="good-examples">Good examples</h2>
+<h3 id="headings-and-lists-marked-up-correctly">Headings and lists marked up correctly</h3>
+<p>When content introducing a section is correctly coded as a heading, it allows people to navigate between those headings using assistive technology. It also helps to break up the page visually. This applies to lists as well. When correctly coded, a screen reader will announce how many list items there are.</p>
+<p>The following screenshot shows a heading of &ldquo;Who can have an NHS account&rdquo; followed by a bullet point list containing 2 items.</p>
+
+<figure>
+    <img src="../images/131/131-pass-heading-and-list.png" alt="Heading followed by text and a list" />
+</figure>
+<p>Simplified code:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;h2&gt;</span>Who can have an NHS account<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>You can have an account if you are:<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>registered with a GP surgery in England<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>aged 13 or over<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div><h3 id="table-with-correctly-marked-up-headers">Table with correctly marked up headers</h3>
+<p>When a table&rsquo;s header cells are correctly coded, a screen reader user will be able to navigate around the table, as each data cell will announce the relevant header.</p>
+<p>The header cells are usually in the first row, and sometimes in the first column.</p>
+<p>In the following example, a screen reader should read &ldquo;Second album&rdquo; when navigating across to the data cell &ldquo;Post&rdquo;. This is essential so the user knows what the content is referring to.</p>
+<p>This is achieved by using correctly marked up table header (<code>&lt;th&gt;</code>) tags which include <code>scope=&quot;col&quot;</code>. This relates the cells in each column to their headers.</p>
+
+<figure>
+    <img src="../images/131/131-pass-table-headers.png" alt="Table with a header row in bold, showing the first two albums by Kate Bush (The Kick Inside and Lionheart), Björk (Debut and Post), and FKA Twigs (LP1 and Magdalene)" />
+</figure>
+<p>The top row of the table uses code <code>&lt;th scope=&quot;col&quot;&gt;</code>, meaning a table header (such as &ldquo;Second album&rdquo;) is related to the rest of its column.</p>
+<p>Simplified code:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;caption&gt;</span>Albums<span class="nt">&lt;/caption&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Artist<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First album<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Second album<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Kate Bush<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>The Kick Inside<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Lionheart<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Björk<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Debut<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Post<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>FKA Twigs<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>LP1<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Magdalene<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div><h2 id="common-mistakes">Common mistakes</h2>
+<h3 id="heading-not-correctly-marked-up">Heading not correctly marked up</h3>
+<p>A common issue is where headings have been styled using only bold and large text, rather than using a heading element such as <code>&lt;h1&gt;</code>. This makes navigation much more difficult for people who navigate by headings.</p>
+
+<figure>
+    <img src="../images/131/131-fail-not-a-heading.png" alt="Large, bold text followed by smaller text" />
+</figure>
+<p>Code:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="c">&lt;!-- Don't do this --&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-size: 36px; font-weight:bold"</span><span class="nt">&gt;</span>
+  I look like a heading but am not
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>The above text is simply large, bold text.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div><h3 id="list-not-correctly-marked-up">List not correctly marked up</h3>
+<p>When a list of items is presented using line breaks to separate each item, it will not be announced as a list to screen reader users.</p>
+<p>For example, the following &ldquo;list&rdquo; is not identified to screen reader users as a list along with the number of items in it:</p>
+<p>apples<br>
+bananas<br>
+cherries<br></p>
+<p>Code:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="c">&lt;!-- don't do this --&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+    apples<span class="nt">&lt;br&gt;</span>
+    bananas<span class="nt">&lt;br&gt;</span>
+    cherries<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div><p>This should instead be coded using an unordered list (<code>&lt;ul&gt;</code>) and list item (<code>&lt;li&gt;</code>) tags.</p>
+<h3 id="further-examples">Further examples</h3>
+<p>In general, this success criterion fails when the code does not match the visual appearance. Some more examples of failures are:</p>
 
 <ul>
-<li>  Tabular data is displayed using CSS to present the appearance of a table, but the proper HTML markup has not been used;</li>
-<li>  A list of items is presented using line breaks to separate each item, and the proper HTML markup has not been used;</li>
-<li>  Headings are text styled with CSS, and the proper HTML markup has not been used;</li>
-<li>  Headings use the proper HTML markup, but do not accurately represent the hierarchy of content on the page (starting with <code>&lt;h1&gt;</code>, then <code>&lt;h2&gt;</code> for each section, <code>&lt;h3&gt;</code> for each sub-section and so on);</li>
-<li>  Form fields do not have labels;</li>
-<li>  Form fields have labels but they are not properly associated with their corresponding fields;</li>
-<li>  Sets of radio buttons or checkboxes are not grouped inside a <code>&lt;fieldset&gt;</code> element, and do not have a <code>&lt;legend&gt;</code> element to provide a label for the group;</li>
-<li>  Form fields have format requirements or additional information, but it is not properly associated with the corresponding field.</li>
+<li>table header rows rely on styled text instead of the correct HTML</li>
+<li>headings use the proper HTML markup, but the heading levels do not match the visual appearance, for example an <code>&lt;h2&gt;</code> section heading appears smaller than an <code>&lt;h3&gt;</code> subsection heading</li>
+<li>form fields have labels but they are not associated with the relevant field</li>
 </ul>
-<h2 id="useful-resources">Useful resources</h2>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p>This success criterion is closely related to several others. In some cases, more than one of these criteria might fail at the same time:</p>
 
 <ul>
-<li>  <a href="https://www.nomensa.com/blog/2010/using-html-headings">Using HTML headings</a></li>
-<li>  <a href="https://www.nomensa.com/blog/2011/using-html-lists">Using HTML lists</a></li>
-<li>  <a href="https://www.nomensa.com/blog/2008/tables-more-than-just-rows-and-cells">Tables, more than just rows and columns</a></li>
+<li><a href="1.1.1.html">1.1.1 Non-text Content</a> covers images and symbols having appropriate alternative text.</li>
+<li><a href="1.3.2.html">1.3.2 Meaningful Sequence</a> makes sure that the reading order of content is logical.</li>
+<li><a href="2.4.6.html">2.4.6 Headings and Labels</a> makes sure that labels are descriptive.</li>
+<li><a href="2.5.3.html">2.5.3 Label in Name</a> makes sure that a component&rsquo;s name (in the code) contains the visible label.</li>
+<li><a href="3.3.2.html">3.3.2 Labels or Instructions</a> makes sure that elements have labels, but does not require them to be associated with each other.</li>
+<li><a href="4.1.2.html">4.1.2 Name, Role, Value</a> interactive elements having appropriate names, roles and values, regardless of how they appear visually.</li>
 </ul>
 
             
