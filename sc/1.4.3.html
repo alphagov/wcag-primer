@@ -96,13 +96,57 @@
     <a href="#1-4-3-contrast-minimum-aa"><span>1.4.3 Contrast (Minimum) (AA)</span></a>
     <ul>
       <li>
-        <a href="#requirements-what-to-do"><span>Requirements / What to do?</span></a>
+        <a href="#wcag-says"><span>WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+        <ul>
+          <li>
+            <a href="#what-is-a-contrast-ratio"><span>What is a contrast ratio?</span></a>
+          </li>
+          <li>
+            <a href="#requirements"><span>Requirements</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+        <ul>
+          <li>
+            <a href="#automated-tools"><span>Automated tools</span></a>
+          </li>
+          <li>
+            <a href="#manual-methods"><span>Manual methods</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#good-examples"><span>Good examples</span></a>
+        <ul>
+          <li>
+            <a href="#heading-and-link-on-gov-uk"><span>Heading and link on GOV.UK</span></a>
+          </li>
+          <li>
+            <a href="#focused-link"><span>Focused link</span></a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#low-contrast-text"><span>Low contrast text</span></a>
+          </li>
+          <li>
+            <a href="#low-contrast-text-on-focus"><span>Low contrast text on focus</span></a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="#useful-resources"><span>Useful resources</span></a>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
       </li>
     </ul>
   </li>
@@ -116,22 +160,72 @@
         <div class="app-pane__content toc-open-disabled" aria-label="Content">
           <main id="content" class="technical-documentation">
             <h1 id="1-4-3-contrast-minimum-aa">1.4.3 Contrast (Minimum) (AA)</h1>
-<p><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Understanding 1.4.3 Contrast (Minimum) (AA)</a></p>
-<p>Text must have a contrast ratio of at least 4.5:1 against its background colour. This makes content easier for everyone to read, but especially partially sighted people.</p>
-<h2 id="requirements-what-to-do">Requirements / What to do?</h2>
+<h2 id="wcag-says">WCAG says:</h2>
+
+<blockquote>
+<p>&ldquo;The visual presentation of text and images of text has a contrast ratio of at least 4.5:1&rdquo; (with exceptions)</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding 1.4.3 Contrast (Minimum)</a></p>
+<h2 id="what-this-means">What this means</h2>
+<h3 id="what-is-a-contrast-ratio">What is a contrast ratio?</h3>
+<p>A contrast ratio is a numerical value comparing the luminance (brightness) of foreground and background colours.</p>
+<p>Values range from 1:1 (no contrast) to 21:1 (maximum contrast).</p>
+<p>The higher the ratio, the greater the contrast and legibility.</p>
+<h3 id="requirements">Requirements</h3>
 
 <ul>
-<li>  Text (whether plain text or in an image) has a contrast ratio of at least 4.5:1 against its background colour.</li>
+<li>Standard text: This needs to have a contrast ratio of at least 4.5:1 against its background.</li>
+<li>Large text:  For text at least 18pt (around 24px), or bold text at least 14pt (around 19px), the ratio needs to be at least 3:1.</li>
+<li>Inactive elements, logos and decorative text are exempt.</li>
 </ul>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>Good contrast makes text easier to read — especially for partially sighted users and people with low vision. Most people find content easier to perceive if the contrast between text and its background is high enough.</p>
+<p>Low contrast text is one of the most common accessibility issues found on websites.</p>
+<h2 id="how-to-check">How to check</h2>
+<h3 id="automated-tools">Automated tools</h3>
+<p>The following automated checkers can often detect contrast issues by comparing text and background colours. They are both available as browser extensions in Chrome, Edge and Firefox:</p>
+
+<ul>
+<li><a href="https://www.deque.com/axe/">Axe</a></li>
+<li><a href="https://wave.webaim.org/">WAVE</a></li>
+</ul>
+<h3 id="manual-methods">Manual methods</h3>
+
+<ul>
+<li>Use browser developer tools to identify text and background colours.</li>
+<li>Enter colour values into the <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</li>
+<li>Use a colour picker tool, such as the <a href="https://www.tpgi.com/color-contrast-checker/">TPGi Colour Contrast Analyser</a>. For small text, zoom in to avoid grainy samples and inaccurate readings.</li>
+</ul>
+<p>Colours are usually written using a hex code format. For example, pure blue is <code>#0000FF</code>.</p>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/1.4.3">How to test in detail for 1.4.3 Contrast (Minimum)</a></p>
+<h2 id="good-examples">Good examples</h2>
+<h3 id="heading-and-link-on-gov-uk">Heading and link on GOV.UK</h3>
+
+<figure>
+    <img src="../images/143/143-pass-govuk-text.png" alt="Large black GOV.UK style heading on a white background with a dark blue link" />
+</figure>
+<p>The heading “Popular on GOV.UK” uses black text <code>#0B0C0C</code> on a white background <code>#FFFFFF</code>, achieving a contrast ratio of 19.6:1.</p>
+<p>Blue link text (“HMRC account&hellip;”) <code>#1D70B8</code> on white has a contrast ratio of 5.2:1.</p>
+<h3 id="focused-link">Focused link</h3>
+
+<figure>
+    <img src="../images/143/143-pass-govuk-link-focused.png" alt="GOV.UK style heading and a link which has been highlighted in orange with a thick black underline" />
+</figure>
+<p>When the link receives keyboard focus, the text darkens to black <code>#0B0C0C</code> for better readability against the yellow highlight background <code>#FFDD00</code>, achieving a contrast ratio of 14.5:1.</p>
 <h2 id="common-mistakes">Common mistakes</h2>
+<h3 id="low-contrast-text">Low contrast text</h3>
+<p><img src="../images/143/143-fail-blue-text.png" alt="Light purple text on a violet background reading &quot;This text has low contrast&quot;." /></p>
+<p>This light purple text on a violet background has a contrast ratio of 2.2:1, below the 4.5:1 required for standard text.</p>
+<h3 id="low-contrast-text-on-focus">Low contrast text on focus</h3>
+<p><img src="../images/143/143-fail-focused-link.png" alt="Blue text with an orange background: &quot;Link with low contrast on focus&quot;." /></p>
+<p>This blue link text does not have enough contrast when it has keyboard focus - the contrast ratio is around 4.1:1.</p>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p>This success criterion only relates to the contrast of text.</p>
 
 <ul>
-<li>  Text does not have a contrast ratio of at least 4.5:1 against its background colour.</li>
-</ul>
-<h2 id="useful-resources">Useful resources</h2>
-
-<ul>
-<li>  TBC</li>
+<li><a href="1.4.1.html">1.4.1 Use of Colour</a> requires that colour is not the only way to convey information.</li>
+<li><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced">1.4.6 Contrast (Enhanced)</a> encourages you to use a minimum contrast ratio of 7:1 to meet level AAA.</li>
+<li><a href="1.4.11.html">1.4.11 Non-text Contrast</a> covers the contrast of anything meaningful other than text.</li>
 </ul>
 
             
