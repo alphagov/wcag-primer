@@ -4,18 +4,91 @@ title: 1.4.3 Contrast (Minimum) (AA)
 
 # <%= current_page.data.title %>
 
-[Understanding <%= current_page.data.title %>](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+## WCAG says:
 
-Text must have a contrast ratio of at least 4.5:1 against its background colour. This makes content easier for everyone to read, but especially partially sighted people.
+> "The visual presentation of text and images of text has a contrast ratio of at least 4.5:1" (with exceptions)
 
-## Requirements / What to do?
+[Understanding 1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum)
 
-*   Text (whether plain text or in an image) has a contrast ratio of at least 4.5:1 against its background colour.
+## What this means
+
+### What is a contrast ratio?
+
+A contrast ratio is a numerical value comparing the luminance (brightness) of foreground and background colours.
+
+Values range from 1:1 (no contrast) to 21:1 (maximum contrast).
+
+The higher the ratio, the greater the contrast and legibility.
+
+### Requirements
+
+* Standard text: This needs to have a contrast ratio of at least 4.5:1 against its background.
+* Large text:  For text at least 18pt (around 24px), or bold text at least 14pt (around 19px), the ratio needs to be at least 3:1.
+* Inactive elements, logos and decorative text are exempt.
+
+## Why it matters
+
+Good contrast makes text easier to read — especially for partially sighted users and people with low vision. Most people find content easier to perceive if the contrast between text and its background is high enough.
+
+Low contrast text is one of the most common accessibility issues found on websites.
+
+## How to check
+
+### Automated tools
+
+The following automated checkers can often detect contrast issues by comparing text and background colours. They are both available as browser extensions in Chrome, Edge and Firefox:
+
+* [Axe](https://www.deque.com/axe/)
+* [WAVE](https://wave.webaim.org/)
+
+### Manual methods
+
+* Use browser developer tools to identify text and background colours.
+* Enter colour values into the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+* Use a colour picker tool, such as the [TPGi Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/). For small text, zoom in to avoid grainy samples and inaccurate readings.
+
+Colours are usually written using a hex code format. For example, pure blue is `#0000FF`.
+
+[How to test in detail for 1.4.3 Contrast (Minimum)](https://github.com/alphagov/wcag-primer/wiki/1.4.3)
+
+## Good examples
+
+### Heading and link on GOV.UK
+
+<figure>
+    <%= image_tag "../images/143/143-pass-govuk-text.png", { :alt => 'Large black GOV.UK style heading on a white background with a dark blue link' } %>
+</figure>
+
+The heading “Popular on GOV.UK” uses black text `#0B0C0C` on a white background `#FFFFFF`, achieving a contrast ratio of 19.6:1.
+
+Blue link text (“HMRC account...”) `#1D70B8` on white has a contrast ratio of 5.2:1.
+
+### Focused link
+
+<figure>
+    <%= image_tag "../images/143/143-pass-govuk-link-focused.png", { :alt => 'GOV.UK style heading and a link which has been highlighted in orange with a thick black underline' } %>
+</figure>
+
+When the link receives keyboard focus, the text darkens to black `#0B0C0C` for better readability against the yellow highlight background `#FFDD00`, achieving a contrast ratio of 14.5:1.
 
 ## Common mistakes
 
-*   Text does not have a contrast ratio of at least 4.5:1 against its background colour.
+### Low contrast text
 
-## Useful resources
+<%= image_tag "../images/143/143-fail-blue-text.png", { :alt => 'Light purple text on a violet background reading "This text has low contrast".' } %>
 
-*   TBC
+This light purple text on a violet background has a contrast ratio of 2.2:1, below the 4.5:1 required for standard text.
+
+### Low contrast text on focus
+
+<%= image_tag "../images/143/143-fail-focused-link.png", { :alt => 'Blue text with an orange background: "Link with low contrast on focus".' } %>
+
+This blue link text does not have enough contrast when it has keyboard focus - the contrast ratio is around 4.1:1.
+
+## Related success criteria
+
+This success criterion only relates to the contrast of text.
+
+* [1.4.1 Use of Colour](1.4.1.html) requires that colour is not the only way to convey information.
+* [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced) encourages you to use a minimum contrast ratio of 7:1 to meet level AAA.
+* [1.4.11 Non-text Contrast](1.4.11.html) covers the contrast of anything meaningful other than text.
