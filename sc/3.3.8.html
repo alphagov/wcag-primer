@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>3.3.8 Accessible Authentication (Minimum) (AA) - WCAG Primer</title>
+
+    <link href="../stylesheets/manifest.css" rel="stylesheet" />
+
+    <link rel="canonical" href="/sc/3.3.8.html">
+      <link rel="icon" sizes="48x48" href="/images/favicon.ico">
+      <link rel="icon" sizes="any" href="/images/favicon.svg" type="image/svg+xml">
+
+      <meta name="robots" content="noindex" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="/images/opengraph-image.png" />
+      <meta name="twitter:title" content="3.3.8 Accessible Authentication (Minimum) (AA) - WCAG Primer" />
+      <meta name="twitter:url" content="/sc/3.3.8.html" />
+
+      <meta property="og:image" content="/images/opengraph-image.png" />
+      <meta property="og:site_name" content="WCAG Primer" />
+      <meta property="og:title" content="3.3.8 Accessible Authentication (Minimum) (AA)" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="/sc/3.3.8.html" />
+
+    
+  </head>
+
+  <body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="../index.html" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__product-name">
+          WCAG Primer
+        </span>
+      </a>
+    </div>
+    <div class="govuk-header__content">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../index.html">Overview</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../all.html">All requirements</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../content.html">Content</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../design.html">Design</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../code.html">Code</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../checklist.html">Checklist</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="../community.html">Community</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      </div>
+
+        <div id="toc-heading" class="toc-show fixedsticky">
+          <button type="button" class="toc-show__label js-toc-show" aria-controls="toc">
+            Table of contents <span class="toc-show__icon"></span>
+          </button>
+        </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+          <div class="app-pane__toc">
+            <div class="toc" data-module="table-of-contents" tabindex="-1">
+              
+              <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
+              <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+                      <ul>
+  <li>
+    <a href="#3-3-8-accessible-authentication-minimum-aa"><span>3.3.8 Accessible Authentication (Minimum) (AA)</span></a>
+    <ul>
+      <li>
+        <a href="#what-wcag-says"><span>What WCAG says:</span></a>
+      </li>
+      <li>
+        <a href="#what-this-means"><span>What this means</span></a>
+      </li>
+      <li>
+        <a href="#why-it-matters"><span>Why it matters</span></a>
+      </li>
+      <li>
+        <a href="#how-to-check"><span>How to check</span></a>
+      </li>
+      <li>
+        <a href="#good-example"><span>Good example</span></a>
+        <ul>
+          <li>
+            <a href="#authentication-code-can-be-pasted"><span>Authentication code can be pasted</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#common-mistakes"><span>Common mistakes</span></a>
+        <ul>
+          <li>
+            <a href="#test-relies-on-transcribing-a-number"><span>Test relies on transcribing a number</span></a>
+          </li>
+          <li>
+            <a href="#test-relies-on-doing-maths-to-add-two-numbers"><span>Test relies on doing maths to add two numbers</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#related-success-criteria"><span>Related success criteria</span></a>
+      </li>
+      <li>
+        <a href="#useful-resources"><span>Useful resources</span></a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+              </nav>
+            </div>
+          </div>
+
+        <div class="app-pane__content toc-open-disabled" aria-label="Content">
+          <main id="content" class="technical-documentation">
+            <h1 id="3-3-8-accessible-authentication-minimum-aa">3.3.8 Accessible Authentication (Minimum) (AA)</h1>
+<p>Make it as easy as possible to sign in with less mental effort. Don&rsquo;t make people remember, solve or transcribe something. This is because some people with cognitive impairments cannot easily solve puzzles, remember passwords or retype one-time passcodes.</p>
+<h2 id="what-wcag-says">What WCAG says:</h2>
+
+<blockquote>
+<p>“A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process…” (with exceptions)</p>
+</blockquote>
+<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">Understanding 3.3.8 Accessible Authentication (Minimum)</a></p>
+<h2 id="what-this-means">What this means</h2>
+<p>Any sign in process must not rely on a test, including:</p>
+
+<ul>
+<li>remembering text, such as a password or numerical code</li>
+<li>copying or transcribing text from one place to another</li>
+<li>a test based on numbers or words</li>
+<li>solving a puzzle</li>
+</ul>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>If a sign in process includes steps which make it unnecessarily difficult, it can exclude some people with cognitive impairments, such as dyslexia, dyscalculia or brain injury.</p>
+<h2 id="how-to-check">How to check</h2>
+<p>Check that there is at least one way to sign in that doesn&rsquo;t rely on a test - for example following a link in an email, or scanning a face or fingerprint.</p>
+<p>It&rsquo;s OK if any of the following are true:</p>
+
+<ul>
+<li>the user can paste or auto-fill a password or authentication code into an input field - as that doesn&rsquo;t rely on memory</li>
+<li>a test involves recognising physical objects</li>
+<li>a test involves identifying images, audio or video that the user has already provided</li>
+<li>help is provided to complete a test - such as hints</li>
+</ul>
+<p><a href="https://github.com/alphagov/wcag-primer/wiki/3.3.8">How to test in detail for 3.3.8 Accessible Authentication</a></p>
+<h2 id="good-example">Good example</h2>
+<h3 id="authentication-code-can-be-pasted">Authentication code can be pasted</h3>
+<p>When the user opens an app, they’re sent a 6 digit code by text - they must enter this code to sign in.</p>
+<p>The input field allows the user to paste the code from their clipboard. The code can also be autofilled using the “From Messages” prompt. This removes any need to remember the code.</p>
+
+<figure>
+    <img src="../images/338/338-pass-paste-code.png" alt="A field to enter a security code on an iPhone, with a Paste option visible and a &quot;From Messages&quot; prompt." />
+</figure>
+<h2 id="common-mistakes">Common mistakes</h2>
+<h3 id="test-relies-on-transcribing-a-number">Test relies on transcribing a number</h3>
+<p>When a security mechanism asks you to listen to a number and write it into a field, this requires you to remember the number. It also discriminates against anyone who cannot hear it.</p>
+<p>To pass Accessible Authentication, there could be an alternative method also available that does not require you to memorise a number.</p>
+
+<figure>
+    <img src="../images/338/338-fail-transcribe-numbers.png" alt="A prompt &quot;Type the numbers you hear&quot; including a play button and input field." />
+</figure>
+<h3 id="test-relies-on-doing-maths-to-add-two-numbers">Test relies on doing maths to add two numbers</h3>
+<p>When a security mechanism asks you to solve a sum or puzzle, it can make it difficult for people with cognitive disabilities to log in.</p>
+<p>This example asks “What is nineteen plus eighty-four”. As well as solving the sum, it is unclear whether the answer should be written as a number or as a word.</p>
+<p>This could be improved by replacing the question with an object recognition test.</p>
+
+<figure>
+    <img src="../images/338/338-fail-maths-puzzle.png" alt="Form field with question &quot;What is nineteen plus eighty-four?&quot;" />
+</figure>
+<h2 id="related-success-criteria">Related success criteria</h2>
+<p>To achieve AAA compliance and meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced">3.3.9 Accessible Authentication (Enhanced)</a>, you need to meet the AA criterion without relying on users recognising objects or content they&rsquo;ve already provided.</p>
+<h2 id="useful-resources">Useful resources</h2>
+<p><a href="https://www.youtube.com/watch?v=9h5aLCS3wJQ">Video: Inspecting WCAG 2.2: accessible authentication</a> (by the GOV.UK Design System)</p>
+
+            
+          </main>
+
+          <aside>
+              <ul class="contribution-banner">
+                <li><a href="https://github.com/alphagov/wcag-primer/blob/master/source/sc/3.3.8.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/alphagov/wcag-primer/issues/new?body=Problem+with+%273.3.8+Accessible+Authentication+%28Minimum%29+%28AA%29%27+%28%2Fsc%2F3.3.8.html%29&amp;labels=bug&amp;title=Re%3A+%273.3.8+Accessible+Authentication+%28Minimum%29+%28AA%29%27">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/wcag-primer">GitHub Repo</a></li>
+              </ul>
+          </aside>
+
+          <footer class="govuk-footer app-footer" role="contentinfo">
+  <div class="govuk-footer__meta">
+    <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+        <ul class="govuk-footer__inline-list">
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="../accessibility.html">Accessibility statement</a>
+            </li>
+        </ul>
+
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="govuk-footer__licence-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 483.2 195.7"
+        height="17"
+        width="41"
+      >
+        <path
+          fill="currentColor"
+          d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+        />
+      </svg>
+      <span class="govuk-footer__licence-description">
+        All content is available under the
+        <a
+          class="govuk-footer__link"
+          href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          rel="license"
+        >Open Government Licence v3.0</a>, except where otherwise stated
+      </span>
+    </div>
+    <div class="govuk-footer__meta-item">
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="../javascripts/govuk_frontend.js" type="module"></script>
+    <script src="../javascripts/application.js"></script>
+  </body>
+</html>
