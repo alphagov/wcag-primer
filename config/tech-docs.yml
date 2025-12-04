@@ -9,7 +9,7 @@ service_link: /index.html
 # Links to show on right-hand-side of header
 header_links:
   Overview: /index.html
-  All requirements: /all.html
+  All success criteria: /all.html
   Content: /content.html
   Design: /design.html
   Code: /code.html
